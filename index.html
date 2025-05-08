@@ -9,8 +9,20 @@
     body {
       font-family: Arial, sans-serif;
       margin: 0;
+      display: flex;
+    }
+    aside {
+      width: 250px;
+      background-color: #eaf3fc;
+      padding: 30px 20px;
+      height: 100vh;
+      box-sizing: border-box;
+      position: sticky;
+      top: 0;
+    }
+    main {
+      flex: 1;
       padding: 40px;
-      color: #222;
       background-color: white;
     }
     header {
@@ -22,7 +34,7 @@
     header img {
       width: 150px;
       height: 150px;
-      border-radius: 50%;
+      border-radius: 12px;
     }
     h1 {
       font-size: 2.5em;
@@ -55,48 +67,72 @@
       border-radius: 6px;
       font-weight: bold;
     }
+    .sidebar-section h3 {
+      margin-top: 20px;
+      margin-bottom: 10px;
+      color: #004080;
+    }
+    .sidebar-section ul {
+      list-style: none;
+      padding: 0;
+    }
+    .sidebar-section li {
+      margin: 8px 0;
+    }
   </style>
 </head>
 <body>
-<header style="display: flex; align-items: center; gap: 20px;">
-  <img src="Headshot.jpg" alt="Saif Elsaady" style="width: 200px; height: auto; border-radius: 12px;">
-  <img src="LinkedINbanner.png" alt="Saif Elsaady Banner" style="width: 100%; max-width: 1000px; height: auto; border-radius: 12px;">
-</header>
-
-
-
-
-<section>
-  <h2> Hi, I'm Saif Elsaady</h2>
-</section>
-
-
-  <section>
-    <h2>🎓 Education</h2>
-    <ul>
-      <li><strong>MS</strong>, Electrical & Computer Engineering (AI/ML), ASU — <em>May 2026</em></li>
-      <li><strong>BSE</strong>, Electrical Systems Engineering, ASU</li>
-      <li><strong>BS</strong>, Data Science (Mathematics), ASU</li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>🌐 Socials</h2>
-    <div class="socials">
-      <a href="https://www.linkedin.com/in/saif-elsaady-78091425a">🔗 LinkedIn</a>
-      <a href="mailto:selsaady27@gmail.com">✉️ Email</a>
-      <a href="https://search.asu.edu/profile/3844340">🎓 ASU Profile</a>
-      <a href="https://www.rsl-az.com/selsaady">⚽ Coaching Profile</a>
+  <aside>
+    <div class="sidebar-section">
+      <h3>🎓 Education</h3>
+      <ul>
+        <li><strong>MS</strong>, ECE (AI/ML), ASU</li>
+        <li><strong>BSE</strong>, Electrical Systems, ASU</li>
+        <li><strong>BS</strong>, Data Science, ASU</li>
+      </ul>
     </div>
-  </section>
+    <div class="sidebar-section">
+      <h3>🌐 Socials</h3>
+      <ul>
+        <li><a href="https://www.linkedin.com/in/saif-elsaady-78091425a">🔗 LinkedIn</a></li>
+        <li><a href="mailto:selsaady27@gmail.com">✉️ Email</a></li>
+        <li><a href="https://search.asu.edu/profile/3844340">🎓 ASU Profile</a></li>
+        <li><a href="https://www.rsl-az.com/selsaady">⚽ Coaching</a></li>
+      </ul>
+    </div>
+    <div class="sidebar-section">
+      <h3>🚀 Projects</h3>
+      <ul>
+        <li><a href="#hardware">🛠 Hardware</a></li>
+        <li><a href="#software">💻 Software</a></li>
+        <li><a href="#ai">📊 AI & Data</a></li>
+        <li><a href="#research">📚 Research</a></li>
+      </ul>
+    </div>
+  </aside>
 
-<h2 id="projects">🚀 Projects</h2>
-<nav class="socials">
-  <a href="#hardware">🛠 Hardware</a>
-  <a href="#software">💻 Software</a>
-  <a href="#ai">📊 AI & Data</a>
-  <a href="#research">📚 Research</a>
-</nav>
+  <main>
+    <header>
+      <img src="Headshot.jpg" alt="Saif Elsaady">
+      <img src="LinkedINbanner.png" alt="Saif Elsaady Banner" style="width: 100%; max-width: 1000px; height: auto; border-radius: 12px;">
+    </header>
+
+    <section>
+      <h2>Hi, I'm Saif Elsaady</h2>
+    </section>
+
+    <section>
+      <h2 id="projects">🚀 Projects</h2>
+      <nav class="socials">
+        <a href="#hardware">🛠 Hardware</a>
+        <a href="#software">💻 Software</a>
+        <a href="#ai">📊 AI & Data</a>
+        <a href="#research">📚 Research</a>
+      </nav>
+    </section>
+  </main>
+</body>
+</html>
   
   <section>
 <h2 id="hardware">🛠 Hardware Experience</h2>    
