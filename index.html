@@ -155,21 +155,114 @@
         <a href="#research">📚 Research</a>
       </nav>
     </section>
-    <section>
-<h2 id="hardware">🛠 Hardware Experience</h2>    
-    <ul>
-      <li>🔧 <strong>Flight Controller Development</strong> – Modeled IMU data using Kalman filtering, assisted with sensor fusion algorithms, and validated performance through real-world UAV testing.</li>
-      <li>📡 <strong>UAV Hardware Integration</strong> – Designed power and ESC connection systems using a custom PCB, configured Veronte Autopilot, and optimized layout for signal integrity.</li>
-      <li>🌦 <strong>Weather Station</strong> – Developed a mobile PCB with I2C/SPI sensors, power-efficient architecture, and field-tested calibration for environmental monitoring.</li>
-      <li>🧥 <strong>Adaptive Apparel PCB</strong> – Built a BLE-powered wearable on CY8CKIT-142 with low-power C++ firmware and user safety compliance.</li>
-      <li>🔊 <strong>Audio Recording Circuit</strong> – Created an op-amp based audio system using ISD1700, including playback, erase, and amplification logic.</li>
-      <li>⚙️ <strong>Servo-Controlled Testing System</strong> – Automated servo motion and sensor feedback with Arduino firmware and Serial Monitor controls.</li>
-      <li>💡 <strong>Custom Temperature Sensor</strong> – Built a PCB + I2C sensor system with LED debugging and oscilloscope testing workflows.</li>
-      <li>🧪 <strong>Peak Detector Network</strong> – Simulated diode-op-amp peak detectors for real-time signal measurement and testing instrumentation.</li>
-      <li>⚽ <strong>Assistive Ball Launcher</strong> – Designed a switch-activated DC motorized assistive device with torque optimization and <$40 BOM.</li>
-      <li>🔒 <strong>EV Charging Cybersecurity</strong> – Simulated attack vectors on onboard chargers using Arduino + MATLAB for both hardware and protocol testing.</li>
-    </ul>
-  </section>
+
+<section>
+  <h2 id="hardware">🛠 Hardware Experience</h2>
+  <ul>
+
+    <li>
+      🔧 <strong>Flight Controller Development</strong> – Modeled IMU data using Kalman filtering, assisted with sensor fusion algorithms, and validated performance through real-world UAV testing.
+      <ul>
+        <li>📊 Cleaned and visualized IMU data in MATLAB using Kalman filtering to support performance evaluation.</li>
+        <li>📚 Researched aerospace specs and datasheets to inform design accuracy during subsystem development.</li>
+        <li>🔌 Assisted in integrating sensor fusion logic and PCB testing workflows for increased system reliability.</li>
+        <li>🗂 Managed project timeline with Gantt charts and Git version control to meet client milestones.</li>
+      </ul>
+    </li>
+
+    <li>
+      🔧 <strong>UAV Hardware Integration</strong> – Designed power and ESC connection systems using a custom PCB, configured Veronte Autopilot, and optimized layout for signal integrity.
+      <ul>
+        <li>✈️ Integrated Veronte Autopilot with GCS for stable flight communication.</li>
+        <li>🔋 Engineered power conversion from 22V to 9V and 5V for subsystem reliability.</li>
+        <li>⚖️ Optimized system for weight balance and ESC thermal response.</li>
+        <li>🔧 Verified signals and outputs through bench testing and signal tracing.</li>
+      </ul>
+    </li>
+
+    <li>
+      🔧 <strong>Weather Station</strong> – Developed a mobile PCB with I2C/SPI sensors, power-efficient architecture, and field-tested calibration for environmental monitoring.
+      <ul>
+        <li>🌡 Built environmental sensor array using temperature, pressure, and wind modules.</li>
+        <li>🧠 Developed a power-saving design using switching regulators and rechargeable cells.</li>
+        <li>📐 Designed the PCB in Cadence and passed DRC checks before fabrication.</li>
+        <li>🧪 Performed accuracy tests in varied conditions to verify sensor readings.</li>
+      </ul>
+    </li>
+
+    <li>
+      🔧 <strong>Adaptive Apparel PCB</strong> – Built a BLE-powered wearable on CY8CKIT-142 with low-power C++ firmware and user safety compliance.
+      <ul>
+        <li>🧵 Developed BLE firmware in C++ for safe and interactive user experience.</li>
+        <li>📘 Integrated safety logic for use in children's wearable devices.</li>
+        <li>🛠 Designed and tested PCB layout for manufacturability and durability.</li>
+        <li>📡 Optimized wireless signal strength and power draw for longer wearability.</li>
+      </ul>
+    </li>
+
+    <li>
+      🔧 <strong>Audio Recording Circuit</strong> – Created an op-amp based audio system using ISD1700, including playback, erase, and amplification logic.
+      <ul>
+        <li>🔉 Implemented audio processing using ISD1700 series chip.</li>
+        <li>🎛️ Added analog preamp circuit using LM741 op-amps.</li>
+        <li>📈 Benchmarked audio clarity and optimized op-amp gain settings.</li>
+        <li>🔁 Enabled playback, erase, and record cycling using digital logic control.</li>
+      </ul>
+    </li>
+
+    <li>
+      🔧 <strong>Servo-Controlled Testing System</strong> – Automated servo motion and sensor feedback with Arduino firmware and Serial Monitor controls.
+      <ul>
+        <li>⚙️ Integrated servo motors with Arduino PWM for precision stroke control.</li>
+        <li>📏 Added load cell and LVDT for real-time force and position tracking.</li>
+        <li>📲 Enabled parameter input through Serial Monitor interface.</li>
+        <li>🔄 Programmed closed-loop system for automated test cycling.</li>
+      </ul>
+    </li>
+
+    <li>
+      🔧 <strong>Custom Temperature Sensor</strong> – Built a PCB + I2C sensor system with LED debugging and oscilloscope testing workflows.
+      <ul>
+        <li>🌡️ Designed PCB with temperature sensor and pull-up resistors.</li>
+        <li>💡 Added LED output for visual status monitoring.</li>
+        <li>🧪 Verified sensor accuracy using oscilloscope signal tracing.</li>
+        <li>🧰 Coded C++ firmware loop to read and validate temperature readings.</li>
+      </ul>
+    </li>
+
+    <li>
+      🔧 <strong>Peak Detector Network</strong> – Simulated diode-op-amp peak detectors for real-time signal measurement and testing instrumentation.
+      <ul>
+        <li>📈 Designed op-amp circuit for capturing signal peaks.</li>
+        <li>🔍 Tuned component values for analog signal tracking.</li>
+        <li>🧪 Tested design across variable input frequencies using scope.</li>
+        <li>🧰 Applied in amplitude-modulated signal diagnostics.</li>
+      </ul>
+    </li>
+
+    <li>
+      🔧 <strong>Assistive Ball Launcher</strong> – Designed a switch-activated DC motorized assistive device with torque optimization and <$40 BOM.
+      <ul>
+        <li>⚽ Developed switch-based motor control interface.</li>
+        <li>🪛 Designed ergonomic frame using low-cost materials.</li>
+        <li>⚡ Optimized motor torque for consistent launching force.</li>
+        <li>💰 Kept total bill of materials under $40 for accessibility.</li>
+      </ul>
+    </li>
+
+    <li>
+      🔧 <strong>EV Charging Cybersecurity</strong> – Simulated attack vectors on onboard chargers using Arduino + MATLAB for both hardware and protocol testing.
+      <ul>
+        <li>🔒 Built hardware simulation to model EV charging protocol.</li>
+        <li>💻 Wrote MATLAB scripts to simulate attack scenarios.</li>
+        <li>📡 Emulated CAN bus signal interference and spoofing.</li>
+        <li>🧪 Verified vulnerabilities through test scenarios and logging.</li>
+      </ul>
+    </li>
+
+  </ul>
+</section>
+
 
   <section>
     <h2 id="software">💻 Software Experience</h2>
