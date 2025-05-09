@@ -4,71 +4,85 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Saif Elsaady | Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
   <style>
-    html, body {
-      height: 100%;
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
       margin: 0;
       font-family: Arial, sans-serif;
       display: flex;
+      min-height: 100vh;
+      flex-direction: row;
       background-color: white;
     }
+
     aside {
       width: 250px;
       background-color: #437c47;
       padding: 30px 20px;
-      height: 100vh;
-      box-sizing: border-box;
-      position: fixed;
-      top: 0;
-      left: 0;
       color: white;
+      flex-shrink: 0;
     }
+
     aside a {
       color: white;
+      text-decoration: none;
     }
+
     aside a:hover {
       text-decoration: underline;
     }
+
     main {
-      margin-left: 250px;
-      padding: 40px;
       flex: 1;
+      padding: 40px;
       background-color: white;
     }
+
     header {
       display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
       align-items: center;
       gap: 30px;
       margin-bottom: 30px;
+      text-align: center;
     }
+
     header img {
-      width: 250px;
-      height: 250px;
+      width: 200px;
+      height: 200px;
       border-radius: 12px;
       object-fit: cover;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     }
+
     h1 {
-      font-size: 6em;
+      font-size: 3.5em;
       color: #437c47;
       margin: 0;
-      white-space: nowrap;
     }
+
     h2 {
       color: #437c47;
       margin-top: 2em;
     }
+
     a {
       color: #004080;
       text-decoration: none;
     }
+
     a:hover {
       text-decoration: underline;
     }
+
     ul {
       padding-left: 20px;
     }
+
     .socials {
       font-size: 1.1em;
       display: flex;
@@ -76,6 +90,7 @@
       gap: 15px;
       margin-top: 10px;
     }
+
     .socials a {
       background-color: #437c47;
       color: white;
@@ -83,43 +98,76 @@
       border-radius: 6px;
       font-weight: bold;
     }
+
     .sidebar-section h3 {
       font-size: 1.5em;
       margin-top: 20px;
       margin-bottom: 15px;
       color: white;
     }
+
     .sidebar-section ul {
       list-style: none;
       padding: 0;
     }
+
     .sidebar-section li {
       margin: 18px 0;
       font-size: 1.3em;
     }
+
+    /* Responsive Styles */
+    @media (max-width: 900px) {
+      body {
+        flex-direction: column;
+      }
+
+      aside {
+        width: 100%;
+        height: auto;
+        position: relative;
+        padding: 20px;
+        text-align: center;
+      }
+
+      main {
+        margin-left: 0;
+        padding: 20px;
+      }
+
+      header {
+        flex-direction: column;
+      }
+
+      header img {
+        width: 150px;
+        height: 150px;
+      }
+
+      h1 {
+        font-size: 2.5em;
+      }
+    }
   </style>
 </head>
 <body>
-<aside>
-  <div class="sidebar-section">
-    <h3>🚀 Projects</h3>
-    <ul>
-      <li><a href="#hardware">🛠 Hardware</a></li>
-      <li><a href="#software">💻 Software & Data</a></li>
-      <li><a href="#research">📚 Research & Sustainability</a></li>
-    </ul>
-  </div>
-</aside>
-
+  <aside>
+    <div class="sidebar-section">
+      <h3>🚀 Projects</h3>
+      <ul>
+        <li><a href="#hardware">🛠 Hardware</a></li>
+        <li><a href="#software">💻 Software & Data</a></li>
+        <li><a href="#research">📚 Research & Sustainability</a></li>
+      </ul>
+    </div>
+  </aside>
 
   <main>
-<header style="display: flex; justify-content: center; align-items: center; gap: 50px; margin-bottom: 30px;">
-  <img src="Headshot.jpg" alt="Saif Elsaady" style="width: 250px; height: 250px; border-radius: 12px; object-fit: cover; box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);">
-
-  <h1 style="font-size: 6em; color: #437c47; margin: 0; text-align: center;">Portfolio</h1>
-
-  <img src="GreenAIImage.png" alt="AI and Hardware" style="width: 250px; height: 250px; border-radius: 12px; object-fit: cover; box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);">
-</header>
+    <header>
+      <img src="Headshot.jpg" alt="Saif Elsaady">
+      <h1>Portfolio</h1>
+      <img src="GreenAIImage.png" alt="AI and Hardware">
+    </header>
 
 
 
