@@ -179,20 +179,24 @@ OCTYPE html>
         /* About image fixed position and alignment */
         .about-content {
             display: flex;
+            flex-direction: row;
             flex-wrap: wrap;
-            align-items: flex-start;
+            align-items: center;
             justify-content: center;
             gap: 2rem;
         }
+        .about-text {
+            flex: 1 1 300px;
+            min-width: 260px;
+        }
         .about-image {
-            position: relative;
-            flex: 0 0 340px;
-            max-width: 340px;
+            flex: 1 1 300px;
             min-width: 220px;
-            height: auto;
+            max-width: 340px;
             display: flex;
             align-items: center;
             justify-content: center;
+            height: auto;
         }
         .about-banner {
             max-width: 100%;
@@ -206,13 +210,11 @@ OCTYPE html>
                 align-items: center;
             }
             .about-image {
-                margin-top: 1.5rem;
-                height: auto;
                 max-width: 90vw;
+                margin-top: 1.5rem;
             }
             .about-banner {
                 max-width: 90vw;
-                max-height: 180px;
             }
         }
     </style>
@@ -259,7 +261,7 @@ OCTYPE html>
                     <h1 class="hero-title">
                         Hi, I'm <span class="highlight">Saif Elsaady</span>
                     </h1>
-                    <h2 class="hero-subtitle">Graduate Student</h2>
+                    <h2 class="hero-subtitle">Electrical & Computer Engineer</h2>
                     <p class="hero-description">
                         Specializing in AI/ML, Hardware Development, and Software Engineering. 
                         Passionate about creating innovative solutions that bridge the gap between 
@@ -290,7 +292,7 @@ OCTYPE html>
                         Dual Master's student in Electrical Engineering (AI/ML) and Data Science 4+1 with a 4.0 GPA across all degrees. Over fifty-six (56) hands-on projects spanning machine learning, automation, hardware design, and software engineering. Passionate about building intelligent, reliable systems at the intersection of ML, hardware, and software.
                     </p>
                     <p>
-                        My experience spans from semiconductors, hardware integration to machine learning 
+                        My experience spans from semiconductor design, hardware integration to machine learning 
                         algorithms and software development. I'm passionate about sustainable technology and 
                         creating solutions that make a positive impact.
                     </p>
