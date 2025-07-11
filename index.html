@@ -32,6 +32,7 @@ OCTYPE html>
     
     <!-- Inline CSS for Projects (Fallback) -->
     <style>
+        /* Enhanced Project Grid */
         .projects-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -46,6 +47,7 @@ OCTYPE html>
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
             transition: all 0.3s ease;
             position: relative;
+            border: 1px solid #e9ecef;
         }
         
         .project-card:hover {
@@ -84,6 +86,16 @@ OCTYPE html>
             height: auto;
             border-radius: 0.5rem;
             margin-top: 1rem;
+            object-fit: cover;
+        }
+        
+        /* Image error handling */
+        .project-card img:not([src]) {
+            display: none;
+        }
+        
+        .project-card img[src=""] {
+            display: none;
         }
         
         .project-filters {
@@ -114,10 +126,54 @@ OCTYPE html>
         [data-theme="dark"] .project-card {
             background: #1e293b;
             color: #f1f5f9;
+            border-color: #475569;
         }
         
         [data-theme="dark"] .project-card li {
             color: #94a3b8;
+        }
+        
+        /* Responsive improvements */
+        @media (max-width: 768px) {
+            .projects-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+            
+            .project-card {
+                padding: 1rem;
+            }
+            
+            .project-filters {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .filter-btn {
+                width: 100%;
+                max-width: 200px;
+            }
+        }
+        
+        /* Loading states */
+        .project-card img {
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .project-card img.loaded {
+            opacity: 1;
+        }
+        
+        /* Error fallback for images */
+        .project-card img[src*="placeholder"] {
+            background: #f0f0f0;
+            min-height: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #666;
+            font-size: 0.9rem;
         }
     </style>
 </head>
@@ -241,8 +297,8 @@ OCTYPE html>
                         <li>Managed project timeline with Gantt charts and Git version control to meet client milestones.</li>
                     </ul>
                     <div style="display: flex; justify-content: center; gap: 30px; margin-top: 20px;">
-                        <img src="Flight_Controller_FC_29_png_alphares.png" alt="Flight Controller Image 1" style="max-width: 300px; max-height: 200px; width: auto; height: auto; object-fit: contain; border-radius: 8px;">
-                        <img src="IMU Visual test.gif" alt="Flight Controller Image 2" style="max-width: 300px; max-height: 200px; width: auto; height: auto; object-fit: contain; border-radius: 8px;">
+                                            <img src="./Flight_Controller_FC_29_png_alphares.png" alt="Flight Controller Image 1" style="max-width: 300px; max-height: 200px; width: auto; height: auto; object-fit: contain; border-radius: 8px;">
+                    <img src="./IMU Visual test.gif" alt="Flight Controller Image 2" style="max-width: 300px; max-height: 200px; width: auto; height: auto; object-fit: contain; border-radius: 8px;">
                     </div>
                 </div>
 
@@ -254,10 +310,10 @@ OCTYPE html>
                         <li>Optimized system for weight balance and ESC thermal response.</li>
                         <li>Verified signals and outputs through bench testing and signal tracing.</li>
                     </ul>
-                    <div style="display: flex; justify-content: center; gap: 30px; margin-top: 20px;">
-                        <img src="DroneBody.jpeg" alt="UAV Hardware Integration Image 1" style="max-width: 300px; max-height: 200px; width: auto; height: auto; object-fit: contain; border-radius: 8px;">
-                        <img src="SchematicDrone.png" alt="UAV Hardware Integration Image 2" style="max-width: 300px; max-height: 200px; width: auto; height: auto; object-fit: contain; border-radius: 8px;">
-                    </div>
+                                      <div style="display: flex; justify-content: center; gap: 30px; margin-top: 20px;">
+                    <img src="./DroneBody.jpeg" alt="UAV Hardware Integration Image 1" style="max-width: 300px; max-height: 200px; width: auto; height: auto; object-fit: contain; border-radius: 8px;">
+                    <img src="./SchematicDrone.png" alt="UAV Hardware Integration Image 2" style="max-width: 300px; max-height: 200px; width: auto; height: auto; object-fit: contain; border-radius: 8px;">
+                  </div>
                 </div>
 
                 <div class="project-card hardware">
@@ -268,10 +324,10 @@ OCTYPE html>
                         <li>Designed the PCB in Cadence and passed DRC checks before fabrication.</li>
                         <li>Performed accuracy tests in varied conditions to verify sensor readings.</li>
                     </ul>
-                    <div style="display: flex; justify-content: center; gap: 30px; margin-top: 20px;">
-                        <img src="PCBweather.jpeg" alt="Weather Station Image 1" style="max-width: 300px; max-height: 200px; width: auto; height: auto; object-fit: contain; border-radius: 8px;">
-                        <img src="FinalDevice.jpeg" alt="Weather Station Image 2" style="max-width: 300px; max-height: 200px; width: auto; height: auto; object-fit: contain; border-radius: 8px;">
-                    </div>
+                                      <div style="display: flex; justify-content: center; gap: 30px; margin-top: 20px;">
+                    <img src="./PCBweather.jpeg" alt="Weather Station Image 1" style="max-width: 300px; max-height: 200px; width: auto; height: auto; object-fit: contain; border-radius: 8px;">
+                    <img src="./FinalDevice.jpeg" alt="Weather Station Image 2" style="max-width: 300px; max-height: 200px; width: auto; height: auto; object-fit: contain; border-radius: 8px;">
+                  </div>
                 </div>
 
                 <div class="project-card hardware">
@@ -282,11 +338,11 @@ OCTYPE html>
                         <li>Designed and tested PCB layout for manufacturability and durability.</li>
                         <li>Optimized wireless signal strength and power draw for longer wearability.</li>
                     </ul>
-                    <div style="display: flex; justify-content: center; gap: 30px; margin-top: 20px;">
-                        <img src="spidermansleeve.jpeg" alt="Adaptive Apparel PCB Image 1" style="max-width: 300px; max-height: 200px; width: auto; height: auto; object-fit: contain; border-radius: 8px;">
-                        <img src="SpidermanPCB.jpeg" alt="Adaptive Apparel PCB Image 2" style="max-width: 300px; max-height: 200px; width: auto; height: auto; object-fit: contain; border-radius: 8px;">
-                        <img src="adaptiveappareldevice.jpeg" alt="Adaptive Apparel PCB Image 3" style="max-width: 300px; max-height: 200px; width: auto; height: auto; object-fit: contain; border-radius: 8px;">
-                    </div>
+                                      <div style="display: flex; justify-content: center; gap: 30px; margin-top: 20px;">
+                    <img src="./spidermansleeve.jpeg" alt="Adaptive Apparel PCB Image 1" style="max-width: 300px; max-height: 200px; width: auto; height: auto; object-fit: contain; border-radius: 8px;">
+                    <img src="./SpidermanPCB.jpeg" alt="Adaptive Apparel PCB Image 2" style="max-width: 300px; max-height: 200px; width: auto; height: auto; object-fit: contain; border-radius: 8px;">
+                    <img src="./adaptiveappareldevice.jpeg" alt="Adaptive Apparel PCB Image 3" style="max-width: 300px; max-height: 200px; width: auto; height: auto; object-fit: contain; border-radius: 8px;">
+                  </div>
                 </div>
 
                 <div class="project-card hardware">
@@ -869,15 +925,24 @@ OCTYPE html>
                         <div class="timeline-date">2024 - Present</div>
                         <h3>Embedded Systems Intern</h3>
                         <h4>Honeywell Aerospace</h4>
-                        <p>Reduced avionics test cycle time by 50% by optimizing scripts with Automated Test Equipment (ATE). Built Linux-based pipeline streaming UAV camera footage via Python over LTE.</p>
+                        <ul>
+                            <li>Reduced avionics test cycle time by 50% by optimizing scripts with Automated Test Equipment (ATE).</li>
+                            <li>Resolved ATE scripting errors and managed JIRA ticketing system to improve test workflow stability.</li>
+                            <li>Analyzed signal integrity and optimized script runtimes to save 10 minutes per cycle on UAV systems.</li>
+                            <li>Built a Linux-based pipeline streaming UAV camera footage via Python over LTE with 1s latency reduction.</li>
+                        </ul>
                     </div>
                 </div>
                 <div class="timeline-item">
                     <div class="timeline-content">
                         <div class="timeline-date">2023 - 2024</div>
-                        <h3>Automation Intern</h3>
+                        <h3>AI/ML Research Intern</h3>
                         <h4>Intel Corporation</h4>
-                        <p>Performed statistical modeling on wafer defect data using JMP, SQL, and Python. Automated semiconductor test workflows, reducing manual debugging by 80%.</p>
+                        <ul>
+                            <li>Developed a dual CNN classification pipeline using TensorFlow/Keras with separate models for continuous and discrete data modalities, achieving 93.4% and 96.3% pass rates respectively on unseen test data.</li>
+                            <li>Engineered a complete 3-script MLOps toolchain (training, evaluation, and retraining pipelines) with professional GUI interfaces and Intel corporate branding, reducing manual configuration by 100%.</li>
+                            <li>Created an end-to-end machine learning solution with professional GUI interfaces and automated result organization, streamlining the evaluation workflow from hours to minutes while providing comprehensive performance reporting and audit trails.</li>
+                        </ul>
                     </div>
                 </div>
                 <div class="timeline-item">
@@ -885,7 +950,23 @@ OCTYPE html>
                         <div class="timeline-date">2022 - 2023</div>
                         <h3>Data Science Intern</h3>
                         <h4>USAA</h4>
-                        <p>Improved customer service insights by implementing K-means clustering on interaction data, reducing friction scores by 15%.</p>
+                        <ul>
+                            <li>Improved customer service insights by implementing K-means clustering on interaction data, reducing friction scores by 15%.</li>
+                            <li>Enhanced NLP capabilities with n-grams and topic modeling, leading to a 10% improvement in satisfaction metrics.</li>
+                            <li>Created dashboards using matplotlib, seaborn, and WordCloud to visualize sentiment and support service redesign.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">2022 - Current</div>
+                        <h3>UGTA, Grader, & FURI Researcher</h3>
+                        <h4>Arizona State University</h4>
+                        <ul>
+                            <li>Assisted instruction and grading in courses: FSE100, BIO514, EGR334, EGR314, EGR202, and EGR201.</li>
+                            <li>Supported freshman engineering design projects and lab-based instruction with hands-on mentoring.</li>
+                            <li>Contributed to undergraduate research through the FURI program in clean energy and AI-based applications.</li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -902,21 +983,21 @@ OCTYPE html>
                         <i class="fas fa-envelope"></i>
                         <div>
                             <h3>Email</h3>
-                            <p>selsaady27@gmail.com</p>
+                            <p><a href="mailto:selsaady27@gmail.com" class="contact-link">selsaady27@gmail.com</a></p>
                         </div>
                     </div>
                     <div class="contact-item">
                         <i class="fab fa-linkedin"></i>
                         <div>
                             <h3>LinkedIn</h3>
-                            <p>Saif S. Elsaady</p>
+                            <p><a href="https://www.linkedin.com/in/saif-s-elsaady-78091425a/" target="_blank" class="contact-link">Saif S. Elsaady</a></p>
                         </div>
                     </div>
                     <div class="contact-item">
                         <i class="fab fa-github"></i>
                         <div>
                             <h3>GitHub</h3>
-                            <p>selsaady1</p>
+                            <p><a href="https://github.com/selsaady1" target="_blank" class="contact-link">selsaady1</a></p>
                         </div>
                     </div>
                 </div>
@@ -955,7 +1036,7 @@ OCTYPE html>
     <!-- Inline JavaScript for Project Filtering (Fallback) -->
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            // Project Filtering
+            // Enhanced Project Filtering
             const filterBtns = document.querySelectorAll('.filter-btn');
             const projectsGrid = document.getElementById('projects-grid');
             
@@ -973,24 +1054,53 @@ OCTYPE html>
                         projects.forEach(card => {
                             if (filter === 'all' || card.classList.contains(filter)) {
                                 card.style.display = '';
+                                card.style.opacity = '0';
+                                setTimeout(() => {
+                                    card.style.opacity = '1';
+                                }, 50);
                             } else {
-                                card.style.display = 'none';
+                                card.style.opacity = '0';
+                                setTimeout(() => {
+                                    card.style.display = 'none';
+                                }, 300);
                             }
                         });
                     });
                 });
             }
             
-            // Remove loading screen
+            // Image loading handler
+            const images = document.querySelectorAll('.project-card img');
+            images.forEach(img => {
+                img.addEventListener('load', function() {
+                    this.classList.add('loaded');
+                });
+                
+                img.addEventListener('error', function() {
+                    this.style.display = 'none';
+                    console.log('Image failed to load:', this.src);
+                });
+            });
+            
+            // Remove loading screen with better timing
             const loadingScreen = document.getElementById('loading-screen');
             if (loadingScreen) {
                 setTimeout(() => {
                     loadingScreen.style.opacity = '0';
-                    setTimeout(() => loadingScreen.style.display = 'none', 400);
-                }, 1000);
+                    setTimeout(() => {
+                        loadingScreen.style.display = 'none';
+                        // Trigger animations after loading
+                        const animatedElements = document.querySelectorAll('.fade-in');
+                        animatedElements.forEach(el => {
+                            if (el.getBoundingClientRect().top < window.innerHeight) {
+                                el.classList.add('visible');
+                            }
+                        });
+                    }, 400);
+                }, 800);
             }
             
-            // Mobile nav toggle
+            // Enhanced Mobile Navigation
             const navToggle = document.getElementById('nav-toggle');
             const navMenu = document.getElementById('nav-menu');
             if (navToggle && navMenu) {
@@ -998,9 +1108,18 @@ OCTYPE html>
                     navMenu.classList.toggle('active');
                     navToggle.classList.toggle('active');
                 });
+                
+                // Close mobile menu when clicking on links
+                const navLinks = document.querySelectorAll('.nav-link');
+                navLinks.forEach(link => {
+                    link.addEventListener('click', function() {
+                        navMenu.classList.remove('active');
+                        navToggle.classList.remove('active');
+                    });
+                });
             }
             
-            // Back to top button
+            // Enhanced Back to Top Button
             const backToTop = document.getElementById('back-to-top');
             if (backToTop) {
                 window.addEventListener('scroll', function() {
@@ -1015,6 +1134,53 @@ OCTYPE html>
                     window.scrollTo({ top: 0, behavior: 'smooth' });
                 });
             }
+            
+            // Smooth scrolling for anchor links
+            const anchorLinks = document.querySelectorAll('a[href^="#"]');
+            anchorLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        const offsetTop = target.offsetTop - 80; // Account for fixed navbar
+                        window.scrollTo({
+                            top: offsetTop,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+            
+            // Intersection Observer for animations
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, observerOptions);
+            
+            const animatedElements = document.querySelectorAll('.fade-in, .section-title');
+            animatedElements.forEach(el => observer.observe(el));
+            
+            // Theme persistence
+            const savedTheme = localStorage.getItem('theme');
+            if (savedTheme) {
+                document.documentElement.setAttribute('data-theme', savedTheme);
+            }
+            
+            // Error handling for missing resources
+            window.addEventListener('error', function(e) {
+                if (e.target.tagName === 'IMG') {
+                    console.log('Image failed to load:', e.target.src);
+                    e.target.style.display = 'none';
+                }
+            }, true);
         });
     </script>
 </body>
