@@ -1158,22 +1158,36 @@ section {
     left: -100%;
     top: 70px;
     flex-direction: column;
-    background: var(--bg-main);
+    background-color: var(--bg-main);
     width: 100%;
     text-align: center;
     transition: left 0.3s;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
-    padding: var(--spacing-lg) 0;
+    box-shadow: var(--shadow-medium);
+    padding: 2rem 0;
     height: calc(100vh - 70px);
     overflow-y: auto;
-    display: block;
-    z-index: 1001;
+    z-index: 999;
+    gap: 2rem;
+    display: flex;
   }
   .nav-menu.active {
     left: 0;
   }
   .nav-toggle {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 0.5rem;
+    z-index: 1001;
+  }
+  .nav-link {
+    font-size: 1.3rem;
+    padding: 1rem 0;
+    border-bottom: none;
   }
 } 
 
