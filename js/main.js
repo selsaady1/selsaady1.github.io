@@ -11,6 +11,30 @@ document.addEventListener('DOMContentLoaded', function() {
     initThemePersistence();
     initAccessibility();
     initPerformanceOptimizations();
+    // ===== PROJECT NAVIGATION ANCHOR OFFSET =====
+    document.querySelectorAll('.project-nav-link').forEach(function(link) {
+        link.addEventListener('click', function(e) {
+            const href = this.getAttribute('href');
+            if (href && href.startsWith('#')) {
+                const target = document.querySelector(href);
+                if (target) {
+                    e.preventDefault();
+                    const yOffset = -80; // navbar height
+                    const y = target.getBoundingClientRect().top + window.pageYOffset + yOffset;
+                    window.scrollTo({ top: y, behavior: 'smooth' });
+                }
+            }
+        });
+    });
+    // ===== ENSURE NAV-TOGGLE IS ALWAYS CLICKABLE =====
+    // (Re-apply pointer cursor and check event propagation)
+    var navToggle = document.getElementById('nav-toggle');
+    if (navToggle) {
+        navToggle.style.cursor = 'pointer';
+        navToggle.addEventListener('click', function(e) {
+            e.stopPropagation();
+        });
+    }
 });
 
 // ===== LOADING SCREEN =====

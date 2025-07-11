@@ -1352,3 +1352,20 @@ section {
     font-size: 0.92rem;
   }
 } 
+
+.project-nav-link {
+  color: var(--link);
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 0.5em 1.2em;
+  border-radius: 2em;
+  transition: background 0.2s, color 0.2s;
+  margin: 0 0.2em;
+  display: inline-block;
+}
+.project-nav-link:hover, .project-nav-link:focus {
+  color: var(--link-hover);
+  background: var(--accent);
+  text-decoration: none;
+} 
