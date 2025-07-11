@@ -45,6 +45,11 @@
     --transition-fast: 0.2s ease;
     --transition-normal: 0.3s ease;
     --transition-slow: 0.5s ease;
+
+    --primary-bg: #7a8751;
+    --primary-text: #2a2a2a;
+    --link-color: #1f1f1f;
+    --highlight-bg: #fefefe;
 }
 
 /* Dark Theme Colors */
@@ -61,6 +66,15 @@
     --shadow-light: 0 2px 10px rgba(0, 0, 0, 0.3);
     --shadow-medium: 0 4px 20px rgba(0, 0, 0, 0.4);
     --shadow-heavy: 0 8px 30px rgba(0, 0, 0, 0.5);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primary-bg: #2a2a2a;
+    --primary-text: #eeeeee;
+    --link-color: #dddddd;
+    --highlight-bg: #3a3a3a;
+  }
 }
 
 /* ===== RESET & BASE STYLES ===== */
@@ -81,11 +95,17 @@ body {
     font-family: var(--font-primary);
     line-height: 1.6;
     color: var(--text-primary);
-    background-color: var(--background-primary);
-    transition: background-color var(--transition-normal), color var(--transition-normal);
+    background: var(--primary-bg);
+    transition: background 0.3s, color 0.3s;
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+
+nav, .navbar, .nav-container {
+  background: var(--primary-bg);
+  color: var(--primary-text);
+  font-family: inherit;
 }
 
 /* ===== LOADING SCREEN ===== */
@@ -169,16 +189,16 @@ body {
 }
 
 .nav-link {
-    color: var(--text-primary);
+    color: var(--primary-text);
     text-decoration: none;
-    font-weight: 500;
-    transition: color var(--transition-fast);
-    position: relative;
-    padding: 0.5rem 0;
+    font-weight: 600;
+    transition: color 0.2s, border-bottom 0.2s;
+    border-bottom: 2px solid transparent;
 }
 
 .nav-link:hover {
-    color: var(--primary-color);
+    color: var(--link-color);
+    border-bottom: 2px solid var(--link-color);
 }
 
 .nav-link::after {
@@ -809,14 +829,14 @@ section {
 
 /* ===== FOOTER ===== */
 .footer {
-    background: var(--background-secondary);
+    background: var(--primary-bg);
     padding: var(--spacing-xl) 0;
     text-align: center;
-    border-top: 1px solid var(--border-color);
+    border-top: 1px solid var(--highlight-bg);
 }
 
 .footer p {
-    color: var(--text-secondary);
+    color: var(--primary-text);
     margin: 0;
 }
 
@@ -933,4 +953,154 @@ section {
     .project-image:hover {
         transform: none !important;
     }
+} 
+
+.projects-section {
+  margin-bottom: 3.5rem;
+}
+.projects-section:last-child {
+  margin-bottom: 0;
+}
+.projects-section h2 {
+  margin-top: 4.5rem;
+  margin-bottom: 2.2rem;
+  font-size: 2rem;
+  border-bottom: 2px solid var(--primary-color);
+  padding-bottom: 0.4rem;
+  background: none;
+} 
+
+.project-spacer {
+  height: 2.2rem;
+} 
+
+.project-item {
+  margin-bottom: 24px;
+  line-height: 1.6;
+}
+
+.project-item:last-child {
+  margin-bottom: 0;
+}
+
+.project-item ul {
+  margin-top: 0.5em;
+  margin-bottom: 0;
+  padding-left: 1.5em;
+  list-style-type: disc;
+}
+
+.project-item li {
+  margin-bottom: 0.3em;
+  line-height: 1.5;
+  color: var(--text-primary);
+}
+
+.project-item li:last-child {
+  margin-bottom: 0;
+}
+
+.projects-section a {
+  color: var(--primary-color);
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.2s, border-bottom 0.2s;
+  border-bottom: 2px solid transparent;
+}
+
+.projects-section a:hover {
+  color: var(--accent-color);
+  border-bottom: 2px solid var(--accent-color);
+  text-decoration: none;
+} 
+
+/* Clean, semantic styles for projects section */
+.projects {
+  padding: 3rem 0;
+}
+
+.projects h2 {
+  font-size: 2rem;
+  color: var(--primary-text);
+  margin: 2.5rem 0 1.5rem;
+  border-bottom: 2px solid var(--primary-text);
+  padding-bottom: 0.5rem;
+}
+
+.project-item {
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.project-item h3 {
+  font-size: 1.25rem;
+  color: var(--primary-text);
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.project-item h3 a {
+  color: var(--primary-text);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s, border-bottom 0.2s;
+  border-bottom: 2px solid transparent;
+}
+
+.project-item h3 a:hover {
+  color: var(--link-color);
+  border-bottom: 2px solid var(--link-color);
+  text-decoration: underline;
+}
+
+.project-item p {
+  margin: 0.5rem 0 0.75rem;
+  color: var(--primary-text);
+}
+
+.project-item ul {
+  background: var(--highlight-bg);
+  border-radius: 0.5em;
+  padding: 0.75em 1.25em;
+  margin: 0.5em 0 0;
+}
+
+.project-item li {
+  margin-bottom: 0.4rem;
+  color: var(--primary-text);
+}
+
+/* Section spacing */
+.featured-projects,
+.hardware-projects,
+.software-projects,
+.research-projects {
+  margin-bottom: 3rem;
+}
+
+/* Section divider/highlight */
+.section-divider {
+  background: var(--highlight-bg);
+  height: 2px;
+  margin: 2.5rem 0;
+  border: none;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .projects {
+    padding: 2rem 0.5rem;
+  }
+  
+  .projects h2 {
+    font-size: 1.5rem;
+  }
+  
+  .project-item h3 {
+    font-size: 1.05rem;
+  }
+  
+  .project-item {
+    margin-bottom: 1.5rem;
+  }
 } 
