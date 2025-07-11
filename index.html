@@ -297,7 +297,7 @@ OCTYPE html>
             <div class="nav-menu" id="nav-menu">
                 <a href="#home" class="nav-link">Home</a>
                 <a href="#about" class="nav-link">About</a>
-                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#featured" class="nav-link">Projects</a>
                 <a href="#skills" class="nav-link">Skills</a>
                 <a href="#experience" class="nav-link">Experience</a>
                 <a href="#contact" class="nav-link">Contact</a>
@@ -413,26 +413,369 @@ OCTYPE html>
     </section>
 
     <section id="hardware-projects">
-      <div class="container">
+      <div class="container projects-section">
         <h2>Hardware</h2>
         <ul>
-          <!-- Add each hardware project as a <li> with title, description, features, and link if available -->
+          <li>
+            <strong><a href="https://jhherre3.github.io/Team29LowSwapC/" target="_blank">Flight Controller Development</a></strong><br>
+            Modeled IMU data using Kalman filtering, sensor fusion, and real-world UAV testing.
+            <ul>
+              <li>MATLAB Kalman filtering, sensor fusion, PCB testing</li>
+              <li>Project management with Gantt charts and Git</li>
+            </ul>
+          </li>
+          <li>
+            <strong>UAV Hardware Integration</strong><br>
+            Designed power/ESC systems, custom PCB, and Veronte Autopilot for UAV.
+            <ul>
+              <li>Power conversion, signal integrity, bench testing</li>
+            </ul>
+          </li>
+          <li>
+            <strong><a href="https://egr314team311.github.io/team311.github.io/Final_Report.html" target="_blank">Weather Station</a></strong><br>
+            Mobile PCB with I2C/SPI sensors, power-efficient architecture, and field-tested calibration.
+            <ul>
+              <li>Environmental sensor array, power-saving design, Cadence PCB</li>
+            </ul>
+          </li>
+          <li>
+            <strong><a href="https://docs.google.com/document/d/1lQRAato3axBpb3OnubBcCswt_42VaLtuO0qtRGwALn4/edit?tab=t.0" target="_blank">Adaptive Apparel PCB</a></strong><br>
+            BLE-powered wearable on CY8CKIT-142 with C++ firmware and safety compliance.
+            <ul>
+              <li>BLE firmware, safety logic, wireless optimization</li>
+            </ul>
+          </li>
+          <li>
+            <strong><a href="https://www.youtube.com/watch?v=tIN8QrGogaU" target="_blank">Audio Recording Circuit</a></strong><br>
+            Op-amp audio system using ISD1700, playback, erase, and amplification logic.
+            <ul>
+              <li>ISD1700, LM741 op-amps, digital logic control</li>
+            </ul>
+          </li>
+          <li>
+            <strong>Servo-Controlled Testing System</strong><br>
+            Automated servo motion and sensor feedback with Arduino firmware.
+            <ul>
+              <li>Servo PWM, load cell, LVDT, closed-loop control</li>
+            </ul>
+          </li>
+          <li>
+            <strong>Custom Temperature Sensor</strong><br>
+            PCB + I2C sensor system with LED debugging and oscilloscope testing.
+            <ul>
+              <li>PCB design, LED status, C++ firmware</li>
+            </ul>
+          </li>
+          <li>
+            <strong><a href="https://docs.google.com/document/d/15YY3wkjqzNF5WyWsF-oQtDUYf0JfN58ijiOq3FkKmfo/edit?usp=sharing" target="_blank">Peak Detector Network</a></strong><br>
+            Simulated diode-op-amp peak detectors for real-time signal measurement.
+            <ul>
+              <li>Op-amp circuit, analog signal tracking, diagnostics</li>
+            </ul>
+          </li>
+          <li>
+            <strong><a href="https://docs.google.com/document/d/1k_05suiBF1eoW4ccDoTk1hdodn7JlwygRELtsQWwK44/edit?usp=sharing" target="_blank">Assistive Ball Launcher</a></strong><br>
+            Switch-activated DC motorized assistive device, <$40 BOM.
+            <ul>
+              <li>Switch-based control, ergonomic frame, low-cost design</li>
+            </ul>
+          </li>
+          <li>
+            <strong><a href="https://docs.google.com/presentation/d/1cc2M1m3EUki-R9KBHR2d8o-x_1fvhnn92bG-7WQjcqc/edit#slide=id.g31c3e5c54f6_0_80" target="_blank">Flyback Converter Power Supply</a></strong><br>
+            5V, 30W isolated power supply using high-frequency flyback topology.
+            <ul>
+              <li>MATLAB simulation, transformer design, efficiency optimization</li>
+            </ul>
+          </li>
+          <li>
+            <strong>Noise Monitoring Subsystem</strong><br>
+            Breakout board with op-amp analog filtering and C++ firmware.
+            <ul>
+              <li>Analog filtering, potentiometer sensitivity, oscilloscope validation</li>
+            </ul>
+          </li>
+          <li>
+            <strong><a href="https://docs.google.com/document/d/1A6kyMex-X0qoTbAwBP4UCDB6OOQim3mzd0AgPxcmRHg/edit?usp=sharing" target="_blank">Electric Skateboard</a></strong><br>
+            Redesigned and optimized electric skateboard, reverse engineering and benchmarking.
+            <ul>
+              <li>Performance testing, component redesign, usability improvements</li>
+            </ul>
+          </li>
+          <li>
+            <strong>Automated Mini Garage Door</strong><br>
+            Servo-powered garage door prototype with bidirectional control.
+            <ul>
+              <li>Breadboard circuit, wooden frame, motion logic</li>
+            </ul>
+          </li>
+          <li>
+            <strong>Digital Logic Gates</strong><br>
+            Simulated 6-bit logic gate operations in Verilog.
+            <ul>
+              <li>AND, OR, XOR, NOR, XNOR, waveform inspection</li>
+            </ul>
+          </li>
+          <li>
+            <strong><a href="https://docs.google.com/document/d/1p6oDjYIkyTAlufFLkuB-n-wEsVihRQw13Gw5JIwI9jA/edit?usp=sharing" target="_blank">Energy Conversion Launcher</a></strong><br>
+            Rubber band-powered projectile launcher, optimized for efficiency.
+            <ul>
+              <li>Energy transfer optimization, real-world testing</li>
+            </ul>
+          </li>
+          <li>
+            <strong><a href="https://docs.google.com/document/d/1uKhOfbx3LtHxiUjiMTkOXYa8AxSAfSaspok6whN4SeU/edit?usp=sharing" target="_blank">Fan Reverse Engineering</a></strong><br>
+            Redesigned consumer stand fan for airflow, noise, and assembly.
+            <ul>
+              <li>Propeller optimization, cage redesign, airflow improvement</li>
+            </ul>
+          </li>
+          <li>
+            <strong><a href="https://docs.google.com/document/d/1zRkxAkVS622qHBqaIlNNMfshI4dm2eH4/edit?usp=sharing&ouid=109522122405950999853&rtpof=true&sd=true" target="_blank">Microgrid & Power Flow Design</a></strong><br>
+            Simulated peak load, islanding, and voltage regulation in hybrid grid.
+            <ul>
+              <li>GIS-based layout, cost-benefit analysis, resilience analysis</li>
+            </ul>
+          </li>
+          <li>
+            <strong><a href="https://www.linkedin.com/in/saif-s-elsaady-78091425a/details/projects/1740165948315/single-media-viewer/?profileId=ACoAAD_Z_HABQWyffCs4GMuY27eD-NRSpekP7G0" target="_blank">Power Flow Analysis | Power Systems Engineering</a></strong><br>
+            Simulated hybrid power grid for Oahu, Hawaii, integrating renewables.
+            <ul>
+              <li>One-line schematic, load flow analysis, islanding simulation</li>
+            </ul>
+          </li>
+          <li>
+            <strong><a href="https://www.linkedin.com/in/saif-s-elsaady-78091425a/overlay/1635525591362/single-media-viewer?type=LINK" target="_blank">EV Charging Cybersecurity</a></strong><br>
+            Simulated attack vectors on onboard chargers using Arduino + MATLAB.
+            <ul>
+              <li>Hardware simulation, CAN bus spoofing, vulnerability testing</li>
+            </ul>
+          </li>
         </ul>
       </div>
     </section>
+
     <section id="software-projects">
-      <div class="container">
+      <div class="container projects-section">
         <h2>AI & Software</h2>
         <ul>
-          <!-- Add each software/AI project as a <li> with title, description, features, and link if available -->
+          <li>
+            <strong>UAV Traffic Management</strong><br>
+            Python-based flight optimization model for Honeywell Hackathon.
+            <ul>
+              <li>Real-time path optimization, 3D visualization, conflict resolution</li>
+            </ul>
+          </li>
+          <li>
+            <strong><a href="https://github.com/selsaady1/Saif-Elsaady/blob/main/DAT402_Project2%20(1).ipynb" target="_blank">NVIDIA Stock & Volume Forecasting</a></strong><br>
+            Time-series models (XGBoost, SVR, ANN) for financial forecasting.
+            <ul>
+              <li>PCA, t-SNE, EDA, supervised learning</li>
+            </ul>
+          </li>
+          <li>
+            <strong><a href="https://rpubs.com/sels04/1004163" target="_blank">Instacart Basket Modeling</a></strong><br>
+            ML/statistical regression to predict reorder behavior.
+            <ul>
+              <li>Regression, EDA, ML classifiers, probability modeling</li>
+            </ul>
+          </li>
+          <li>
+            <strong><a href="https://www.linkedin.com/in/saif-s-elsaady-78091425a/details/projects/1740371996001/single-media-viewer/?profileId=ACoAAD_Z_HABQWyffCs4GMuY27eD-NRSpekP7G0" target="_blank">Customer Call Clustering (USAA)</a></strong><br>
+            NLP and K-Means to segment call transcripts and improve service.
+            <ul>
+              <li>Clustering, EDA, n-gram/topic modeling, UX insights</li>
+            </ul>
+          </li>
+          <li>
+            <strong><a href="https://www.linkedin.com/in/saif-s-elsaady-78091425a/details/projects/297892626/multiple-media-viewer/?profileId=ACoAAD_Z_HABQWyffCs4GMuY27eD-NRSpekP7G0&treasuryMediaId=1740615100215" target="_blank">Crime Prediction (ML)</a></strong><br>
+            Clustering, logistic regression, and geospatial features for crime prediction.
+            <ul>
+              <li>Violent/armed crime classification, DBSCAN, Prophet</li>
+            </ul>
+          </li>
+          <li>
+            <strong><a href="https://www.linkedin.com/in/saif-s-elsaady-78091425a/details/projects/1740434774738/single-media-viewer/?profileId=ACoAAD_Z_HABQWyffCs4GMuY27eD-NRSpekP7G0" target="_blank">MATLAB Simulation</a></strong><br>
+            Simulated Newton's Cooling Law, baton physics, and Lotka-Volterra equations.
+            <ul>
+              <li>Heat loss, motion, predator-prey modeling, visualization</li>
+            </ul>
+          </li>
+          <li>
+            <strong>Java Dice Game</strong><br>
+            Object-oriented betting simulator with input validation and game logic.
+            <ul>
+              <li>OOP, custom Die/Main classes, input validation</li>
+            </ul>
+          </li>
+          <li>
+            <strong><a href="https://rpubs.com/sels04/994937" target="_blank">Adhesive Heat Testing</a></strong><br>
+            Hypothesis testing on calorimetry data, comparing means.
+            <ul>
+              <li>One-sample tests, confidence intervals, statistical significance</li>
+            </ul>
+          </li>
+          <li>
+            <strong><a href="https://www.linkedin.com/in/saif-s-elsaady-78091425a/details/projects/1740162793819/single-media-viewer/?profileId=ACoAAD_Z_HABQWyffCs4GMuY27eD-NRSpekP7G0" target="_blank">EPL Goal Analysis</a></strong><br>
+            Normal distribution modeling of Premier League match data.
+            <ul>
+              <li>Z-tests, statistical inference, normal curve visualization</li>
+            </ul>
+          </li>
+          <li>
+            <strong><a href="https://www.linkedin.com/in/saif-s-elsaady-78091425a/details/projects/1705887138747/single-media-viewer/?profileId=ACoAAD_Z_HABQWyffCs4GMuY27eD-NRSpekP7G0" target="_blank">Energy Usage in AZ</a></strong><br>
+            Regression to correlate energy burden to income tiers from RECS data.
+            <ul>
+              <li>Regression, equity gap visualization, intervention strategies</li>
+            </ul>
+          </li>
+          <li>
+            <strong><a href="https://github.com/selsaady1/MAT-421-Elsaady/blob/d2fbcfc368a1359efe5f83fb73b0dd05013fb7ed/DAT301Project2.ipynb" target="_blank">Retail Orders | ML & Statistical Project</a></strong><br>
+            Modeled grocery order behavior using regression, classification, and probability.
+            <ul>
+              <li>Regression, ML, PMFs, probability modeling, UX optimization</li>
+            </ul>
+          </li>
+          <li>
+            <strong><a href="https://sels04.shinyapps.io/HypothesisTestingOneSample/" target="_blank">One-Sample Hypothesis Testing App</a></strong><br>
+            Shiny R app for real-time hypothesis testing with CI visualization.
+            <ul>
+              <li>Hypothesis testing, CI, ggplot2, Shinyapps.io deployment</li>
+            </ul>
+          </li>
+          <li>
+            <strong><a href="https://abyssinianstyle.com/" target="_blank">Abyssinian Style E-Commerce Website</a></strong><br>
+            Shopify site for digital sales and enhanced UX.
+            <ul>
+              <li>HTML/CSS, mobile responsive, product/inventory/SEO features</li>
+            </ul>
+          </li>
+          <li>
+            <strong>UAV Camera Integration | Embedded Systems</strong><br>
+            Live-streaming camera pipeline for UAV using Linux, FFmpeg, OpenCV.
+            <ul>
+              <li>OpenCV, GStreamer, FFmpeg, Linux scripting, live video</li>
+            </ul>
+          </li>
+          <li>
+            <strong><a href="https://docs.google.com/presentation/d/1aNWkjnihUd0T1jMgJzpzdGPdUoMiZezoLIDkjWCCofc/edit" target="_blank">Product Trends with R</a></strong><br>
+            Visualized product sales and inventory patterns using R.
+            <ul>
+              <li>Heatmaps, bar charts, ggplot2, Google Slides</li>
+            </ul>
+          </li>
+          <li>
+            <strong><a href="https://www.linkedin.com/in/saif-s-elsaady-78091425a/details/projects/1615889655/multiple-media-viewer/?profileId=ACoAAD_Z_HABQWyffCs4GMuY27eD-NRSpekP7G0&treasuryMediaId=1746463659906" target="_blank">RF Signal Analysis | Statistical Inference</a></strong><br>
+            Explored RF detection trends in data center rooms using Python stats.
+            <ul>
+              <li>Pandas, matplotlib, seaborn, chi-square/t-tests</li>
+            </ul>
+          </li>
+          <li>
+            <strong><a href="https://www.linkedin.com/in/saif-s-elsaady-78091425a/details/projects/1752181177815/single-media-viewer?type=DOCUMENT&profileId=ACoAAD_Z_HABQWyffCs4GMuY27eD-NRSpekP7G0&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_projects_details%3BsIpY9B47Qvyx%2BbTseUzCLg%3D%3D" target="_blank">Machine Learning Hardware Failure Classification System</a></strong><br>
+            Dual CNN architecture for automated hardware failure detection.
+            <ul>
+              <li>Deep learning, transfer learning, MLOps, GUI for diagnostics</li>
+            </ul>
+          </li>
+          <li>
+            <strong><a href="https://www.linkedin.com/in/saif-s-elsaady-78091425a/details/projects/1752179354689/single-media-viewer?type=DOCUMENT&profileId=ACoAAD_Z_HABQWyffCs4GMuY27eD-NRSpekP7G0&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_projects_details%3BsIpY9B47Qvyx%2BbTseUzCLg%3D%3D" target="_blank">Advanced Signal Demodulation System - DSP/ML Engineering</a></strong><br>
+            Comparative BPSK demodulation system (DSP vs. neural networks).
+            <ul>
+              <li>Classical DSP, neural network demodulation, SNR simulation</li>
+            </ul>
+          </li>
+          <li>
+            <strong><a href="https://www.linkedin.com/in/saif-s-elsaady-78091425a/details/projects/1752179640978/single-media-viewer?type=DOCUMENT&profileId=ACoAAD_Z_HABQWyffCs4GMuY27eD-NRSpekP7G0&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_projects_details%3BsIpY9B47Qvyx%2BbTseUzCLg%3D%3D" target="_blank">Semiconductor Diode Modeling System</a></strong><br>
+            Advanced semiconductor device simulation platform.
+            <ul>
+              <li>Newton-Raphson solver, SciPy, multi-parameter optimization</li>
+            </ul>
+          </li>
+          <li>
+            <strong><a href="https://www.linkedin.com/in/saif-s-elsaady-78091425a/details/projects/1752178836019/single-media-viewer?type=DOCUMENT&profileId=ACoAAD_Z_HABQWyffCs4GMuY27eD-NRSpekP7G0&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_projects_details%3BsIpY9B47Qvyx%2BbTseUzCLg%3D%3D" target="_blank">Submarine Mine Detection System - Machine Learning Approach</a></strong><br>
+            PCA-optimized neural network for submarine mine detection.
+            <ul>
+              <li>PCA, MLP, sonar signal processing, defense technology</li>
+            </ul>
+          </li>
+          <li>
+            <strong><a href="https://www.linkedin.com/in/saif-s-elsaady-78091425a/details/projects/1752179921261/single-media-viewer?type=DOCUMENT&profileId=ACoAAD_Z_HABQWyffCs4GMuY27eD-NRSpekP7G0&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_projects_details%3BsIpY9B47Qvyx%2BbTseUzCLg%3D%3D" target="_blank">VLSI Circuit Optimization System, EDA Automation Approach</a></strong><br>
+            HSPICE-driven circuit optimization platform for parametric sweeps.
+            <ul>
+              <li>Python automation, HSPICE, netlist generation, EDA workflow</li>
+            </ul>
+          </li>
+          <li>
+            <strong><a href="https://www.linkedin.com/in/saif-s-elsaady-78091425a/details/projects/1752179169267/single-media-viewer?type=DOCUMENT&profileId=ACoAAD_Z_HABQWyffCs4GMuY27eD-NRSpekP7G0&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_projects_details%3BsIpY9B47Qvyx%2BbTseUzCLg%3D%3D" target="_blank">Heart Disease Prediction System - Machine Learning Approach</a></strong><br>
+            SVM with RBF kernel for heart disease prediction (94.4% accuracy).
+            <ul>
+              <li>Exploratory data analysis, feature selection, ML optimization</li>
+            </ul>
+          </li>
+          <li>
+            <strong><a href="https://www.linkedin.com/in/saif-s-elsaady-78091425a/details/projects/1752180384041/single-media-viewer?type=DOCUMENT&profileId=ACoAAD_Z_HABQWyffCs4GMuY27eD-NRSpekP7G0&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_projects_details%3BsIpY9B47Qvyx%2BbTseUzCLg%3D%3D" target="_blank">AI Deployment Workflow Optimization</a></strong><br>
+            Reduced AI model deployment time by 75% via IDEF0 modeling.
+            <ul>
+              <li>Automation, CLI toolchain, workflow design, edge deployment</li>
+            </ul>
+          </li>
+          <li>
+            <strong><a href="https://www.linkedin.com/in/saif-s-elsaady-78091425a/details/projects/1752181921260/single-media-viewer?type=DOCUMENT&profileId=ACoAAD_Z_HABQWyffCs4GMuY27eD-NRSpekP7G0&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_projects_details%3BsIpY9B47Qvyx%2BbTseUzCLg%3D%3D" target="_blank">EDA Compliance Validation GUI System</a></strong><br>
+            Desktop app with dynamic plugin architecture and real-time visualization.
+            <ul>
+              <li>tkinter GUI, plugin loading, multi-check engine, MVC/Observer/Factory/Strategy patterns</li>
+            </ul>
+          </li>
         </ul>
       </div>
     </section>
+
     <section id="research-projects">
-      <div class="container">
+      <div class="container projects-section">
         <h2>Research & Sustainability</h2>
         <ul>
-          <!-- Add each research/sustainability project as a <li> with title, description, features, and link if available -->
+          <li>
+            <strong><a href="https://colab.research.google.com/drive/1Q99aIMV8y3LL3m8ud0Pt17700qDMT20S" target="_blank">Sea Turtle Survival</a></strong><br>
+            Modeled endangered populations using Leslie matrices and simulated conservation outcomes.
+            <ul>
+              <li>Stage-based matrix model, IUCN data, scenario simulation</li>
+            </ul>
+          </li>
+          <li>
+            <strong><a href="https://www.linkedin.com/in/saif-s-elsaady-78091425a/details/projects/1740638687791/single-media-viewer/?profileId=ACoAAD_Z_HABQWyffCs4GMuY27eD-NRSpekP7G0" target="_blank">Bird Biodiversity</a></strong><br>
+            ANOVA and regression on urban vs. rural species diversity (CAP LTER data).
+            <ul>
+              <li>Species richness, ANOVA, regression, conservation implications</li>
+            </ul>
+          </li>
+          <li>
+            <strong><a href="#" target="_blank">TEM for Thin Films</a></strong><br>
+            Microscopy and FEA to study grain boundaries, voiding, and delamination.
+            <ul>
+              <li>TEM analysis, FEA, defect visualization, process improvement</li>
+            </ul>
+          </li>
+          <li>
+            <strong><a href="https://www.linkedin.com/in/saif-s-elsaady-78091425a/details/projects/1736820104121/single-media-viewer/?profileId=ACoAAD_Z_HABQWyffCs4GMuY27eD-NRSpekP7G0" target="_blank">Perovskite Research Ethics</a></strong><br>
+            Ethics of solar innovation, data transparency, and conflicts of interest.
+            <ul>
+              <li>Transparency, funding conflicts, best practices, societal responsibility</li>
+            </ul>
+          </li>
+          <li>
+            <strong><a href="https://www.linkedin.com/in/saif-s-elsaady-78091425a/details/projects/1364895872/multiple-media-viewer/?profileId=ACoAAD_Z_HABQWyffCs4GMuY27eD-NRSpekP7G0&treasuryMediaId=1740163223354" target="_blank">PETase Filtration System</a></strong><br>
+            Water pitcher with plastic-eating enzyme membrane, validated filtration.
+            <ul>
+              <li>PETase enzyme, mesh filter, lab-based efficiency testing</li>
+            </ul>
+          </li>
+          <li>
+            <strong><a href="https://docs.google.com/document/d/1TZRP6A4-CvUWnU3l3kYcBU2yQYpV2cdJVXPOmOcaHZg/edit?usp=sharing" target="_blank">Urban Green Space GIS</a></strong><br>
+            Modeled biodiversity and access in Tempe, AZ using GeoPandas and OSM data.
+            <ul>
+              <li>Python GIS, species diversity, carbon sequestration, dashboards</li>
+            </ul>
+          </li>
         </ul>
       </div>
     </section>
