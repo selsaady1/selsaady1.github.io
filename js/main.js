@@ -1,6 +1,13 @@
 // ===== MAIN JS FOR PORTFOLIO INTERACTIVITY =====
 
 document.addEventListener('DOMContentLoaded', function() {
+  // Remove loading screen when DOM is ready
+  const loadingScreen = document.getElementById('loading-screen');
+  if (loadingScreen) {
+    loadingScreen.style.opacity = '0';
+    setTimeout(() => loadingScreen.style.display = 'none', 400);
+  }
+
   // Sticky Navbar
   const navbar = document.querySelector('.navbar');
   window.addEventListener('scroll', function() {
