@@ -49,6 +49,9 @@ OCTYPE html>
             transition: all 0.3s ease;
             position: relative;
             border: 1px solid #e9ecef;
+            min-width: 0;
+            word-break: break-word;
+            overflow: visible;
         }
         
         .project-card:hover {
@@ -257,6 +260,7 @@ OCTYPE html>
             width: 100%;
             box-sizing: border-box;
             overflow-x: visible;
+            min-width: 0;
         }
         @media (max-width: 480px) {
             html, body {
@@ -266,7 +270,12 @@ OCTYPE html>
                 padding: 0 0.3rem;
             }
             .project-card {
-                padding: 0.5rem;
+                padding: 0.3rem;
+                font-size: 0.97rem;
+            }
+            .project-card ul, .project-card li {
+                padding-left: 1rem;
+                font-size: 0.97rem;
             }
         }
     </style>
