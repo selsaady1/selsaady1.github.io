@@ -1,15 +1,15 @@
 /* ===== CSS VARIABLES ===== */
 :root {
     /* Modern, gentle palette for light mode */
-    --bg-main: #fefefe;
-    --bg-section: #f5f5f0;
-    --text-main: #2a2a2a;
-    --text-muted: #556b2f;
-    --link: #437c47;
-    --link-hover: #2d3b26;
-    --accent: #e6e9d8;
-    --divider: #e0e4d3;
-    --highlight: #f9f9f4;
+    --bg-main: #eaf2e0; /* lighter, soft green */
+    --bg-section: #f5f8f2; /* very light green for sections */
+    --text-main: #1a2b16; /* deep olive for strong contrast */
+    --text-muted: #3d4d2a; /* muted olive for secondary text */
+    --link: #1b5e20; /* strong green for links */
+    --link-hover: #388e3c; /* brighter green for hover */
+    --accent: #dbe7c9; /* soft highlight */
+    --divider: #b7c9a8;
+    --highlight: #f0f7e8;
     /* Typography */
     --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     --font-secondary: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
@@ -17,11 +17,11 @@
     --font-size-sm: 0.875rem;
     --font-size-base: 1rem;
     --font-size-lg: 1.125rem;
-    --font-size-xl: 1.25rem;
-    --font-size-2xl: 1.5rem;
-    --font-size-3xl: 1.875rem;
-    --font-size-4xl: 2.25rem;
-    --font-size-5xl: 3rem;
+    --font-size-xl: 1.35rem;
+    --font-size-2xl: 1.7rem;
+    --font-size-3xl: 2.1rem;
+    --font-size-4xl: 2.5rem;
+    --font-size-5xl: 3.2rem;
     /* Spacing */
     --spacing-xs: 0.5rem;
     --spacing-sm: 1rem;
@@ -42,15 +42,15 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg-main: #2d3b26;
-    --bg-section: #26311f;
-    --text-main: #f2f0e8;
-    --text-muted: #fdfaf3;
-    --link: #e6e9d8;
-    --link-hover: #fdfaf3;
-    --accent: #556b2f;
+    --bg-main: #232e1b; /* deep olive green */
+    --bg-section: #1a2213; /* even deeper olive for sections */
+    --text-main: #f7f5e6; /* cream for high contrast */
+    --text-muted: #e0e0c2; /* lighter cream for secondary text */
+    --link: #b7e27e; /* light green for links */
+    --link-hover: #e6e9d8; /* cream highlight for hover */
+    --accent: #3d4d2a; /* muted olive for accents */
     --divider: #3a4a2c;
-    --highlight: #38442b;
+    --highlight: #2c3a1a;
   }
 }
 
@@ -419,13 +419,19 @@ section {
     grid-template-columns: 1fr 1fr;
     gap: var(--spacing-2xl);
     align-items: center;
+    background: var(--bg-section);
+    border-radius: var(--radius-lg);
+    box-shadow: 0 2px 10px rgba(60,80,40,0.07);
+    padding: var(--spacing-xl);
 }
 
 .about-text p {
     font-size: var(--font-size-lg);
-    color: var(--text-muted);
+    color: var(--text-main);
     margin-bottom: var(--spacing-lg);
     line-height: 1.7;
+    font-weight: 500;
+    letter-spacing: 0.01em;
 }
 
 .about-stats {
@@ -938,13 +944,20 @@ section {
 .projects-section:last-child {
   margin-bottom: 0;
 }
-.projects-section h2 {
+.projects-section h2,
+.featured-projects h2,
+.hardware-projects h2,
+.software-projects h2,
+.research-projects h2 {
   margin-top: 4.5rem;
   margin-bottom: 2.2rem;
-  font-size: 2rem;
+  font-size: 2.2rem;
   border-bottom: 2px solid var(--link);
   padding-bottom: 0.4rem;
   background: none;
+  color: var(--text-main);
+  font-weight: 800;
+  letter-spacing: 0.01em;
 } 
 
 .project-spacer {
@@ -977,18 +990,20 @@ section {
   margin-bottom: 0;
 }
 
-.projects-section a {
+.projects-section a,
+.project-item a {
   color: var(--link);
-  font-weight: 600;
-  text-decoration: none;
+  text-decoration: underline;
+  font-weight: 700;
+  border-bottom: 2px solid var(--link);
   transition: color 0.2s, border-bottom 0.2s;
-  border-bottom: 2px solid transparent;
 }
 
-.projects-section a:hover {
-  color: var(--accent);
-  border-bottom: 2px solid var(--accent);
-  text-decoration: none;
+.projects-section a:hover,
+.project-item a:hover {
+  color: var(--link-hover);
+  border-bottom: 2px solid var(--link-hover);
+  text-decoration: underline;
 } 
 
 /* Clean, semantic styles for projects section */
@@ -1045,6 +1060,8 @@ section {
 .project-item li {
   margin-bottom: 0.4rem;
   color: var(--text-main);
+  font-size: 1rem;
+  font-weight: 500;
 }
 
 /* Section spacing */
