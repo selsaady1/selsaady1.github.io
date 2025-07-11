@@ -5,8 +5,8 @@
     --bg-section: #faf7f2; /* very light cream for sections */
     --text-main: #2d1b0e; /* deep brown for strong contrast */
     --text-muted: #5d4a3a; /* muted brown for secondary text */
-    --link: #8b4513; /* strong brown for links */
-    --link-hover: #a0522d; /* brighter brown for hover */
+    --link: #644117; /* strong brown for links (updated) */
+    --link-hover: #7a5220; /* slightly brighter brown for hover (based on #644117) */
     --accent: #e8dcc8; /* soft cream highlight */
     --divider: #d4c4a8;
     --highlight: #f8f4e8;
@@ -46,8 +46,8 @@
     --bg-section: #1a1108; /* even deeper brown for sections */
     --text-main: #f7f5e6; /* cream for high contrast */
     --text-muted: #e0e0c2; /* lighter cream for secondary text */
-    --link: #d4a574; /* light brown for links */
-    --link-hover: #e6e9d8; /* cream highlight for hover */
+    --link: #644117; /* strong brown for links (updated) */
+    --link-hover: #a67c52; /* lighter brown for hover in dark mode */
     --accent: #5d4a3a; /* muted brown for accents */
     --divider: #4a3a2c;
     --highlight: #3c2a1a;
@@ -1288,4 +1288,53 @@ section {
 
 .project-image[src*="placeholder"]::before {
     content: 'Image not available';
+} 
+
+/* === Technical Skills Icons Row === */
+.skills-icons-row {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 3rem;
+  margin-top: 2.5rem;
+  flex-wrap: wrap;
+}
+.skill-icon-label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.7rem;
+  min-width: 120px;
+}
+.skill-icon-label span:last-child {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--text-main);
+}
+.skill-libraries {
+  margin: 0.5rem 0 0 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0.98rem;
+  color: var(--text-muted);
+  opacity: 0.85;
+  text-align: center;
+}
+.skill-libraries li {
+  margin: 0;
+  padding: 0;
+  line-height: 1.3;
+}
+@media (max-width: 600px) {
+  .skills-icons-row {
+    gap: 1.2rem;
+  }
+  .skill-icon-label {
+    font-size: 1.2rem;
+    min-width: 90px;
+  }
+  .skill-libraries {
+    font-size: 0.92rem;
+  }
 } 
