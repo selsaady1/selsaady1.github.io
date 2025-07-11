@@ -35,9 +35,10 @@ OCTYPE html>
         /* Enhanced Project Grid */
         .projects-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /* was 350px, now 220px for mobile */
             gap: 2rem;
             margin-top: 2rem;
+            overflow-x: auto; /* allow horizontal scroll if needed */
         }
         
         .project-card {
@@ -175,6 +176,46 @@ OCTYPE html>
             color: #666;
             font-size: 0.9rem;
         }
+        /* About image fixed position and alignment */
+        .about-content {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            gap: 2rem;
+        }
+        .about-image {
+            flex: 0 0 340px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-width: 220px;
+            max-width: 340px;
+            height: 180px;
+        }
+        .about-banner {
+            max-width: 100%;
+            max-height: 180px;
+            width: auto;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.08);
+        }
+        @media (max-width: 900px) {
+            .about-content {
+                flex-direction: column;
+                align-items: center;
+            }
+            .about-image {
+                margin-top: 1.5rem;
+                height: auto;
+                max-width: 90vw;
+            }
+            .about-banner {
+                max-width: 90vw;
+                max-height: 180px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -260,7 +301,7 @@ OCTYPE html>
                             <p>Years Experience</p>
                         </div>
                         <div class="stat">
-                            <h3>25+</h3>
+                            <h3>56+</h3>
                             <p>Projects Completed</p>
                         </div>
                         <div class="stat">
@@ -270,7 +311,7 @@ OCTYPE html>
                     </div>
                 </div>
                 <div class="about-image">
-                    <img src="./LinkedINbanner.png" alt="Professional Background" class="about-banner">
+                    <img src="./PenguinWorker.png" alt="Penguin Worker" class="about-banner">
                 </div>
             </div>
         </div>
