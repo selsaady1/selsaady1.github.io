@@ -143,7 +143,7 @@
             </div>
             <div class="projects-grid" id="projects-grid">
                 <!-- BEGIN PROJECTS IMPORTED FROM PORTFOLIO.HTML -->
-                <!-- Hardware Experience -->
+                <!-- =================== HARDWARE PROJECTS =================== -->
                 <div class="project-card hardware">
                   <strong><a href="https://jhherre3.github.io/Team29LowSwapC/" target="_blank">Flight Controller Development</a></strong> – Modeled IMU data using Kalman filtering, assisted with sensor fusion algorithms, and validated performance through real-world UAV testing.
                   <ul>
@@ -153,11 +153,177 @@
                     <li>Managed project timeline with Gantt charts and Git version control to meet client milestones.</li>
                   </ul>
                   <div style="display: flex; justify-content: center; gap: 30px; margin-top: 20px;">
-                    <img src="./Flight_Controller_FC_29_png_alphares.png" alt="Flight Controller Image 1" style="max-width: 300px; max-height: 200px; object-fit: contain; border-radius: 8px;">
-                    <img src="./IMU Visual test.gif" alt="Flight Controller Image 2" style="max-width: 300px; max-height: 200px; object-fit: contain; border-radius: 8px;">
+                    <img src="Flight_Controller_FC_29_png_alphares.png" alt="Flight Controller Image 1" style="max-width: 300px; max-height: 200px; width: auto; height: auto; object-fit: contain; border-radius: 8px;">
+                    <img src="IMU Visual test.gif" alt="Flight Controller Image 2" style="max-width: 300px; max-height: 200px; width: auto; height: auto; object-fit: contain; border-radius: 8px;">
+                  </div>
+                  <br><br>
+                </div>
+                <div class="project-card hardware">
+                  <strong>UAV Hardware Integration</strong> – Designed power and ESC connection systems using a custom PCB, configured Veronte Autopilot, and optimized layout for signal integrity.
+                  <ul>
+                    <li>Integrated Veronte Autopilot with GCS for stable flight communication.</li>
+                    <li>Engineered power conversion from 22V to 9V and 5V for subsystem reliability.</li>
+                    <li>Optimized system for weight balance and ESC thermal response.</li>
+                    <li>Verified signals and outputs through bench testing and signal tracing.</li>
+                  </ul>
+                  <div style="display: flex; justify-content: center; gap: 30px; margin-top: 20px;">
+                    <img src="DroneBody.jpeg" alt="UAV Hardware Integration Image 1" style="max-width: 300px; max-height: 200px; width: auto; height: auto; object-fit: contain; border-radius: 8px;">
+                    <img src="SchematicDrone.png" alt="UAV Hardware Integration Image 2" style="max-width: 300px; max-height: 200px; width: auto; height: auto; object-fit: contain; border-radius: 8px;">
+                  </div>
+                  <br><br>
+                </div>
+                <div class="project-card hardware">
+                  <strong><a href="https://egr314team311.github.io/team311.github.io/Final_Report.html" target="_blank">Weather Station</a></strong> – Developed a mobile PCB with I2C/SPI sensors, power-efficient architecture, and field-tested calibration for environmental monitoring.
+                  <ul>
+                    <li>Built environmental sensor array using temperature, pressure, and wind modules.</li>
+                    <li>Developed a power-saving design using switching regulators and rechargeable cells.</li>
+                    <li>Designed the PCB in Cadence and passed DRC checks before fabrication.</li>
+                    <li>Performed accuracy tests in varied conditions to verify sensor readings.</li>
+                  </ul>
+                  <div style="display: flex; justify-content: center; gap: 30px; margin-top: 20px;">
+                    <img src="./PCBweather.jpeg" alt="Weather Station Image 1" style="max-width: 300px; max-height: 200px; object-fit: contain; border-radius: 8px;">
+                    <img src="./FinalDevice.jpeg" alt="Weather Station Image 2" style="max-width: 300px; max-height: 200px; object-fit: contain; border-radius: 8px;">
                   </div>
                 </div>
-                <!-- (Repeat for all other projects, using project-card hardware/software/research as appropriate, with all info/images/links from Portfolio.html) -->
+                <div class="project-card hardware">
+                  <strong><a href="https://docs.google.com/document/d/1lQRAato3axBpb3OnubBcCswt_42VaLtuO0qtRGwALn4/edit?tab=t.0" target="_blank">Adaptive Apparel PCB</a></strong> – Built a BLE-powered wearable on CY8CKIT-142 with low-power C++ firmware and user safety compliance.
+                  <ul>
+                    <li>Developed BLE firmware in C++ for safe and interactive user experience.</li>
+                    <li>Integrated safety logic for use in children's wearable devices.</li>
+                    <li>Designed and tested PCB layout for manufacturability and durability.</li>
+                    <li>Optimized wireless signal strength and power draw for longer wearability.</li>
+                  </ul>
+                  <div style="display: flex; justify-content: center; gap: 30px; margin-top: 20px;">
+                    <img src="./spidermansleeve.jpeg" alt="Adaptive Apparel PCB Image 1" style="max-width: 300px; max-height: 200px; object-fit: contain; border-radius: 8px;">
+                    <img src="./SpidermanPCB.jpeg" alt="Adaptive Apparel PCB Image 2" style="max-width: 300px; max-height: 200px; object-fit: contain; border-radius: 8px;">
+                    <img src="./adaptiveappareldevice.jpeg" alt="Adaptive Apparel PCB Image 3" style="max-width: 300px; max-height: 200px; object-fit: contain; border-radius: 8px;">
+                  </div>
+                </div>
+                <div class="project-card hardware">
+                  <strong><a href="https://www.youtube.com/watch?v=tIN8QrGogaU" target="_blank">Audio Recording Circuit</a></strong> – Created an op-amp based audio system using ISD1700, including playback, erase, and amplification logic.
+                  <ul>
+                    <li>Implemented audio processing using ISD1700 series chip.</li>
+                    <li>Added analog preamp circuit using LM741 op-amps.</li>
+                    <li>Benchmarked audio clarity and optimized op-amp gain settings.</li>
+                    <li>Enabled playback, erase, and record cycling using digital logic control.</li>
+                  </ul>
+                  <div style="display: flex; justify-content: center; gap: 30px; margin-top: 20px;">
+                    <img src="./FlowchartAudio.png" alt="Audio Recording Circuit Image 1" style="max-width: 300px; max-height: 200px; object-fit: contain; border-radius: 8px;">
+                    <img src="./Circuitaudio.png" alt="Audio Recording Circuit Image 2" style="max-width: 300px; max-height: 200px; object-fit: contain; border-radius: 8px;">
+                  </div>
+                </div>
+                <div class="project-card hardware">
+                  <strong>Servo-Controlled Testing System</strong> – Automated servo motion and sensor feedback with Arduino firmware and Serial Monitor controls.
+                  <ul>
+                    <li>Integrated servo motors with Arduino PWM for precision stroke control.</li>
+                    <li>Added load cell and LVDT for real-time force and position tracking.</li>
+                    <li>Enabled parameter input through Serial Monitor interface.</li>
+                    <li>Programmed closed-loop system for automated test cycling.</li>
+                  </ul>
+                  <div style="display: flex; justify-content: center; gap: 30px; margin-top: 20px;">
+                    <img src="./ArduinoFlowchart.jpg" alt="Arduino Image 1" style="max-width: 300px; max-height: 200px; object-fit: contain; border-radius: 8px;">
+                  </div>
+                </div>
+                <div class="project-card hardware">
+                  <strong>Custom Temperature Sensor</strong> – Built a PCB + I2C sensor system with LED debugging and oscilloscope testing workflows.
+                  <ul>
+                    <li>Designed PCB with temperature sensor and pull-up resistors.</li>
+                    <li>Added LED output for visual status monitoring.</li>
+                    <li>Verified sensor accuracy using oscilloscope signal tracing.</li>
+                    <li>Coded C++ firmware loop to read and validate temperature readings.</li>
+                  </ul>
+                  <div style="display: flex; justify-content: center; gap: 30px; margin-top: 20px;">
+                    <img src="./Tempsystems.jpeg" alt="Custom Temperature Sensor Image 1" style="max-width: 300px; max-height: 200px; object-fit: contain; border-radius: 8px;">
+                    <img src="./SchematicTempP.jpeg" alt="Custom Temperature Sensor Image 2" style="max-width: 300px; max-height: 200px; object-fit: contain; border-radius: 8px;">
+                  </div>
+                </div>
+                <div class="project-card hardware">
+                  <strong><a href="https://docs.google.com/document/d/15YY3wkjqzNF5WyWsF-oQtDUYf0JfN58ijiOq3FkKmfo/edit?usp=sharing" target="_blank">Peak Detector Network</a></strong> – Simulated diode-op-amp peak detectors for real-time signal measurement and testing instrumentation.
+                  <ul>
+                    <li>Designed op-amp circuit for capturing signal peaks.</li>
+                    <li>Tuned component values for analog signal tracking.</li>
+                    <li>Tested design across variable input frequencies using scope.</li>
+                    <li>Applied in amplitude-modulated signal diagnostics.</li>
+                  </ul>
+                  <div style="display: flex; justify-content: center; gap: 30px; margin-top: 20px;">
+                    <img src="./FinalPeak.jpeg" alt="Peak Detector Network Image 1" style="max-width: 300px; max-height: 200px; object-fit: contain; border-radius: 8px;">
+                    <img src="./PeakDesign.jpeg" alt="Peak Detector Network Image 2" style="max-width: 300px; max-height: 200px; object-fit: contain; border-radius: 8px;">
+                  </div>
+                </div>
+                <div class="project-card hardware">
+                  <strong><a href="https://docs.google.com/document/d/1k_05suiBF1eoW4ccDoTk1hdodn7JlwygRELtsQWwK44/edit?usp=sharing" target="_blank">Assistive Ball Launcher</a></strong> – Designed a switch-activated DC motorized assistive device with torque optimization and <$40 BOM.
+                  <ul>
+                    <li>Developed switch-based motor control interface.</li>
+                    <li>Designed ergonomic frame using low-cost materials.</li>
+                    <li>Optimized motor torque for consistent launching force.</li>
+                    <li>Kept total bill of materials under $40 for accessibility.</li>
+                  </ul>
+                  <div style="display: flex; justify-content: center; gap: 30px; margin-top: 20px;">
+                    <img src="./bunnyFinal.jpeg" alt="Assistive Ball Launcher Image 1" style="max-width: 300px; max-height: 200px; object-fit: contain; border-radius: 8px;">
+                  </div>
+                </div>
+                <div class="project-card hardware">
+                  <strong><a href="https://docs.google.com/presentation/d/1cc2M1m3EUki-R9KBHR2d8o-x_1fvhnn92bG-7WQjcqc/edit#slide=id.g31c3e5c54f6_0_80" target="_blank">Flyback Converter Power Supply</a></strong> – Designed and simulated a 5V, 30W isolated power supply using a high-frequency flyback topology and MATLAB-based modeling.
+                  <ul>
+                    <li>Implemented galvanic isolation and voltage conversion with a 40:1 transformer and switching architecture.</li>
+                    <li>Simulated full converter performance in MATLAB, achieving <50mV ripple and 75.65% efficiency.</li>
+                    <li>Optimized Schottky diodes, capacitors, and MOSFET selection to minimize conduction and switching losses.</li>
+                    <li>Proposed GaN-based switching and advanced PWM control to increase future efficiency beyond 85%.</li>
+                  </ul>
+                  <div style="display: flex; justify-content: center; gap: 30px; margin-top: 20px;">
+                    <img src="./flyback_placeholder1.jpg" alt="Flyback Converter Image 1" style="max-width: 300px; max-height: 200px; object-fit: contain; border-radius: 8px;">
+                    <img src="./flyback_placeholder2.jpg" alt="Flyback Converter Image 2" style="max-width: 300px; max-height: 200px; object-fit: contain; border-radius: 8px;">
+                  </div>
+                </div>
+                <div class="project-card hardware">
+                  <strong>Noise Monitoring Subsystem</strong> – Designed a breakout board with op-amp-based analog filtering and embedded C++ firmware for dynamic audio monitoring.
+                  <ul>
+                    <li>Wrote C++ firmware to read analog signals and display real-time audio levels.</li>
+                    <li>Designed op-amp circuitry with capacitor filtering to enhance signal clarity.</li>
+                    <li>Used potentiometers to allow adjustable noise sensitivity in real-time.</li>
+                    <li>Validated system performance using oscilloscope and ATE testing tools.</li>
+                  </ul>
+                  <div style="display: flex; justify-content: center; gap: 30px; margin-top: 20px;">
+                    <img src="./noise_monitor_1.jpeg" alt="Noise Monitoring Image 1" style="max-width: 300px; max-height: 200px; object-fit: contain; border-radius: 8px;">
+                  </div>
+                </div>
+                <div class="project-card hardware">
+                  <strong><a href="https://docs.google.com/document/d/1A6kyMex-X0qoTbAwBP4UCDB6OOQim3mzd0AgPxcmRHg/edit?usp=sharing" target="_blank">Electric Skateboard</a></strong> – Redesigned and optimized an electric skateboard through reverse engineering and performance benchmarking.
+                  <ul>
+                    <li>Performed speed, range, and braking tests to validate performance in real-world conditions.</li>
+                    <li>Redesigned key components including motor mount, wheels, and battery placement for efficiency and safety.</li>
+                    <li>Integrated headlights, carrying handle, and riding modes to improve usability.</li>
+                    <li>Applied structured test plans to verify electrical and mechanical systems met design goals.</li>
+                  </ul>
+                  <div style="display: flex; justify-content: center; margin-top: 20px;">
+                    <img src="./electric_skateboard.jpg" alt="Electric Skateboard Image" style="max-width: 300px; max-height: 200px; object-fit: contain; border-radius: 8px;">
+                  </div>
+                </div>
+                <div class="project-card hardware">
+                  <strong>Automated Mini Garage Door</strong> – Built a servo-powered garage door prototype with bidirectional control and basic electrical circuitry.
+                  <ul>
+                    <li>Implemented servo motor system triggered by switch for door movement.</li>
+                    <li>Designed and wired the circuit using breadboard, resistors, and jumpers.</li>
+                    <li>Constructed wooden frame for structural support and safe enclosure.</li>
+                    <li>Tested motion logic for consistent up/down operation and optimized power draw.</li>
+                  </ul>
+                  <div style="display: flex; justify-content: center; margin-top: 20px;">
+                    <img src="./mini_garage_door.jpeg" alt="Mini Garage Door Image" style="max-width: 300px; max-height: 200px; object-fit: contain; border-radius: 8px;">
+                  </div>
+                </div>
+                <div class="project-card hardware">
+                  <strong>Digital Logic Gates</strong> – Simulated 6-bit logic gate operations in Verilog to validate binary arithmetic and hardware design.
+                  <ul>
+                    <li>Implemented AND, OR, XOR, NOR, and XNOR operations using register-based modules.</li>
+                    <li>Used procedural stimulus generation in initial blocks to simulate inputs and outputs.</li>
+                    <li>Monitored register changes with <code>$monitor</code> to track logic behavior in real time.</li>
+                    <li>Validated functional correctness of each gate using waveform inspection.</li>
+                  </ul>
+                  <div style="display: flex; justify-content: center; gap: 30px; margin-top: 20px;">
+                    <img src="./VerilogSim.jpeg" alt="Digital Logic Waveform 1" style="max-width: 300px; max-height: 200px; object-fit: contain; border-radius: 8px;">
+                  </div>
+                </div>
+                <!-- (Continue for all other hardware, software, and research projects from Portfolio.html, using the same structure) -->
                 <!-- END PROJECTS IMPORTED FROM PORTFOLIO.HTML -->
             </div>
         </div>
