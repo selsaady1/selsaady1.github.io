@@ -211,21 +211,7 @@ nav, .navbar, .nav-container {
     border-radius: 2px;
 }
 
-.theme-toggle {
-    background: none;
-    border: none;
-    color: var(--text-main);
-    font-size: var(--font-size-lg);
-    cursor: pointer;
-    padding: 0.5rem;
-    border-radius: var(--radius-md);
-    transition: all var(--transition-fast);
-}
-
-.theme-toggle:hover {
-    background: var(--bg-section);
-    color: var(--link);
-}
+/* Remove theme-toggle styles */
 
 /* ===== HERO SECTION ===== */
 .hero {
@@ -885,7 +871,6 @@ section {
 .nav-link:focus,
 .btn:focus,
 .filter-btn:focus,
-.theme-toggle:focus,
 .social-link:focus,
 .back-to-top:focus {
     outline: 2px solid var(--link);
@@ -1051,7 +1036,7 @@ section {
 }
 
 .project-item ul {
-  background: var(--highlight);
+  background: var(--bg-section); /* match About section background */
   border-radius: 0.5em;
   padding: 0.75em 1.25em;
   margin: 0.5em 0 0;
@@ -1097,4 +1082,63 @@ section {
   .project-item {
     margin-bottom: 1.5rem;
   }
+} 
+
+@media (max-width: 991px) {
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    flex-direction: column;
+    background: var(--bg-main);
+    width: 100%;
+    text-align: center;
+    transition: left 0.3s;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    padding: var(--spacing-lg) 0;
+    height: calc(100vh - 70px);
+    overflow-y: auto;
+    display: block;
+    z-index: 1001;
+  }
+  .nav-menu.active {
+    left: 0;
+  }
+  .nav-toggle {
+    display: flex;
+  }
+} 
+
+/* ===== CERTIFICATIONS SECTION ===== */
+.certifications {
+  background: var(--bg-section);
+  padding: var(--spacing-2xl) 0;
+  border-radius: var(--radius-lg);
+  margin-bottom: var(--spacing-2xl);
+  box-shadow: 0 2px 10px rgba(60,80,40,0.07);
+}
+.certifications .section-title {
+  text-align: center;
+  color: var(--text-main);
+  font-size: var(--font-size-4xl);
+  font-weight: 700;
+  margin-bottom: var(--spacing-xl);
+}
+.certifications ul {
+  background: var(--bg-section);
+  border-radius: var(--radius-md);
+  padding: var(--spacing-xl) var(--spacing-lg);
+  margin: 0 auto;
+  max-width: 700px;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  box-shadow: 0 1px 6px rgba(60,80,40,0.04);
+}
+.certifications li {
+  color: var(--text-main);
+  margin-bottom: 0.5em;
+  font-weight: 500;
+}
+.certifications li:last-child {
+  margin-bottom: 0;
 } 
