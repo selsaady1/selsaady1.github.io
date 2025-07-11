@@ -1,989 +1,302 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Saif Elsaady | Portfolio</title>
-  <style>
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      display: flex;
-      min-height: 100vh;
-      flex-direction: row;
-      background-color: white;
-    }
-
-    aside {
-      width: 250px;
-      background-color: #437c47;
-      padding: 30px 20px;
-      color: white;
-      flex-shrink: 0;
-    }
-
-    aside a {
-      color: white;
-      text-decoration: none;
-    }
-
-    aside a:hover {
-      text-decoration: underline;
-    }
-
-    main {
-      flex: 1;
-      padding: 40px;
-      background-color: white;
-    }
-
-    header {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      align-items: center;
-      gap: 30px;
-      margin-bottom: 30px;
-      text-align: center;
-    }
-
-    header img {
-      width: 200px;
-      height: 200px;
-      border-radius: 12px;
-      object-fit: cover;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    }
-
-    h1 {
-      font-size: 3.5em;
-      color: #437c47;
-      margin: 0;
-    }
-
-    h2 {
-      color: #437c47;
-      margin-top: 2em;
-    }
-
-    a {
-      color: #004080;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    ul {
-      padding-left: 20px;
-    }
-
-    .socials {
-      font-size: 1.1em;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 15px;
-      margin-top: 10px;
-    }
-
-    .socials a {
-      background-color: #437c47;
-      color: white;
-      padding: 8px 12px;
-      border-radius: 6px;
-      font-weight: bold;
-    }
-
-    .sidebar-section h3 {
-      font-size: 1.5em;
-      margin-top: 20px;
-      margin-bottom: 15px;
-      color: white;
-    }
-
-    .sidebar-section ul {
-      list-style: none;
-      padding: 0;
-    }
-
-    .sidebar-section li {
-      margin: 18px 0;
-      font-size: 1.3em;
-    }
-
-    /* Responsive Styles */
-    @media (max-width: 900px) {
-      body {
-        flex-direction: column;
-      }
-
-      aside {
-        width: 100%;
-        height: auto;
-        position: relative;
-        padding: 20px;
-        text-align: center;
-      }
-
-      main {
-        margin-left: 0;
-        padding: 20px;
-      }
-
-      header {
-        flex-direction: column;
-      }
-
-      header img {
-        width: 150px;
-        height: 150px;
-      }
-
-      h1 {
-        font-size: 2.5em;
-      }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saif Elsaady | Portfolio</title>
+    <meta name="description" content="Saif Elsaady - Electrical & Computer Engineering Portfolio | AI/ML, Hardware, Software Development">
+    <meta name="keywords" content="Saif Elsaady, Portfolio, Electrical Engineering, Computer Engineering, AI, ML, Hardware, Software">
+    <meta name="author" content="Saif Elsaady">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Saif Elsaady | Portfolio">
+    <meta property="og:description" content="Electrical & Computer Engineering Portfolio | AI/ML, Hardware, Software Development">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://selsaady1.github.io/">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="./Headshot.jpg">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="./css/animations.css"><!-- Added for scroll/animation effects -->
 </head>
 <body>
-<aside>
-  <div class="sidebar-section">
-    <h3>🚀 Projects</h3>
-    <ul>
-      <li><a href="#hardware">Hardware</a></li>
-      <li><a href="#software">AI & Software</a></li>
-      <li><a href="#research">Research & Sustainability</a></li>
-    </ul>
-  </div>
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <div class="loader">
+            <div class="loader-circle"></div>
+            <p>Loading Portfolio...</p>
+        </div>
+    </div>
 
-  <!-- Divider Line -->
-  <hr style="border: none; border-top: 4px solid white; margin: 30px 0;" />
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">Saif Elsaady</a>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <div class="theme-toggle" id="theme-toggle">
+                <i class="fas fa-moon"></i>
+            </div>
+        </div>
+    </nav>
 
-  <div class="sidebar-section">
-    <h3>📄 Experience</h3>
-    <ul>
-      <li><a href="#experience">Work</a></li>
-      <li><a href="#certifications">Certifications</a></li>
-    </ul>
-  </div>
-
-  <hr style="border: none; border-top: 4px solid white; margin: 30px 0;" />
-
-  <div class="sidebar-section">
-    <h3>🌐 Connect</h3>
-    <ul>
-      <li><a href="https://www.linkedin.com/in/saif-s-elsaady-78091425a/" target="_blank">LinkedIn</a></li>
-      <li><a href="https://github.com/selsaady1" target="_blank">GitHub</a></li>
-      <li><a href="mailto:selsaady27@gmail.com">Email</a></li>
-      <li><a href="https://search.asu.edu/profile/3844340" target="_blank">ASU Profile</a></li>
-    </ul>
-  </div>
-</aside>
-
-  <main>
-    <header>
-      <img src="Headshot.jpg" alt="Saif Elsaady">
-      <h1>Portfolio</h1>
-      <img src="GreenAIImage.png" alt="AI and Hardware">
-    </header>
-
-
-
-    <section>
-      <h2>Hi, I'm Saif Elsaady !! </h2>
+    <!-- Hero Section -->
+    <section id="home" class="hero fade-in"><!-- Added fade-in -->
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        Hi, I'm <span class="highlight">Saif Elsaady</span>
+                    </h1>
+                    <h2 class="hero-subtitle">Electrical & Computer Engineer</h2>
+                    <p class="hero-description">
+                        Specializing in AI/ML, Hardware Development, and Software Engineering. 
+                        Passionate about creating innovative solutions that bridge the gap between 
+                        hardware and software technologies.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">View Projects</a>
+                        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="./Headshot.jpg" alt="Saif Elsaady" class="profile-image">
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <div class="scroll-arrow"></div>
+            </div>
+        </div>
     </section>
 
-    <section>
-      <h2>🎓 Education</h2>
-      <ul>
-        <li><strong>MSE</strong>, Electrical & Computer Engineering (AI/ML), Arizona State University — <em>May 2026</em></li>
-        <li><strong>MS</strong>, Data Science 4+1, Arizona State University — <em>May 2026</em></li>
-        <li><strong>BSE</strong>, Electrical Systems Engineering, Arizona State University </li>
-        <li><strong>BS</strong>, Data Science (Mathematics), Arizona State University </li>
-        <li><strong>Certificate</strong>, Mathmatical Concepts Of Engineering, Arizona State University </li>
-      </ul>
+    <!-- About Section -->
+    <section id="about" class="about fade-in"><!-- Added fade-in -->
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        I'm a graduate student at Arizona State University pursuing my MS in Electrical & Computer Engineering 
+                        with a focus on AI/ML. With a strong foundation in both hardware and software development, 
+                        I specialize in creating integrated solutions that leverage the latest technologies.
+                    </p>
+                    <p>
+                        My experience spans from semiconductor design and hardware integration to machine learning 
+                        algorithms and software development. I'm passionate about sustainable technology and 
+                        creating solutions that make a positive impact.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <h3>3+</h3>
+                            <p>Years Experience</p>
+                        </div>
+                        <div class="stat">
+                            <h3>25+</h3>
+                            <p>Projects Completed</p>
+                        </div>
+                        <div class="stat">
+                            <h3>5+</h3>
+                            <p>Technologies</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="./LinkedINbanner.png" alt="Professional Background" class="about-banner">
+                </div>
+            </div>
+        </div>
     </section>
 
-
-<section>
-  <h2 id="certifications">📜 Certifications</h2>
-  <ul>
-    <li><strong>High Speed Signal Integrity Principles</strong> – Siemens EDA (Issued May 2025)</li>
-    <li><strong>AI Foundations</strong> – Intel Corporation</li>
-    <li><strong>Electrical Safety</strong> – Intel Corporation</li>
-    <li><strong>Responsible Conduct of Research</strong> – CITI Program (Credential ID 67231577)</li>
-    <li><strong>Introduction to R</strong> – DataCamp (Credential ID 35658541)</li>
-    <li><strong>Introduction to the TidyVerse</strong> – DataCamp (Credential ID 35686923)</li>
-    <li><strong>Lean Six Sigma Overview</strong> – Intel Corporation</li>
-    <li><strong>Process Control Systems</strong> – Intel Corporation</li>
-    <li><strong>Quality Issue Management</strong> – Intel Corporation</li>
-    <li><strong>Reporting with R Markdown</strong> – DataCamp (Credential ID 35673667)</li>
-    <li><strong>SPC++ Basics</strong> – Intel Corporation</li>
-    <li><strong>Machine Learning & Deep Learning In Python</strong> – Udemy</li>
-  </ul>
-</section>
-
-<section>
-  <h2 id="experience">💼 Professional Experience</h2>
-  <ul>
-    <li style="margin-bottom: 30px;">
-      <strong>Intel Corporation</strong> – Process Automation Intern (9 months)
-      <ul style="margin-left: 20px;">
-        <li>Performed statistical modeling on wafer defect and process data using JMP, SQL, and Python (pandas, NumPy, scipy) to improve yield analysis and detect anomalies.</li>
-        <li>Automated semiconductor test and verification workflows with Python scripting, reducing manual debugging efforts by 80%.</li>
-        <li>Identified data defects through JMP/Excel, leading to optimized maintenance planning and a $15,000 cost savings.</li>
-      </ul>
-    </li>
-
-    <li style="margin-bottom: 30px;">
-      <strong>Intel Corporation</strong> – AI/ML Research Intern (4 months)
-      <ul style="margin-left: 20px;">
-        <li>Developed a dual CNN classification pipeline using TensorFlow/Keras with separate models for continuous and discrete data modalities, achieving 93.4% and 96.3% pass rates respectively on unseen test data, demonstrating strong generalization capabilities for binary image classification tasks.</li>
-        <li>Engineered a complete 3-script MLOps toolchain (training, evaluation, and retraining pipelines) with professional GUI interfaces and Intel corporate branding, reducing manual configuration by 100% and enabling non-technical users to deploy models through intuitive folder selection workflows.</li>
-        <li>Created an end-to-end machine learning solution with professional GUI interfaces and automated result organization, streamlining the evaluation workflow from hours to minutes while providing comprehensive performance reporting and audit trails.</li>
-      </ul>
-    </li>
-
-    <li style="margin-bottom: 30px;">
-      <strong>USAA</strong> – Data Science Intern (9 months)
-      <ul style="margin-left: 20px;">
-        <li>Improved customer service insights by implementing K-means clustering on interaction data, reducing friction scores by 15%.</li>
-        <li>Enhanced NLP capabilities with n-grams and topic modeling, leading to a 10% improvement in satisfaction metrics.</li>
-        <li>Created dashboards using matplotlib, seaborn, and WordCloud to visualize sentiment and support service redesign.</li>
-      </ul>
-    </li>
-
-    <li style="margin-bottom: 30px;">
-      <strong>Honeywell Aerospace</strong> – Embedded Systems Intern (2024 – Current)
-      <ul style="margin-left: 20px;">
-        <li>Reduced avionics test cycle time by 50% by optimizing scripts with Automated Test Equipment (ATE).</li>
-        <li>Resolved ATE scripting errors and managed JIRA ticketing system to improve test workflow stability.</li>
-        <li>Analyzed signal integrity and optimized script runtimes to save 10 minutes per cycle on UAV systems.</li>
-        <li>Built a Linux-based pipeline streaming UAV camera footage via Python over LTE with 1s latency reduction.</li>
-      </ul>
-    </li>
-
-    <li style="margin-bottom: 30px;">
-      <strong>Arizona State University</strong> – UGTA, Grader, & FURI Researcher (2022 – Current)
-      <ul style="margin-left: 20px;">
-        <li>Assisted instruction and grading in courses: FSE100, BIO514, EGR334, EGR314, EGR202, and EGR201.</li>
-        <li>Supported freshman engineering design projects and lab-based instruction with hands-on mentoring.</li>
-        <li>Contributed to undergraduate research through the FURI program in clean energy and AI-based applications.</li>
-      </ul>
-    </li>
-  </ul>
-</section>
-
-
-    
-
-<section>
-  <h2 id="hardware">🛠 Hardware Experience</h2>
-  <ul style="list-style-position: outside;">
-
-    <li style="margin-bottom: 50px;">
-  <strong><a href="https://jhherre3.github.io/Team29LowSwapC/" target="_blank">Flight Controller Development</a></strong> – Modeled IMU data using Kalman filtering, assisted with sensor fusion algorithms, and validated performance through real-world UAV testing.
-  <ul style="margin-left: 20px;">
-    <li>Cleaned and visualized IMU data in MATLAB using Kalman filtering to support performance evaluation.</li>
-    <li>Researched aerospace specs and datasheets to inform design accuracy during subsystem development.</li>
-    <li>Assisted in integrating sensor fusion logic and PCB testing workflows for increased system reliability.</li>
-    <li>Managed project timeline with Gantt charts and Git version control to meet client milestones.</li>
-  </ul>
-
-  <!-- Centered and uniformly sized images -->
-  <div style="display: flex; justify-content: center; gap: 30px; margin-top: 20px;">
-    <img src="Flight_Controller_FC_29_png_alphares.png" alt="Flight Controller Image 1" style="max-width: 300px; max-height: 200px; width: auto; height: auto; object-fit: contain; border-radius: 8px;">
-    <img src="IMU Visual test.gif" alt="Flight Controller Image 2" style="max-width: 300px; max-height: 200px; width: auto; height: auto; object-fit: contain; border-radius: 8px;">
-  </div>
-  <br><br>
-</li>
-
-
-
-    
-
-    <li style="margin-bottom: 50px;">
-      <strong>UAV Hardware Integration</strong> – Designed power and ESC connection systems using a custom PCB, configured Veronte Autopilot, and optimized layout for signal integrity.
-      <ul style="margin-left: 20px;">
-        <li>Integrated Veronte Autopilot with GCS for stable flight communication.</li>
-        <li>Engineered power conversion from 22V to 9V and 5V for subsystem reliability.</li>
-        <li>Optimized system for weight balance and ESC thermal response.</li>
-        <li>Verified signals and outputs through bench testing and signal tracing.</li>
-      </ul>
-    </li>
-
-
-      <!-- Centered and uniformly sized images -->
-  <div style="display: flex; justify-content: center; gap: 30px; margin-top: 20px;">
-    <img src="DroneBody.jpeg" alt="UAV Hardware Integration Image 1" style="max-width: 300px; max-height: 200px; width: auto; height: auto; object-fit: contain; border-radius: 8px;">
-    <img src="SchematicDrone.png" alt="UAV Hardware Integration Image 2" style="max-width: 300px; max-height: 200px; width: auto; height: auto; object-fit: contain; border-radius: 8px;">
-  </div>
-    <br><br>
-
-</li>
-
-
-
-
-    
-
-    <li style="margin-bottom: 50px;">
-      <strong><a href="https://egr314team311.github.io/team311.github.io/Final_Report.html" target="_blank">Weather Station</a></strong> – Developed a mobile PCB with I2C/SPI sensors, power-efficient architecture, and field-tested calibration for environmental monitoring.
-      <ul style="margin-left: 20px;">
-        <li>Built environmental sensor array using temperature, pressure, and wind modules.</li>
-        <li>Developed a power-saving design using switching regulators and rechargeable cells.</li>
-        <li>Designed the PCB in Cadence and passed DRC checks before fabrication.</li>
-        <li>Performed accuracy tests in varied conditions to verify sensor readings.</li>
-      </ul>
-    </li>
-
-
-      <!-- Centered and uniformly sized images -->
-  <div style="display: flex; justify-content: center; gap: 30px; margin-top: 20px;">
-    <img src="PCBweather.jpeg" alt="Weather Station Image 1" style="max-width: 300px; max-height: 200px; width: auto; height: auto; object-fit: contain; border-radius: 8px;">
-    <img src="FinalDevice.jpeg" alt="Weather Station Image 2" style="max-width: 300px; max-height: 200px; width: auto; height: auto; object-fit: contain; border-radius: 8px;">
-  </div>
-    <br><br>
-</li>
-
-
-
-    
-
-    <li style="margin-bottom: 30px;">
-      <strong><a href="https://docs.google.com/document/d/1lQRAato3axBpb3OnubBcCswt_42VaLtuO0qtRGwALn4/edit?tab=t.0" target="_blank">Adaptive Apparel PCB</a></strong> – Built a BLE-powered wearable on CY8CKIT-142 with low-power C++ firmware and user safety compliance.
-      <ul style="margin-left: 20px;">
-        <li>Developed BLE firmware in C++ for safe and interactive user experience.</li>
-        <li>Integrated safety logic for use in children's wearable devices.</li>
-        <li>Designed and tested PCB layout for manufacturability and durability.</li>
-        <li>Optimized wireless signal strength and power draw for longer wearability.</li>
-      </ul>
-    </li>
-
-      <!-- Centered and uniformly sized images -->
-  <div style="display: flex; justify-content: center; gap: 30px; margin-top: 20px;">
-    <img src="spidermansleeve.jpeg" alt="Adaptive Apparel PCB Image 1" style="max-width: 300px; max-height: 200px; width: auto; height: auto; object-fit: contain; border-radius: 8px;">
-    <img src="SpidermanPCB.jpeg" alt="Adaptive Apparel PCB Image 2" style="max-width: 300px; max-height: 200px; width: auto; height: auto; object-fit: contain; border-radius: 8px;">
-    <img src="adaptiveappareldevice.jpeg" alt="Adaptive Apparel PCB Image 3" style="max-width: 300px; max-height: 200px; width: auto; height: auto; object-fit: contain; border-radius: 8px;">
-  </div>
-    <br><br>
-</li>
-
-
-
-
-
-    
-
-    <li style="margin-bottom: 30px;">
-      <strong><a href="https://www.youtube.com/watch?v=tIN8QrGogaU" target="_blank">Audio Recording Circuit</a></strong> – Created an op-amp based audio system using ISD1700, including playback, erase, and amplification logic.
-      <ul style="margin-left: 20px;">
-        <li>Implemented audio processing using ISD1700 series chip.</li>
-        <li>Added analog preamp circuit using LM741 op-amps.</li>
-        <li>Benchmarked audio clarity and optimized op-amp gain settings.</li>
-        <li>Enabled playback, erase, and record cycling using digital logic control.</li>
-      </ul>
-    </li>
-
-      <!-- Centered and uniformly sized images -->
-  <div style="display: flex; justify-content: center; gap: 30px; margin-top: 20px;">
-    <img src="FlowchartAudio.png" alt="Audio Recording Circuit Image 1" style="max-width: 300px; max-height: 200px; width: auto; height: auto; object-fit: contain; border-radius: 8px;">
-    <img src="Circuitaudio.png" alt="Audio Recording Circuit Image 2" style="max-width: 300px; max-height: 200px; width: auto; height: auto; object-fit: contain; border-radius: 8px;">
-  </div>
-    <br><br>
-</li>
-    
-
-    <li style="margin-bottom: 30px;">
-      <strong>Servo-Controlled Testing System</strong> – Automated servo motion and sensor feedback with Arduino firmware and Serial Monitor controls.
-      <ul style="margin-left: 20px;">
-        <li>Integrated servo motors with Arduino PWM for precision stroke control.</li>
-        <li>Added load cell and LVDT for real-time force and position tracking.</li>
-        <li>Enabled parameter input through Serial Monitor interface.</li>
-        <li>Programmed closed-loop system for automated test cycling.</li>
-      </ul>
-    </li>
-      <!-- Centered and uniformly sized images -->
-  <div style="display: flex; justify-content: center; gap: 30px; margin-top: 20px;">
-    <img src="ArduinoFlowchart.jpg" alt="Arduino Image 1" style="max-width: 300px; max-height: 200px; width: auto; height: auto; object-fit: contain; border-radius: 8px;">
-  </div>
-    <br><br>
-</li>
-
-
-    
-
-    <li style="margin-bottom: 30px;">
-      <strong>Custom Temperature Sensor</strong> – Built a PCB + I2C sensor system with LED debugging and oscilloscope testing workflows.
-      <ul style="margin-left: 20px;">
-        <li>Designed PCB with temperature sensor and pull-up resistors.</li>
-        <li>Added LED output for visual status monitoring.</li>
-        <li>Verified sensor accuracy using oscilloscope signal tracing.</li>
-        <li>Coded C++ firmware loop to read and validate temperature readings.</li>
-      </ul>
-    </li>
-
-      <!-- Centered and uniformly sized images -->
-  <div style="display: flex; justify-content: center; gap: 30px; margin-top: 20px;">
-    <img src="Tempsystems.jpeg" alt="Custom Temperature Sensor Image 1" style="max-width: 300px; max-height: 200px; width: auto; height: auto; object-fit: contain; border-radius: 8px;">
-    <img src="SchematicTempP.jpeg" alt="Custom Temperature Sensor Image 2" style="max-width: 300px; max-height: 200px; width: auto; height: auto; object-fit: contain; border-radius: 8px;">
-  </div>
-    <br><br>
-</li>
-
-
-    
-
-    <li style="margin-bottom: 30px;">
-      <strong><a href="https://docs.google.com/document/d/15YY3wkjqzNF5WyWsF-oQtDUYf0JfN58ijiOq3FkKmfo/edit?usp=sharing" target="_blank">Peak Detector Network</a></strong> – Simulated diode-op-amp peak detectors for real-time signal measurement and testing instrumentation.
-      <ul style="margin-left: 20px;">
-        <li>Designed op-amp circuit for capturing signal peaks.</li>
-        <li>Tuned component values for analog signal tracking.</li>
-        <li>Tested design across variable input frequencies using scope.</li>
-        <li>Applied in amplitude-modulated signal diagnostics.</li>
-      </ul>
-    </li>
-
-      <!-- Centered and uniformly sized images -->
-  <div style="display: flex; justify-content: center; gap: 30px; margin-top: 20px;">
-    <img src="FinalPeak.jpeg" alt="Peak Detector Network Image 1" style="max-width: 300px; max-height: 200px; width: auto; height: auto; object-fit: contain; border-radius: 8px;">
-    <img src="PeakDesign.jpeg" alt="Peak Detector Network Image 2" style="max-width: 300px; max-height: 200px; width: auto; height: auto; object-fit: contain; border-radius: 8px;">
-  </div>
-    <br><br>
-</li>
-
-    
-
-    <li style="margin-bottom: 30px;">
-      <strong><a href="https://docs.google.com/document/d/1k_05suiBF1eoW4ccDoTk1hdodn7JlwygRELtsQWwK44/edit?usp=sharing" target="_blank">Assistive Ball Launcher</a></strong> – Designed a switch-activated DC motorized assistive device with torque optimization and <$40 BOM.
-      <ul style="margin-left: 20px;">
-        <li>Developed switch-based motor control interface.</li>
-        <li>Designed ergonomic frame using low-cost materials.</li>
-        <li>Optimized motor torque for consistent launching force.</li>
-        <li>Kept total bill of materials under $40 for accessibility.</li>
-      </ul>
-    </li>
-
-      <!-- Centered and uniformly sized images -->
-  <div style="display: flex; justify-content: center; gap: 30px; margin-top: 20px;">
-    <img src="bunnyFinal.jpeg" alt="Assistive Ball Launcher Image 1" style="max-width: 300px; max-height: 200px; width: auto; height: auto; object-fit: contain; border-radius: 8px;">
-  </div>
-    <br><br>
-</li>
-
-
-
-<li style="margin-bottom: 30px;">
-  <strong><a href="https://docs.google.com/presentation/d/1cc2M1m3EUki-R9KBHR2d8o-x_1fvhnn92bG-7WQjcqc/edit#slide=id.g31c3e5c54f6_0_80" target="_blank">Flyback Converter Power Supply</a></strong> – Designed and simulated a 5V, 30W isolated power supply using a high-frequency flyback topology and MATLAB-based modeling.
-  <ul style="margin-left: 20px;">
-    <li>Implemented galvanic isolation and voltage conversion with a 40:1 transformer and switching architecture.</li>
-    <li>Simulated full converter performance in MATLAB, achieving <50mV ripple and 75.65% efficiency.</li>
-    <li>Optimized Schottky diodes, capacitors, and MOSFET selection to minimize conduction and switching losses.</li>
-    <li>Proposed GaN-based switching and advanced PWM control to increase future efficiency beyond 85%.</li>
-  </ul>
-</li>
-
-<!-- Centered and uniformly sized images -->
-<div style="display: flex; justify-content: center; gap: 30px; margin-top: 20px;">
-  <img src="flyback_placeholder1.jpg" alt="Flyback Converter Image 1" style="max-width: 300px; max-height: 200px; width: auto; height: auto; object-fit: contain; border-radius: 8px;">
-  <img src="flyback_placeholder2.jpg" alt="Flyback Converter Image 2" style="max-width: 300px; max-height: 200px; width: auto; height: auto; object-fit: contain; border-radius: 8px;">
-</div>
-<br><br>
-
-
-<li style="margin-bottom: 30px;">
-  <strong>Noise Monitoring Subsystem</strong> – Designed a breakout board with op-amp-based analog filtering and embedded C++ firmware for dynamic audio monitoring.
-  <ul style="margin-left: 20px;">
-    <li>Wrote C++ firmware to read analog signals and display real-time audio levels.</li>
-    <li>Designed op-amp circuitry with capacitor filtering to enhance signal clarity.</li>
-    <li>Used potentiometers to allow adjustable noise sensitivity in real-time.</li>
-    <li>Validated system performance using oscilloscope and ATE testing tools.</li>
-  </ul>
-</li>
-
-<!-- Centered and uniformly sized images -->
-<div style="display: flex; justify-content: center; gap: 30px; margin-top: 20px;">
-  <img src="noise_monitor_1.jpeg" alt="Noise Monitoring Image 1" style="max-width: 300px; max-height: 200px; width: auto; height: auto; object-fit: contain; border-radius: 8px;">
-</div>
-<br><br>
-
-
-<li style="margin-bottom: 30px;">
-  <strong><a href="https://docs.google.com/document/d/1A6kyMex-X0qoTbAwBP4UCDB6OOQim3mzd0AgPxcmRHg/edit?usp=sharing" target="_blank">Electric Skateboard</a></strong> – Redesigned and optimized an electric skateboard through reverse engineering and performance benchmarking.
-  <ul style="margin-left: 20px;">
-    <li>Performed speed, range, and braking tests to validate performance in real-world conditions.</li>
-    <li>Redesigned key components including motor mount, wheels, and battery placement for efficiency and safety.</li>
-    <li>Integrated headlights, carrying handle, and riding modes to improve usability.</li>
-    <li>Applied structured test plans to verify electrical and mechanical systems met design goals.</li>
-  </ul>
-</li>
-
-<!-- Centered and uniformly sized image -->
-<div style="display: flex; justify-content: center; margin-top: 20px;">
-  <img src="electric_skateboard.jpg" alt="Electric Skateboard Image" style="max-width: 300px; max-height: 200px; width: auto; height: auto; object-fit: contain; border-radius: 8px;">
-</div>
-<br><br>
-
-
-<li style="margin-bottom: 30px;">
-  <strong>Automated Mini Garage Door</strong> – Built a servo-powered garage door prototype with bidirectional control and basic electrical circuitry.
-  <ul style="margin-left: 20px;">
-    <li>Implemented servo motor system triggered by switch for door movement.</li>
-    <li>Designed and wired the circuit using breadboard, resistors, and jumpers.</li>
-    <li>Constructed wooden frame for structural support and safe enclosure.</li>
-    <li>Tested motion logic for consistent up/down operation and optimized power draw.</li>
-  </ul>
-</li>
-
-<!-- Centered and uniformly sized image -->
-<div style="display: flex; justify-content: center; margin-top: 20px;">
-  <img src="mini_garage_door.jpeg" alt="Mini Garage Door Image" style="max-width: 300px; max-height: 200px; width: auto; height: auto; object-fit: contain; border-radius: 8px;">
-</div>
-<br><br>
-
-
-
-<li style="margin-bottom: 30px;">
-  <strong>Digital Logic Gates</strong> – Simulated 6-bit logic gate operations in Verilog to validate binary arithmetic and hardware design.
-  <ul style="margin-left: 20px;">
-    <li>Implemented AND, OR, XOR, NOR, and XNOR operations using register-based modules.</li>
-    <li>Used procedural stimulus generation in initial blocks to simulate inputs and outputs.</li>
-    <li>Monitored register changes with <code>$monitor</code> to track logic behavior in real time.</li>
-    <li>Validated functional correctness of each gate using waveform inspection.</li>
-  </ul>
-</li>
-
-<!-- Centered and uniformly sized images -->
-<div style="display: flex; justify-content: center; gap: 30px; margin-top: 20px;">
-  <img src="VerilogSim.jpeg" alt="Digital Logic Waveform 1" style="max-width: 300px; max-height: 200px; width: auto; height: auto; object-fit: contain; border-radius: 8px;">
-</div>
-<br><br>
-
-
-
-
-    <li style="margin-bottom: 30px;">
-  <strong><a href="https://docs.google.com/document/d/1p6oDjYIkyTAlufFLkuB-n-wEsVihRQw13Gw5JIwI9jA/edit?usp=sharing" target="_blank">Energy Conversion Launcher</a></strong> – Designed and built a rubber band-powered projectile launcher, optimizing elastic energy conversion for maximum efficiency.
-  <ul style="margin-left: 20px;">
-    <li>Optimized energy transfer to maximize launch efficiency, reducing mechanical losses.</li>
-    <li>Validated theoretical vs. experimental results, refining design through real-world testing.</li>
-  </ul>
-</li>
-
-<!-- Centered and uniformly sized image -->
-<div style="display: flex; justify-content: center; margin-top: 20px;">
-  <img src="energy.jpeg" alt="Energy Conversion Launcher Image" style="max-width: 300px; max-height: 200px; width: auto; height: auto; object-fit: contain; border-radius: 8px;">
-</div>
-<br><br>
-
-
-
-    <li style="margin-bottom: 30px;">
-  <strong><a href="https://docs.google.com/document/d/1uKhOfbx3LtHxiUjiMTkOXYa8AxSAfSaspok6whN4SeU/edit?usp=sharing" target="_blank">Fan Reverse Engineering</a></strong> – Redesigned and optimized a consumer stand fan for airflow, noise reduction, and assembly improvements.
-  <ul style="margin-left: 20px;">
-    <li>Optimized propeller design to minimize noise by applying a thin plastic coating for dampening vibrations.</li>
-    <li>Redesigned fan cage for easy disassembly, improving maintenance and air quality by reducing dust buildup.</li>
-    <li>Enhanced airflow distribution by modifying the cage geometry, increasing cooling efficiency.</li>
-  </ul>
-</li>
-
-<!-- Centered and uniformly sized image -->
-<div style="display: flex; justify-content: center; margin-top: 20px;">
-  <img src="Fan.jpeg" alt="Fan Reverse Engineering Image" style="max-width: 300px; max-height: 200px; width: auto; height: auto; object-fit: contain; border-radius: 8px;">
-</div>
-<br><br>
-
-
- <li style="margin-bottom: 30px;">
-  <strong><a href="https://docs.google.com/document/d/1zRkxAkVS622qHBqaIlNNMfshI4dm2eH4/edit?usp=sharing&ouid=109522122405950999853&rtpof=true&sd=true" target="_blank">Microgrid & Power Flow Design</a></strong> – Used Xendee to simulate peak load, islanding, and voltage regulation in a hybrid solar/wind/diesel grid in Oahu.
-  <ul style="margin-left: 20px;">
-    <li>Developed a GIS-based microgrid layout, modeling load profiles and renewable energy potential using real-world data.</li>
-    <li>Performed cost-benefit analysis using Lazard's levelized cost benchmarks for optimal long-term affordability.</li>
-    <li>Implemented peak shaving with battery storage and renewables to reduce dependency on the grid.</li>
-    <li>Conducted 3-day resilience analysis to ensure critical load coverage with backup generation.</li>
-    <li>Optimized dispatch scheduling to minimize operating costs while maintaining grid stability.</li>
-  </ul>
-</li>
-
-<!-- Centered image -->
-<div style="display: flex; justify-content: center; margin-top: 20px;">
-  <img src="GRIDDESIGN.jpeg" alt="Microgrid Design Image" style="max-width: 300px; max-height: 200px; width: auto; height: auto; object-fit: contain; border-radius: 8px;">
-</div>
-<br><br>
-   
-
-<li style="margin-bottom: 30px;">
-  <strong><a href="https://www.linkedin.com/in/saif-s-elsaady-78091425a/details/projects/1740165948315/single-media-viewer/?profileId=ACoAAD_Z_FABQWyffCs4GMuY27eD-NRSpekP7G0" target="_blank">Power Flow Analysis | Power Systems Engineering</a></strong> – Simulated a resilient hybrid power grid for Oahu, Hawaii, integrating solar, wind, and diesel assets under both connected and islanded modes.
-  <ul style="margin-left: 20px;">
-    <li>Created a one-line schematic in Xendee with feeders, buses, transformers, and microgrid inverters.</li>
-    <li>Performed peak load flow analysis to optimize transformer and cable sizing and correct voltage violations.</li>
-    <li>Simulated islanding scenarios to maintain voltage and reactive power balance using local generation.</li>
-    <li>Compared system behavior under grid-connected vs. islanded conditions with variable demand profiles.</li>
-    <li>Validated critical load coverage and power quality for uninterrupted operations during outages.</li>
-  </ul>
-</li>
-
-
-    
-    
-    
-
-    <li style="margin-bottom: 30px;">
-      <strong><a href="https://www.linkedin.com/in/saif-s-elsaady-78091425a/overlay/1635525591362/single-media-viewer?type=LINK" target="_blank">EV Charging Cybersecurity</a></strong> – Simulated attack vectors on onboard chargers using Arduino + MATLAB for both hardware and protocol testing.
-      <ul style="margin-left: 20px;">
-        <li>Built hardware simulation to model EV charging protocol.</li>
-        <li>Wrote MATLAB scripts to simulate attack scenarios.</li>
-        <li>Emulated CAN bus signal interference and spoofing.</li>
-        <li>Verified vulnerabilities through test scenarios and logging.</li>
-      </ul>
-    </li>
-
-    
-      <!-- Centered and uniformly sized images -->
-  <div style="display: flex; justify-content: center; gap: 30px; margin-top: 20px;">
-    <img src="FlowchartCyber.png" alt="EV Charging Cybersecurity Image 1" style="max-width: 300px; max-height: 200px; width: auto; height: auto; object-fit: contain; border-radius: 8px;">
-  </div>
-    <br><br>
-</li>
-
-  </ul>
-</section>
-
-
-
-
-<section>
-  <h2 id="software">💻 Software, AI & Simulation</h2>
-
-  <li style="margin-bottom: 30px;">
-    <strong>UAV Traffic Management</strong> – Built Python-based flight optimization model for Honeywell Hackathon with 3D visualization and live path correction logic.
-    <ul style="margin-left: 20px;">
-      <li>Developed real-time UAV path optimization using Python simulation.</li>
-      <li>Integrated 3D visualization for UAV airspace situational awareness.</li>
-      <li>Enhanced UAV safety via autonomous conflict resolution logic.</li>
-    </ul>
-    <div style="display: flex; justify-content: center; margin-top: 10px;">
-      <img src="uav_traffic_image.jpg" alt="UAV Traffic Management Image" style="max-width: 300px; border-radius: 8px;">
-    </div>
-  </li>
-
-  <li style="margin-bottom: 30px;">
-    <strong><a href="https://github.com/selsaady1/Saif-Elsaady/blob/main/DAT402_Project2%20(1).ipynb" target="_blank">NVIDIA Stock & Volume Forecasting</a></strong> – Built time-series models (XGBoost, SVR, ANN) and applied PCA + t-SNE for forecasting optimization.
-    <ul style="margin-left: 20px;">
-      <li>Applied supervised learning models for financial forecasting accuracy.</li>
-      <li>Performed EDA to visualize trends and trading behavior anomalies.</li>
-      <li>Used PCA and t-SNE to enhance input features and reduce dimensionality.</li>
-    </ul>
-  </li>
-
-  <li style="margin-bottom: 30px;">
-    <strong><a href="https://rpubs.com/sels04/1004163" target="_blank">Instacart Basket Modeling</a></strong> – Applied ML and statistical regression to predict reorder behavior across departments and product types.
-    <ul style="margin-left: 20px;">
-      <li>Performed regression and EDA on reorder patterns in Instacart datasets.</li>
-      <li>Built ML classifiers and conducted confidence interval testing.</li>
-      <li>Used probability modeling to optimize reorder prediction accuracy.</li>
-    </ul>
-  </li>
-
-  <li style="margin-bottom: 30px;">
-    <strong><a href="https://www.linkedin.com/in/saif-s-elsaady-78091425a/details/projects/1740371996001/single-media-viewer/?profileId=ACoAAD_Z_FABQWyffCs4GMuY27eD-NRSpekP7G0" target="_blank">Customer Call Clustering (USAA)</a></strong> – Used NLP and K-Means to segment call transcripts, visualize friction, and improve service design.
-    <ul style="margin-left: 20px;">
-      <li>Performed clustering and EDA on transcript data to segment call types.</li>
-      <li>Used n-gram and topic modeling to identify satisfaction drivers.</li>
-      <li>Presented insights in checkpoints to inform client-side UX changes.</li>
-    </ul>
-  </li>
-
-  <li style="margin-bottom: 30px;">
-    <strong><a href="https://www.linkedin.com/in/saif-s-elsaady-78091425a/details/projects/297892626/multiple-media-viewer/?profileId=ACoAAD_Z_FABQWyffCs4GMuY27eD-NRSpekP7G0&treasuryMediaId=1740615100215" target="_blank">Crime Prediction (ML)</a></strong> – Used clustering, logistic regression, and geospatial features to predict crime severity and classify weapon usage.
-    <ul style="margin-left: 20px;">
-      <li>Trained classifiers to distinguish violent and armed crime categories.</li>
-      <li>Mapped geospatial trends with DBSCAN and choropleth clustering.</li>
-      <li>Modeled temporal patterns with Prophet for forecasting.</li>
-    </ul>
-  </li>
-
-  <li style="margin-bottom: 30px;">
-    📐 <strong><a href="https://www.linkedin.com/in/saif-s-elsaady-78091425a/details/projects/1740434774738/single-media-viewer/?profileId=ACoAAD_Z_FABQWyffCs4GMuY27eD-NRSpekP7G0" target="_blank">MATLAB Simulation</a></strong> – Simulated Newton’s Cooling Law, baton physics, and Lotka-Volterra equations for dynamics & biology models.
-    <ul style="margin-left: 20px;">
-      <li>Built simulations of heat loss and motion in physical systems.</li>
-      <li>Modeled predator-prey behavior with Lotka-Volterra in MATLAB.</li>
-      <li>Visualized simulations with time plots and parameter sweeps.</li>
-    </ul>
-  </li>
-
-  <li style="margin-bottom: 30px;">
-    <strong>Java Dice Game</strong> – Developed a simple object-oriented betting simulator using classes, input validation, and game logic.
-    <ul style="margin-left: 20px;">
-      <li>Implemented OOP with custom Die and Main classes.</li>
-      <li>Validated input and tracked user balance during gameplay.</li>
-      <li>Used java.util.Random for dice roll simulation.</li>
-    </ul>
-  </li>
-
-  <li style="margin-bottom: 30px;">
-    <strong><a href="https://rpubs.com/sels04/994937" target="_blank">Adhesive Heat Testing</a></strong> – Conducted hypothesis testing on calorimetry data, comparing reported and experimental means.
-    <ul style="margin-left: 20px;">
-      <li>Performed one-sample hypothesis tests using R.</li>
-      <li>Plotted confidence intervals and error bars for clarity.</li>
-      <li>Published findings showing statistical significance (p &lt; 0.01).</li>
-    </ul>
-  </li>
-
-  <li style="margin-bottom: 30px;">
-    <strong><a href="https://www.linkedin.com/in/saif-s-elsaady-78091425a/details/projects/1740162793819/single-media-viewer/?profileId=ACoAAD_Z_FABQWyffCs4GMuY27eD-NRSpekP7G0" target="_blank">EPL Goal Analysis</a></strong> – Applied normal distribution modeling to Premier League match data, testing fairness of reported stats.
-    <ul style="margin-left: 20px;">
-      <li>Performed z-tests and statistical inference on EPL goal data.</li>
-      <li>Interpreted fairness and distribution validity of goal claims.</li>
-      <li>Visualized results with normal curves and deviation thresholds.</li>
-    </ul>
-  </li>
-
-  <li style="margin-bottom: 30px;">
-    <strong><a href="https://www.linkedin.com/in/saif-s-elsaady-78091425a/details/projects/1705887138747/single-media-viewer/?profileId=ACoAAD_Z_FABQWyffCs4GMuY27eD-NRSpekP7G0" target="_blank">Energy Usage in AZ</a></strong> – Used regression to correlate energy burden to income tiers and analyze utility cost equity from RECS data.
-    <ul style="margin-left: 20px;">
-      <li>Modeled relationships between household energy cost and income.</li>
-      <li>Visualized equity gaps using scatterplots and density maps.</li>
-      <li>Proposed targeted intervention strategies based on regression insights.</li>
-    </ul>
-  </li>
-
-
-<li style="margin-bottom: 30px;">
-    <strong><a href="https://github.com/selsaady1/MAT-421-Elsaady/blob/d2fbcfc368a1359efe5f83fb73b0dd05013fb7ed/DAT301Project2.ipynb" target="_blank">Retail Orders | ML & Statistical Project</a></strong> – Modeled grocery order behavior using regression, classification, and probability distribution.
-    <ul style="margin-left: 20px;">
-      <li>Performed regression analysis to examine reorder and purchase trends.</li>
-      <li>Implemented ML models with scikit-learn for reorder prediction accuracy.</li>
-      <li>Visualized frequency distributions and PMFs using seaborn & matplotlib.</li>
-      <li>Applied probability modeling to evaluate checkout likelihood.</li>
-      <li>Proposed UX-driven data optimization strategies for cart behavior.</li>
-    </ul>
-  </li>
-
-  <li style="margin-bottom: 30px;">
-    <strong><a href="https://sels04.shinyapps.io/HypothesisTestingOneSample/" target="_blank">One-Sample Hypothesis Testing App</a></strong> – Developed Shiny R app for real-time hypothesis testing with CI visualization.
-    <ul style="margin-left: 20px;">
-      <li>Built hypothesis testing functions with R (shiny, stats) for one-sample analysis.</li>
-      <li>Generated confidence intervals and statistical visuals dynamically.</li>
-      <li>Used ggplot2 to show hypothesis rejection with input-driven graphics.</li>
-      <li>Deployed fully functional app on Shinyapps.io for live demo use.</li>
-    </ul>
-  </li>
-
-  <li style="margin-bottom: 30px;">
-    <strong><a href="https://abyssinianstyle.com/" target="_blank">Abyssinian Style E-Commerce Website</a></strong> – Designed and launched Shopify site to support digital sales and enhance UX.
-    <ul style="margin-left: 20px;">
-      <li>Implemented front-end with HTML/CSS and optimized mobile responsiveness.</li>
-      <li>Built product pages with integrated checkout and image optimization.</li>
-      <li>Customized navigation and branding for an intuitive shopping experience.</li>
-      <li>Worked with backend Shopify settings for inventory and SEO features.</li>
-    </ul>
-  </li>
-
-  <li style="margin-bottom: 30px;">
-    <strong>UAV Camera Integration | Embedded Systems</strong> – Built live-streaming camera pipeline for UAV using Linux, FFmpeg, and OpenCV.
-    <ul style="margin-left: 20px;">
-      <li>Developed video pipeline with OpenCV, GStreamer, and FFmpeg for low-latency feed.</li>
-      <li>Used Linux scripting for automation of encoding and secure data handling.</li>
-      <li>Streamed live video to GCS with reliability under UAV flight conditions.</li>
-      <li>Debugged and tuned performance for improved streaming quality.</li>
-    </ul>
-    <div style="display: flex; justify-content: center; margin-top: 10px;">
-      <img src="UAV_CAMERA_PLACEHOLDER.png" alt="UAV Camera Integration" style="max-width: 300px; height: auto; object-fit: contain; border-radius: 8px;">
-    </div>
-  </li>
-
-  <li style="margin-bottom: 30px;">
-    <strong><a href="https://docs.google.com/presentation/d/1aNWkjnihUd0T1jMgJzpzdGPdUoMiZezoLIDkjWCCofc/edit" target="_blank">Product Trends with R</a></strong> – Visualized product sales and inventory patterns using R data visualization libraries.
-    <ul style="margin-left: 20px;">
-      <li>Created heatmaps and bar charts for category-level product distributions.</li>
-      <li>Used ggplot2 and tidyr for long-format transformations and mapping.</li>
-      <li>Highlighted sales performance drivers via aggregation and color maps.</li>
-      <li>Built interactive Google Slides for presentation and visual storytelling.</li>
-    </ul>
-  </li>
-
-  <li style="margin-bottom: 30px;">
-    <strong><a href="https://www.linkedin.com/in/saif-s-elsaady-78091425a/details/projects/1615889655/multiple-media-viewer/?profileId=ACoAAD_Z_FABQWyffCs4GMuY27eD-NRSpekP7G0&treasuryMediaId=1746463659906" target="_blank">RF Signal Analysis | Statistical Inference</a></strong> – Explored RF detection trends in data center rooms using Python stats methods.
-    <ul style="margin-left: 20px;">
-      <li>Cleaned and structured RF signal datasets using pandas for Python analysis.</li>
-      <li>Visualized signal behavior using matplotlib, seaborn, and distribution plots.</li>
-      <li>Calculated confidence intervals and performed inference on signal variance.</li>
-      <li>Applied chi-square and t-tests to estimate signal parameters.</li>
-      <li>Delivered reproducible results using statistical scripting workflows.</li>
-    </ul>
-  </li>
-
-  <li style="margin-bottom: 30px;">
-    <strong><a href="https://www.linkedin.com/in/saif-s-elsaady-78091425a/details/projects/1752181177815/single-media-viewer?type=DOCUMENT&profileId=ACoAAD_Z_FABQWyffCs4GMuY27eD-NRSpekP7G0&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_projects_details%3BsIpY9B47Qvyx%2BbTseUzCLg%3D%3D" target="_blank">Machine Learning Hardware Failure Classification System</a></strong> – Engineered advanced dual CNN architecture for automated hardware failure detection using specialized models for continuous and discrete sensor data.
-    <ul style="margin-left: 20px;">
-      <li>Implemented custom deep learning pipeline with 48→96→128 progressive feature extraction and strategic dropout regularization (0.1, 0.05 rates).</li>
-      <li>Developed comprehensive transfer learning framework utilizing Adam optimization (5e-5 LR), class weight balancing for imbalanced datasets, and L2 regularization (0.0001).</li>
-      <li>Built production-ready MLOps pipeline with automated model versioning, timestamped backup systems, and real-time performance monitoring.</li>
-      <li>Created interactive GUI framework enabling non-technical users to deploy ML models for industrial hardware diagnostics.</li>
-    </ul>
-  </li>
-
-  <li style="margin-bottom: 30px;">
-    <strong><a href="https://www.linkedin.com/in/saif-s-elsaady-78091425a/details/projects/1752179354689/single-media-viewer?type=DOCUMENT&profileId=ACoAAD_Z_FABQWyffCs4GMuY27eD-NRSpekP7G0&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_projects_details%3BsIpY9B47Qvyx%2BbTseUzCLg%3D%3D" target="_blank">Advanced Signal Demodulation System - DSP/ML Engineering</a></strong> – Engineered comparative BPSK demodulation system using dual methodologies (classical DSP vs. neural networks).
-    <ul style="margin-left: 20px;">
-      <li>Processed 10,000-bit transmission with SNR=1 Gaussian noise modeling for realistic communication channel simulation.</li>
-      <li>Implemented advanced classical demodulation pipeline using orthogonal basis projection onto cosine/sine vectors with trigonometric phase estimation algorithms.</li>
-      <li>Developed machine learning demodulation approach using optimized Multi-Layer Perceptron (10 hidden neurons) for direct signal-to-bit classification.</li>
-      <li>Bypassed traditional phase estimation for innovative neural network-based signal recovery.</li>
-    </ul>
-  </li>
-
-  <li style="margin-bottom: 30px;">
-    <strong><a href="https://www.linkedin.com/in/saif-s-elsaady-78091425a/details/projects/1752179640978/single-media-viewer?type=DOCUMENT&profileId=ACoAAD_Z_FABQWyffCs4GMuY27eD-NRSpekP7G0&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_projects_details%3BsIpY9B47Qvyx%2BbTseUzCLg%3D%3D" target="_blank">Semiconductor Diode Modeling System</a></strong> – Engineered advanced semiconductor device simulation platform integrating fundamental physics equations with numerical optimization.
-    <ul style="margin-left: 20px;">
-      <li>Achieved 1e-6 convergence tolerance across 30 iterative optimization cycles for precise parameter extraction from experimental I-V data.</li>
-      <li>Implemented robust Newton-Raphson circuit solver using SciPy optimization for nonlinear diode-resistor networks at 375K.</li>
-      <li>Developed multi-parameter optimization engine using iterative least-squares algorithms to extract barrier height, ideality factor, and series resistance.</li>
-      <li>Created comprehensive diode physics model incorporating temperature dependencies for accurate high-temperature semiconductor device characterization.</li>
-    </ul>
-  </li>
-
-  <li style="margin-bottom: 30px;">
-    <strong><a href="https://www.linkedin.com/in/saif-s-elsaady-78091425a/details/projects/1752178836019/single-media-viewer?type=DOCUMENT&profileId=ACoAAD_Z_FABQWyffCs4GMuY27eD-NRSpekP7G0&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_projects_details%3BsIpY9B47Qvyx%2BbTseUzCLg%3D%3D" target="_blank">Submarine Mine Detection System - Machine Learning Approach</a></strong> – Achieved 88.89% accuracy in life-critical submarine mine detection using PCA-optimized Multi-Layer Perceptron neural networks.
-    <ul style="margin-left: 20px;">
-      <li>Processed 60-dimensional sonar signals with only 3 missed mines out of 29 test cases for enhanced crew survival.</li>
-      <li>Engineered optimal dimensionality reduction pipeline using Principal Component Analysis, reducing feature space from 60 to 8 components (87% reduction).</li>
-      <li>Implemented systematic hyperparameter optimization across 60 PCA configurations using scikit-learn MLPClassifier with 100 hidden neurons.</li>
-      <li>Delivered mission-critical defense technology solution with 10.3% false negative rate for hostile environment navigation.</li>
-    </ul>
-  </li>
-
-  <li style="margin-bottom: 30px;">
-    <strong><a href="https://www.linkedin.com/in/saif-s-elsaady-78091425a/details/projects/1752179921261/single-media-viewer?type=DOCUMENT&profileId=ACoAAD_Z_FABQWyffCs4GMuY27eD-NRSpekP7G0&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_projects_details%3BsIpY9B47Qvyx%2BbTseUzCLg%3D%3D" target="_blank">VLSI Circuit Optimization System, EDA Automation Approach</a></strong> – Engineered advanced HSPICE-driven circuit optimization platform automating parametric sweeps across fan factors and chain lengths.
-    <ul style="margin-left: 20px;">
-      <li>Minimized propagation delay (t_phl) for 30pF high-capacitance loads through intelligent inverter sizing and topology optimization.</li>
-      <li>Developed sophisticated Python automation framework integrating industry-standard HSPICE simulation with dynamic netlist generation.</li>
-      <li>Enabled systematic exploration of 100+ circuit configurations with automated performance extraction and optimal design identification.</li>
-      <li>Implemented robust electronic design automation workflow using subprocess management for seamless HSPICE invocation and CSV parsing.</li>
-    </ul>
-  </li>
-
-  <li style="margin-bottom: 30px;">
-    <strong><a href="https://www.linkedin.com/in/saif-s-elsaady-78091425a/details/projects/1752179169267/single-media-viewer?type=DOCUMENT&profileId=ACoAAD_Z_FABQWyffCs4GMuY27eD-NRSpekP7G0&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_projects_details%3BsIpY9B47Qvyx%2BbTseUzCLg%3D%3D" target="_blank">Heart Disease Prediction System - Machine Learning Approach</a></strong> – Achieved 94.44% diagnostic accuracy in heart disease prediction using Support Vector Machine with RBF kernel.
-    <ul style="margin-left: 20px;">
-      <li>Outperformed 5 other ML algorithms on clinical dataset of 270 patient records with 13 cardiovascular features.</li>
-      <li>Conducted comprehensive exploratory data analysis using Pearson correlation matrices and covariance analysis.</li>
-      <li>Identified 6 critical predictive features with correlations above 0.41 for optimal model performance.</li>
-      <li>Implemented and optimized 6 machine learning algorithms achieving consistent 90%+ accuracy across multiple models.</li>
-    </ul>
-  </li>
-
-  <li style="margin-bottom: 30px;">
-    <strong><a href="https://www.linkedin.com/in/saif-s-elsaady-78091425a/details/projects/1752180384041/single-media-viewer?type=DOCUMENT&profileId=ACoAAD_Z_FABQWyffCs4GMuY27eD-NRSpekP7G0&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_projects_details%3BsIpY9B47Qvyx%2BbTseUzCLg%3D%3D" target="_blank">AI Deployment Workflow Optimization</a></strong> – Led enterprise process transformation initiative reducing AI model deployment time by 75% through systematic IDEF0 modeling.
-    <ul style="margin-left: 20px;">
-      <li>Reduced deployment time from 3-4 hours to <1 hour through automated workflow design for edge computing platforms.</li>
-      <li>Engineered comprehensive automation solution using CLI-based toolchain integration with $5,700 total solution investment.</li>
-      <li>Applied advanced enterprise modeling methodologies including Fishbone diagrams and 5 Whys analysis.</li>
-      <li>Designed standardized, version-controlled deployment pipeline for Jetson Nano and Coral TPU platforms.</li>
-    </ul>
-  </li>
-
-  <li style="margin-bottom: 30px;">
-    <strong><a href="https://www.linkedin.com/in/saif-s-elsaady-78091425a/details/projects/1752181921260/single-media-viewer?type=DOCUMENT&profileId=ACoAAD_Z_FABQWyffCs4GMuY27eD-NRSpekP7G0&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_projects_details%3BsIpY9B47Qvyx%2BbTseUzCLg%3D%3D" target="_blank">EDA Compliance Validation GUI System</a></strong> – Engineered enterprise-grade desktop application featuring dynamic plugin architecture with importlib-based module loading.
-    <ul style="margin-left: 20px;">
-      <li>Implemented sophisticated multi-check execution engine supporting variable schema CSV processing and intelligent data merging.</li>
-      <li>Developed advanced tkinter-based GUI framework with Excel-style multi-column filtering and real-time visualization.</li>
-      <li>Built production-ready software architecture implementing MVC, Observer, Factory, and Strategy design patterns.</li>
-      <li>Delivered scalable validation platform enabling non-technical users to execute complex compliance workflows.</li>
-    </ul>
-  </li>
-
-</section>
-
-
-
-    
-<section>
-  <h2 id="research">🔬 Scientific Research & Sustainability</h2>
-
-  <li style="margin-bottom: 40px;">
-    <strong><a href="https://colab.research.google.com/drive/1Q99aIMV8y3LL3m8ud0Pt17700qDMT20S" target="_blank">Sea Turtle Survival</a></strong> – Modeled endangered populations using Leslie matrices and simulated conservation strategy outcomes.
-    <ul>
-      <li>Built stage-based matrix model using life-stage survival data from IUCN.</li>
-      <li>Simulated population trends under baseline and conservation scenarios.</li>
-      <li>Identified juvenile survival as key limiting factor to long-term growth.</li>
-      <li>Recommended MPAs and bycatch reduction to improve species viability.</li>
-    </ul>
-    <div style="display: flex; justify-content: center; margin-top: 10px;">
-      <img src="AGEMODEL.png" alt="Sea Turtle Model" style="max-width: 300px; border-radius: 8px;">
-    </div>
-  </li>
-
-  <li style="margin-bottom: 40px;">
-    <strong><a href="https://www.linkedin.com/in/saif-s-elsaady-78091425a/details/projects/1740638687791/single-media-viewer/?profileId=ACoAAD_Z_FABQWyffCs4GMuY27eD-NRSpekP7G0" target="_blank">Bird Biodiversity</a></strong> – Performed ANOVA and regression on urban vs. rural species diversity using CAP LTER data.
-    <ul>
-      <li>Analyzed 20+ years of CAP LTER bird data using R statistical tools.</li>
-      <li>Compared species richness across habitats using one-way ANOVA.</li>
-      <li>Performed linear regression to identify temporal biodiversity trends.</li>
-      <li>Discussed conservation implications for urban planning policies.</li>
-    </ul>
-  </li>
-
-  <li style="margin-bottom: 40px;">
-    <strong><a href="#" target="_blank">TEM for Thin Films</a></strong> – Used microscopy and FEA to study grain boundaries, voiding, and delamination in thin-film semiconductors.
-    <ul>
-      <li>Performed TEM-based structural analysis of advanced thin-film materials.</li>
-      <li>Simulated stress-induced void formation using FEA and Python modeling.</li>
-      <li>Visualized defect evolution under strain using SciPy and Matplotlib.</li>
-      <li>Proposed improvements to fabrication processes based on findings.</li>
-    </ul>
-    <div style="display: flex; justify-content: center; gap: 10px; margin-top: 10px;">
-      <img src="STRESST.jpeg" alt="TEM Stress 1" style="max-width: 300px; border-radius: 8px;">
-      <img src="STRESSS.jpeg" alt="TEM Stress 2" style="max-width: 300px; border-radius: 8px;">
-    </div>
-  </li>
-
-  <li style="margin-bottom: 40px;">
-    <strong><a href="https://www.linkedin.com/in/saif-s-elsaady-78091425a/details/projects/1736820104121/single-media-viewer/?profileId=ACoAAD_Z_FABQWyffCs4GMuY27eD-NRSpekP7G0" target="_blank">Perovskite Research Ethics</a></strong> – Explored ethics of solar innovation, data transparency, and conflicts of interest in green tech.
-    <ul>
-      <li>Evaluated transparency issues in perovskite efficiency claims.</li>
-      <li>Reviewed funding conflicts in industry-academic solar research.</li>
-      <li>Recommended best practices for ethical materials data reporting.</li>
-      <li>Reflected on societal responsibility of emerging solar technologies.</li>
-    </ul>
-  </li>
-
-  <li style="margin-bottom: 40px;">
-    <strong><a href="https://www.linkedin.com/in/saif-s-elsaady-78091425a/details/projects/1364895872/multiple-media-viewer/?profileId=ACoAAD_Z_FABQWyffCs4GMuY27eD-NRSpekP7G0&treasuryMediaId=1740163223354" target="_blank">PETase Filtration System</a></strong> – Designed a water pitcher with plastic-eating enzyme membrane and validated filtration performance.
-    <ul>
-      <li>Integrated PETase enzyme to degrade microplastics in water samples.</li>
-      <li>Prototyped reusable mesh filter with enzymatic plastic breakdown.</li>
-      <li>Tested filtration efficiency through lab-based particle retention studies.</li>
-      <li>Aligned project goals with UN Sustainable Development Goal 6.6.</li>
-    </ul>
-    <div style="display: flex; justify-content: center; margin-top: 10px;">
-      <img src="FILTER.jpg" alt="PETase Filtration" style="max-width: 300px; border-radius: 8px;">
-    </div>
-  </li>
-
-  <li style="margin-bottom: 40px;">
-    <strong><a href="https://docs.google.com/document/d/1TZRP6A4-CvUWnU3l3kYcBU2yQYpV2cdJVXPOmOcaHZg/edit?usp=sharing" target="_blank">Urban Green Space GIS</a></strong> – Modeled biodiversity and access in Tempe, AZ using GeoPandas and open street map data.
-    <ul>
-      <li>Mapped green spaces in Tempe using Python GIS libraries (GeoPandas, OSMnx).</li>
-      <li>Analyzed species diversity and ecological benefits across city zones.</li>
-      <li>Visualized carbon sequestration and air quality improvement metrics.</li>
-      <li>Built interactive dashboards to support sustainable urban planning.</li>
-    </ul>
-    <div style="display: flex; justify-content: center; margin-top: 10px;">
-      <img src="Heattree.jpg" alt="Green Space Visualization" style="max-width: 300px; border-radius: 8px;">
-    </div>
-  </li>
-</section>
-
-
-
-  </main>
+    <!-- Projects Section -->
+    <section id="projects" class="projects fade-in"><!-- Added fade-in -->
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="hardware">Hardware</button>
+                <button class="filter-btn" data-filter="software">Software & AI</button>
+                <button class="filter-btn" data-filter="research">Research</button>
+            </div>
+            <div class="projects-grid" id="projects-grid">
+                <!-- Projects will be dynamically loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills fade-in"><!-- Added fade-in -->
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-content">
+                <div class="skills-category">
+                    <h3>Programming Languages</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <i class="fab fa-python"></i>
+                            <span>Python</span>
+                            <div class="skill-level" data-level="95"></div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-java"></i>
+                            <span>Java</span>
+                            <div class="skill-level" data-level="85"></div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-js"></i>
+                            <span>JavaScript</span>
+                            <div class="skill-level" data-level="80"></div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-code"></i>
+                            <span>C++</span>
+                            <div class="skill-level" data-level="90"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills-category">
+                    <h3>Technologies & Tools</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <i class="fas fa-brain"></i>
+                            <span>Machine Learning</span>
+                            <div class="skill-level" data-level="90"></div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-microchip"></i>
+                            <span>Hardware Design</span>
+                            <div class="skill-level" data-level="85"></div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-database"></i>
+                            <span>Data Analysis</span>
+                            <div class="skill-level" data-level="88"></div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-cloud"></i>
+                            <span>Cloud Computing</span>
+                            <div class="skill-level" data-level="75"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience fade-in"><!-- Added fade-in -->
+        <div class="container">
+            <h2 class="section-title">Professional Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">2024 - Present</div>
+                        <h3>Embedded Systems Intern</h3>
+                        <h4>Honeywell Aerospace</h4>
+                        <p>Reduced avionics test cycle time by 50% by optimizing scripts with Automated Test Equipment (ATE). Built Linux-based pipeline streaming UAV camera footage via Python over LTE.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">2023 - 2024</div>
+                        <h3>Automation Intern</h3>
+                        <h4>Intel Corporation</h4>
+                        <p>Performed statistical modeling on wafer defect data using JMP, SQL, and Python. Automated semiconductor test workflows, reducing manual debugging by 80%.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">2022 - 2023</div>
+                        <h3>Data Science Intern</h3>
+                        <h4>USAA</h4>
+                        <p>Improved customer service insights by implementing K-means clustering on interaction data, reducing friction scores by 15%.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact fade-in"><!-- Added fade-in -->
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>selsaady27@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-linkedin"></i>
+                        <div>
+                            <h3>LinkedIn</h3>
+                            <p>Saif S. Elsaady</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-github"></i>
+                        <div>
+                            <h3>GitHub</h3>
+                            <p>selsaady1</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/saif-s-elsaady-78091425a/" target="_blank" class="social-link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/selsaady1" target="_blank" class="social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="mailto:selsaady27@gmail.com" class="social-link">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Saif Elsaady. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- JavaScript Files -->
+    <script src="./js/main.js"></script>
+    <script src="./js/animations.js"></script>
+    <script src="./js/theme-toggle.js"></script>
 </body>
-</html>
-
+</html> 

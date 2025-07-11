@@ -1,0 +1,62 @@
+/* ===== ANIMATIONS & SCROLL EFFECTS ===== */
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s cubic-bezier(0.4,0,0.2,1), transform 0.8s cubic-bezier(0.4,0,0.2,1);
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: none;
+}
+
+.slide-in-left {
+  opacity: 0;
+  transform: translateX(-40px);
+  transition: opacity 0.8s cubic-bezier(0.4,0,0.2,1), transform 0.8s cubic-bezier(0.4,0,0.2,1);
+}
+.slide-in-left.visible {
+  opacity: 1;
+  transform: none;
+}
+
+.slide-in-right {
+  opacity: 0;
+  transform: translateX(40px);
+  transition: opacity 0.8s cubic-bezier(0.4,0,0.2,1), transform 0.8s cubic-bezier(0.4,0,0.2,1);
+}
+.slide-in-right.visible {
+  opacity: 1;
+  transform: none;
+}
+
+.btn, .filter-btn {
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.btn:hover, .filter-btn:hover {
+  transform: translateY(-3px) scale(1.04);
+  box-shadow: 0 4px 24px rgba(67,124,71,0.12);
+}
+
+.section-title {
+  position: relative;
+  overflow: hidden;
+}
+.section-title::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 4px;
+  background: var(--primary-color);
+  transition: width 0.6s cubic-bezier(0.4,0,0.2,1);
+  position: absolute;
+  left: 50%;
+  bottom: -10px;
+  transform: translateX(-50%);
+}
+.section-title.visible::after {
+  width: 60px;
+}
+
+/* Loader animation (already in style.css, but can be enhanced here if needed) */ 
