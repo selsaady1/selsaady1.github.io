@@ -59,14 +59,14 @@ OCTYPE html>
         }
         
         .project-card strong {
-            color: #437c47;
+            color: #8b4513;
             font-size: 1.25rem;
             display: block;
             margin-bottom: 1rem;
         }
         
         .project-card a {
-            color: #437c47;
+            color: #8b4513;
             text-decoration: none;
         }
         
@@ -111,9 +111,9 @@ OCTYPE html>
         
         .filter-btn {
             padding: 0.5rem 1.5rem;
-            border: 2px solid #437c47;
+            border: 2px solid #8b4513;
             background: transparent;
-            color: #437c47;
+            color: #8b4513;
             border-radius: 0.5rem;
             cursor: pointer;
             transition: all 0.3s ease;
@@ -122,7 +122,7 @@ OCTYPE html>
         
         .filter-btn.active,
         .filter-btn:hover {
-            background: #437c47;
+            background: #8b4513;
             color: white;
         }
         
@@ -427,8 +427,14 @@ OCTYPE html>
             <li>Assisted in integrating sensor fusion logic and PCB testing workflows for increased system reliability.</li>
             <li>Managed project timeline with Gantt charts and Git version control to meet client milestones.</li>
           </ul>
+          
+          <!-- Project Images -->
+          <div class="project-images">
+            <img src="Flight_Controller_FC_29_png_alphares.png" alt="Flight Controller Development" loading="lazy" class="project-image">
+            <img src="IMU Visual test.gif" alt="IMU Visualization Test" loading="lazy" class="project-image">
+          </div>
         </div>
-  
+
         <div class="project-item">
           <h3>UAV Hardware Integration</h3>
           <p>Designed power and ESC connection systems using a custom PCB, configured Veronte Autopilot, and optimized layout for signal integrity.</p>
@@ -438,8 +444,31 @@ OCTYPE html>
             <li>Optimized system for weight balance and ESC thermal response.</li>
             <li>Verified signals and outputs through bench testing and signal tracing.</li>
           </ul>
+          
+          <!-- Project Images -->
+          <div class="project-images">
+            <img src="DroneBody.jpeg" alt="UAV Hardware Integration" loading="lazy" class="project-image">
+            <img src="SchematicDrone.png" alt="UAV Schematic Design" loading="lazy" class="project-image">
+          </div>
         </div>
-  
+
+        <div class="project-item">
+          <h3><a href="https://egr314team311.github.io/team311.github.io/Final_Report.html" target="_blank">Weather Station</a></h3>
+          <p>Developed a mobile PCB with I2C/SPI sensors, power-efficient architecture, and field-tested calibration for environmental monitoring.</p>
+          <ul>
+            <li>Built environmental sensor array using temperature, pressure, and wind modules.</li>
+            <li>Developed a power-saving design using switching regulators and rechargeable cells.</li>
+            <li>Designed the PCB in Cadence and passed DRC checks before fabrication.</li>
+            <li>Performed accuracy tests in varied conditions to verify sensor readings.</li>
+          </ul>
+          
+          <!-- Project Images -->
+          <div class="project-images">
+            <img src="PCBweather.jpeg" alt="Weather Station PCB" loading="lazy" class="project-image">
+            <img src="FinalDevice.jpeg" alt="Weather Station Final Device" loading="lazy" class="project-image">
+          </div>
+        </div>
+
         <div class="project-item">
           <h3><a href="https://docs.google.com/document/d/1lQRAato3axBpb3OnubBcCswt_42VaLtuO0qtRGwALn4/edit?tab=t.0" target="_blank">Adaptive Apparel PCB</a></h3>
           <p>Built a BLE-powered wearable on CY8CKIT-142 with low-power C++ firmware and user safety compliance.</p>
@@ -449,8 +478,15 @@ OCTYPE html>
             <li>Designed and tested PCB layout for manufacturability and durability.</li>
             <li>Optimized wireless signal strength and power draw for longer wearability.</li>
           </ul>
+          
+          <!-- Project Images -->
+          <div class="project-images">
+            <img src="spidermansleeve.jpeg" alt="Adaptive Apparel Sleeve" loading="lazy" class="project-image">
+            <img src="SpidermanPCB.jpeg" alt="Adaptive Apparel PCB" loading="lazy" class="project-image">
+            <img src="adaptiveappareldevice.jpeg" alt="Adaptive Apparel Device" loading="lazy" class="project-image">
+          </div>
         </div>
-  
+
         <div class="project-item">
           <h3><a href="https://www.youtube.com/watch?v=tIN8QrGogaU" target="_blank">Audio Recording Circuit</a></h3>
           <p>Created an op-amp based audio system using ISD1700, including playback, erase, and amplification logic.</p>
@@ -460,8 +496,14 @@ OCTYPE html>
             <li>Benchmarked audio clarity and optimized op-amp gain settings.</li>
             <li>Enabled playback, erase, and record cycling using digital logic control.</li>
           </ul>
+          
+          <!-- Project Images -->
+          <div class="project-images">
+            <img src="FlowchartAudio.png" alt="Audio Recording Flowchart" loading="lazy" class="project-image">
+            <img src="Circuitaudio.png" alt="Audio Recording Circuit" loading="lazy" class="project-image">
+          </div>
         </div>
-  
+
         <div class="project-item">
           <h3>Servo-Controlled Testing System</h3>
           <p>Automated servo motion and sensor feedback with Arduino firmware and Serial Monitor controls.</p>
@@ -471,8 +513,13 @@ OCTYPE html>
             <li>Enabled parameter input through Serial Monitor interface.</li>
             <li>Programmed closed-loop system for automated test cycling.</li>
           </ul>
+          
+          <!-- Project Images -->
+          <div class="project-images">
+            <img src="ArduinoFlowchart.jpg" alt="Arduino Flowchart" loading="lazy" class="project-image">
+          </div>
         </div>
-  
+
         <div class="project-item">
           <h3>Custom Temperature Sensor</h3>
           <p>Built a PCB + I2C sensor system with LED debugging and oscilloscope testing workflows.</p>
@@ -482,8 +529,14 @@ OCTYPE html>
             <li>Verified sensor accuracy using oscilloscope signal tracing.</li>
             <li>Coded C++ firmware loop to read and validate temperature readings.</li>
           </ul>
+          
+          <!-- Project Images -->
+          <div class="project-images">
+            <img src="Tempsystems.jpeg" alt="Temperature Sensor System" loading="lazy" class="project-image">
+            <img src="SchematicTempP.jpeg" alt="Temperature Sensor Schematic" loading="lazy" class="project-image">
+          </div>
         </div>
-  
+
         <div class="project-item">
           <h3><a href="https://docs.google.com/document/d/15YY3wkjqzNF5WyWsF-oQtDUYf0JfN58ijiOq3FkKmfo/edit?usp=sharing" target="_blank">Peak Detector Network</a></h3>
           <p>Simulated diode-op-amp peak detectors for real-time signal measurement and testing instrumentation.</p>
@@ -493,8 +546,14 @@ OCTYPE html>
             <li>Tested design across variable input frequencies using scope.</li>
             <li>Applied in amplitude-modulated signal diagnostics.</li>
           </ul>
+          
+          <!-- Project Images -->
+          <div class="project-images">
+            <img src="FinalPeak.jpeg" alt="Peak Detector Final" loading="lazy" class="project-image">
+            <img src="PeakDesign.jpeg" alt="Peak Detector Design" loading="lazy" class="project-image">
+          </div>
         </div>
-  
+
         <div class="project-item">
           <h3><a href="https://docs.google.com/document/d/1k_05suiBF1eoW4ccDoTk1hdodn7JlwygRELtsQWwK44/edit?usp=sharing" target="_blank">Assistive Ball Launcher</a></h3>
           <p>Designed a switch-activated DC motorized assistive device with torque optimization and <$40 BOM.</p>
@@ -504,8 +563,13 @@ OCTYPE html>
             <li>Optimized motor torque for consistent launching force.</li>
             <li>Kept total bill of materials under $40 for accessibility.</li>
           </ul>
+          
+          <!-- Project Images -->
+          <div class="project-images">
+            <img src="bunnyFinal.jpeg" alt="Assistive Ball Launcher" loading="lazy" class="project-image">
+          </div>
         </div>
-  
+
         <div class="project-item">
           <h3><a href="https://docs.google.com/presentation/d/1cc2M1m3EUki-R9KBHR2d8o-x_1fvhnn92bG-7WQjcqc/edit#slide=id.g31c3e5c54f6_0_80" target="_blank">Flyback Converter Power Supply</a></h3>
           <p>Designed and simulated a 5V, 30W isolated power supply using a high-frequency flyback topology and MATLAB-based modeling.</p>
@@ -516,7 +580,7 @@ OCTYPE html>
             <li>Proposed GaN-based switching and advanced PWM control to increase future efficiency beyond 85%.</li>
           </ul>
         </div>
-  
+
         <div class="project-item">
           <h3>Noise Monitoring Subsystem</h3>
           <p>Designed a breakout board with op-amp-based analog filtering and embedded C++ firmware for dynamic audio monitoring.</p>
@@ -527,7 +591,7 @@ OCTYPE html>
             <li>Validated system performance using oscilloscope and ATE testing tools.</li>
           </ul>
         </div>
-  
+
         <div class="project-item">
           <h3><a href="https://docs.google.com/document/d/1A6kyMex-X0qoTbAwBP4UCDB6OOQim3mzd0AgPxcmRHg/edit?usp=sharing" target="_blank">Electric Skateboard</a></h3>
           <p>Redesigned and optimized an electric skateboard through reverse engineering and performance benchmarking.</p>
@@ -538,7 +602,7 @@ OCTYPE html>
             <li>Applied structured test plans to verify electrical and mechanical systems met design goals.</li>
           </ul>
         </div>
-  
+
         <div class="project-item">
           <h3>Automated Mini Garage Door</h3>
           <p>Built a servo-powered garage door prototype with bidirectional control and basic electrical circuitry.</p>
@@ -549,7 +613,7 @@ OCTYPE html>
             <li>Tested motion logic for consistent up/down operation and optimized power draw.</li>
           </ul>
         </div>
-  
+
         <div class="project-item">
           <h3>Digital Logic Gates</h3>
           <p>Simulated 6-bit logic gate operations in Verilog to validate binary arithmetic and hardware design.</p>
@@ -559,8 +623,13 @@ OCTYPE html>
             <li>Monitored register changes with <code>$monitor</code> to track logic behavior in real time.</li>
             <li>Validated functional correctness of each gate using waveform inspection.</li>
           </ul>
+          
+          <!-- Project Images -->
+          <div class="project-images">
+            <img src="VerilogSim.jpeg" alt="Verilog Simulation" loading="lazy" class="project-image">
+          </div>
         </div>
-  
+
         <div class="project-item">
           <h3><a href="https://docs.google.com/document/d/1p6oDjYIkyTAlufFLkuB-n-wEsVihRQw13Gw5JIwI9jA/edit?usp=sharing" target="_blank">Energy Conversion Launcher</a></h3>
           <p>Designed and built a rubber band-powered projectile launcher, optimizing elastic energy conversion for maximum efficiency.</p>
@@ -568,8 +637,13 @@ OCTYPE html>
             <li>Optimized energy transfer to maximize launch efficiency, reducing mechanical losses.</li>
             <li>Validated theoretical vs. experimental results, refining design through real-world testing.</li>
           </ul>
+          
+          <!-- Project Images -->
+          <div class="project-images">
+            <img src="energy.jpeg" alt="Energy Conversion Launcher" loading="lazy" class="project-image">
+          </div>
         </div>
-  
+
         <div class="project-item">
           <h3><a href="https://docs.google.com/document/d/1uKhOfbx3LtHxiUjiMTkOXYa8AxSAfSaspok6whN4SeU/edit?usp=sharing" target="_blank">Fan Reverse Engineering</a></h3>
           <p>Redesigned and optimized a consumer stand fan for airflow, noise reduction, and assembly improvements.</p>
@@ -578,8 +652,13 @@ OCTYPE html>
             <li>Redesigned fan cage for easy disassembly, improving maintenance and air quality by reducing dust buildup.</li>
             <li>Enhanced airflow distribution by modifying the cage geometry, increasing cooling efficiency.</li>
           </ul>
+          
+          <!-- Project Images -->
+          <div class="project-images">
+            <img src="Fan.jpeg" alt="Fan Reverse Engineering" loading="lazy" class="project-image">
+          </div>
         </div>
-  
+
         <div class="project-item">
           <h3><a href="https://docs.google.com/document/d/1zRkxAkVS622qHBqaIlNNMfshI4dm2eH4/edit?usp=sharing&ouid=109522122405950999853&rtpof=true&sd=true" target="_blank">Microgrid & Power Flow Design</a></h3>
           <p>Used Xendee to simulate peak load, islanding, and voltage regulation in a hybrid solar/wind/diesel grid in Oahu.</p>
@@ -590,8 +669,13 @@ OCTYPE html>
             <li>Conducted 3-day resilience analysis to ensure critical load coverage with backup generation.</li>
             <li>Optimized dispatch scheduling to minimize operating costs while maintaining grid stability.</li>
           </ul>
+          
+          <!-- Project Images -->
+          <div class="project-images">
+            <img src="GRIDDESIGN.jpeg" alt="Microgrid Design" loading="lazy" class="project-image">
+          </div>
         </div>
-  
+
         <div class="project-item">
           <h3><a href="https://www.linkedin.com/in/saif-s-elsaady-78091425a/details/projects/1740165948315/single-media-viewer/?profileId=ACoAAD_Z_FABQWyffCs4GMuY27eD-NRSpekP7G0" target="_blank">Power Flow Analysis | Power Systems Engineering</a></h3>
           <p>Simulated a resilient hybrid power grid for Oahu, Hawaii, integrating solar, wind, and diesel assets under both connected and islanded modes.</p>
@@ -603,7 +687,7 @@ OCTYPE html>
             <li>Validated critical load coverage and power quality for uninterrupted operations during outages.</li>
           </ul>
         </div>
-  
+
         <div class="project-item">
           <h3><a href="https://www.linkedin.com/in/saif-s-elsaady-78091425a/overlay/1635525591362/single-media-viewer?type=LINK" target="_blank">EV Charging Cybersecurity</a></h3>
           <p>Simulated attack vectors on onboard chargers using Arduino + MATLAB for both hardware and protocol testing.</p>
@@ -613,6 +697,11 @@ OCTYPE html>
             <li>Emulated CAN bus signal interference and spoofing.</li>
             <li>Verified vulnerabilities through test scenarios and logging.</li>
           </ul>
+          
+          <!-- Project Images -->
+          <div class="project-images">
+            <img src="FlowchartCyber.png" alt="EV Charging Cybersecurity Flowchart" loading="lazy" class="project-image">
+          </div>
         </div>
       </section>
   
@@ -628,8 +717,13 @@ OCTYPE html>
             <li>Integrated 3D visualization for UAV airspace situational awareness.</li>
             <li>Enhanced UAV safety via autonomous conflict resolution logic.</li>
           </ul>
+          
+          <!-- Project Images -->
+          <div class="project-images">
+            <img src="uav_traffic_image.jpg" alt="UAV Traffic Management" loading="lazy" class="project-image">
+          </div>
         </div>
-  
+
         <div class="project-item">
           <h3><a href="https://github.com/selsaady1/Saif-Elsaady/blob/main/DAT402_Project2%20(1).ipynb" target="_blank">NVIDIA Stock & Volume Forecasting</a></h3>
           <p>Built time-series models (XGBoost, SVR, ANN) and applied PCA + t-SNE for forecasting optimization.</p>
@@ -639,7 +733,7 @@ OCTYPE html>
             <li>Used PCA and t-SNE to enhance input features and reduce dimensionality.</li>
           </ul>
         </div>
-  
+
         <div class="project-item">
           <h3><a href="https://rpubs.com/sels04/1004163" target="_blank">Instacart Basket Modeling</a></h3>
           <p>Applied ML and statistical regression to predict reorder behavior across departments and product types.</p>
@@ -649,7 +743,7 @@ OCTYPE html>
             <li>Used probability modeling to optimize reorder prediction accuracy.</li>
           </ul>
         </div>
-  
+
         <div class="project-item">
           <h3><a href="https://www.linkedin.com/in/saif-s-elsaady-78091425a/details/projects/1740371996001/single-media-viewer/?profileId=ACoAAD_Z_FABQWyffCs4GMuY27eD-NRSpekP7G0" target="_blank">Customer Call Clustering (USAA)</a></h3>
           <p>Used NLP and K-Means to segment call transcripts, visualize friction, and improve service design.</p>
@@ -659,7 +753,7 @@ OCTYPE html>
             <li>Presented insights in checkpoints to inform client-side UX changes.</li>
           </ul>
         </div>
-  
+
         <div class="project-item">
           <h3><a href="https://www.linkedin.com/in/saif-s-elsaady-78091425a/details/projects/297892626/multiple-media-viewer/?profileId=ACoAAD_Z_FABQWyffCs4GMuY27eD-NRSpekP7G0&treasuryMediaId=1740615100215" target="_blank">Crime Prediction (ML)</a></h3>
           <p>Used clustering, logistic regression, and geospatial features to predict crime severity and classify weapon usage.</p>
@@ -669,7 +763,7 @@ OCTYPE html>
             <li>Modeled temporal patterns with Prophet for forecasting.</li>
           </ul>
         </div>
-  
+
         <div class="project-item">
           <h3><a href="https://www.linkedin.com/in/saif-s-elsaady-78091425a/details/projects/1740434774738/single-media-viewer/?profileId=ACoAAD_Z_FABQWyffCs4GMuY27eD-NRSpekP7G0" target="_blank">MATLAB Simulation</a></h3>
           <p>📐 Simulated Newton's Cooling Law, baton physics, and Lotka-Volterra equations for dynamics & biology models.</p>
@@ -679,7 +773,7 @@ OCTYPE html>
             <li>Visualized simulations with time plots and parameter sweeps.</li>
           </ul>
         </div>
-  
+
         <div class="project-item">
           <h3>Java Dice Game</h3>
           <p>Developed a simple object-oriented betting simulator using classes, input validation, and game logic.</p>
@@ -689,7 +783,7 @@ OCTYPE html>
             <li>Used java.util.Random for dice roll simulation.</li>
           </ul>
         </div>
-  
+
         <div class="project-item">
           <h3><a href="https://rpubs.com/sels04/994937" target="_blank">Adhesive Heat Testing</a></h3>
           <p>Conducted hypothesis testing on calorimetry data, comparing reported and experimental means.</p>
@@ -699,7 +793,7 @@ OCTYPE html>
             <li>Published findings showing statistical significance (p &lt; 0.01).</li>
           </ul>
         </div>
-  
+
         <div class="project-item">
           <h3><a href="https://www.linkedin.com/in/saif-s-elsaady-78091425a/details/projects/1740162793819/single-media-viewer/?profileId=ACoAAD_Z_FABQWyffCs4GMuY27eD-NRSpekP7G0" target="_blank">EPL Goal Analysis</a></h3>
           <p>Applied normal distribution modeling to Premier League match data, testing fairness of reported stats.</p>
@@ -709,7 +803,7 @@ OCTYPE html>
             <li>Visualized results with normal curves and deviation thresholds.</li>
           </ul>
         </div>
-  
+
         <div class="project-item">
           <h3><a href="https://www.linkedin.com/in/saif-s-elsaady-78091425a/details/projects/1705887138747/single-media-viewer/?profileId=ACoAAD_Z_FABQWyffCs4GMuY27eD-NRSpekP7G0" target="_blank">Energy Usage in AZ</a></h3>
           <p>Used regression to correlate energy burden to income tiers and analyze utility cost equity from RECS data.</p>
@@ -719,7 +813,7 @@ OCTYPE html>
             <li>Proposed targeted intervention strategies based on regression insights.</li>
           </ul>
         </div>
-  
+
         <div class="project-item">
           <h3><a href="https://github.com/selsaady1/MAT-421-Elsaady/blob/d2fbcfc368a1359efe5f83fb73b0dd05013fb7ed/DAT301Project2.ipynb" target="_blank">Retail Orders | ML & Statistical Project</a></h3>
           <p>Modeled grocery order behavior using regression, classification, and probability distribution.</p>
@@ -731,7 +825,7 @@ OCTYPE html>
             <li>Proposed UX-driven data optimization strategies for cart behavior.</li>
           </ul>
         </div>
-  
+
         <div class="project-item">
           <h3><a href="https://sels04.shinyapps.io/HypothesisTestingOneSample/" target="_blank">One-Sample Hypothesis Testing App</a></h3>
           <p>Developed Shiny R app for real-time hypothesis testing with CI visualization.</p>
@@ -742,7 +836,7 @@ OCTYPE html>
             <li>Deployed fully functional app on Shinyapps.io for live demo use.</li>
           </ul>
         </div>
-  
+
         <div class="project-item">
           <h3><a href="https://abyssinianstyle.com/" target="_blank">Abyssinian Style E-Commerce Website</a></h3>
           <p>Designed and launched Shopify site to support digital sales and enhance UX.</p>
@@ -753,7 +847,7 @@ OCTYPE html>
             <li>Worked with backend Shopify settings for inventory and SEO features.</li>
           </ul>
         </div>
-  
+
         <div class="project-item">
           <h3>UAV Camera Integration | Embedded Systems</h3>
           <p>Built live-streaming camera pipeline for UAV using Linux, FFmpeg, and OpenCV.</p>
@@ -763,8 +857,13 @@ OCTYPE html>
             <li>Streamed live video to GCS with reliability under UAV flight conditions.</li>
             <li>Debugged and tuned performance for improved streaming quality.</li>
           </ul>
+          
+          <!-- Project Images -->
+          <div class="project-images">
+            <img src="UAV_CAMERA_PLACEHOLDER.png" alt="UAV Camera Integration" loading="lazy" class="project-image">
+          </div>
         </div>
-  
+
         <div class="project-item">
           <h3><a href="https://docs.google.com/presentation/d/1aNWkjnihUd0T1jMgJzpzdGPdUoMiZezoLIDkjWCCofc/edit" target="_blank">Product Trends with R</a></h3>
           <p>Visualized product sales and inventory patterns using R data visualization libraries.</p>
@@ -775,7 +874,7 @@ OCTYPE html>
             <li>Built interactive Google Slides for presentation and visual storytelling.</li>
           </ul>
         </div>
-  
+
         <div class="project-item">
           <h3><a href="https://www.linkedin.com/in/saif-s-elsaady-78091425a/details/projects/1615889655/multiple-media-viewer/?profileId=ACoAAD_Z_FABQWyffCs4GMuY27eD-NRSpekP7G0&treasuryMediaId=1746463659906" target="_blank">RF Signal Analysis | Statistical Inference</a></h3>
           <p>Explored RF detection trends in data center rooms using Python stats methods.</p>
@@ -787,7 +886,18 @@ OCTYPE html>
             <li>Delivered reproducible results using statistical scripting workflows.</li>
           </ul>
         </div>
-  
+
+        <div class="project-item">
+          <h3><a href="https://www.linkedin.com/in/saif-s-elsaady-78091425a/details/projects/1752181177815/single-media-viewer?type=DOCUMENT&profileId=ACoAAD_Z_FABQWyffCs4GMuY27eD-NRSpekP7G0&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_projects_details%3BsIpY9B47Qvyx%2BbTseUzCLg%3D%3D" target="_blank">Machine Learning Hardware Failure Classification System</a></h3>
+          <p>Engineered advanced dual CNN architecture for automated hardware failure detection using specialized models for continuous and discrete sensor data.</p>
+          <ul>
+            <li>Implemented custom deep learning pipeline with 48→96→128 progressive feature extraction and strategic dropout regularization (0.1, 0.05 rates).</li>
+            <li>Developed comprehensive transfer learning framework utilizing Adam optimization (5e-5 LR), class weight balancing for imbalanced datasets, and L2 regularization (0.0001).</li>
+            <li>Built production-ready MLOps pipeline with automated model versioning, timestamped backup systems, and real-time performance monitoring.</li>
+            <li>Created interactive GUI framework enabling non-technical users to deploy ML models for industrial hardware diagnostics.</li>
+          </ul>
+        </div>
+
         <div class="project-item">
           <h3><a href="https://www.linkedin.com/in/saif-s-elsaady-78091425a/details/projects/1752179354689/single-media-viewer?type=DOCUMENT&profileId=ACoAAD_Z_FABQWyffCs4GMuY27eD-NRSpekP7G0&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_projects_details%3BsIpY9B47Qvyx%2BbTseUzCLg%3D%3D" target="_blank">Advanced Signal Demodulation System - DSP/ML Engineering</a></h3>
           <p>Engineered comparative BPSK demodulation system using dual methodologies (classical DSP vs. neural networks).</p>
@@ -798,7 +908,7 @@ OCTYPE html>
             <li>Bypassed traditional phase estimation for innovative neural network-based signal recovery.</li>
           </ul>
         </div>
-  
+
         <div class="project-item">
           <h3><a href="https://www.linkedin.com/in/saif-s-elsaady-78091425a/details/projects/1752179640978/single-media-viewer?type=DOCUMENT&profileId=ACoAAD_Z_FABQWyffCs4GMuY27eD-NRSpekP7G0&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_projects_details%3BsIpY9B47Qvyx%2BbTseUzCLg%3D%3D" target="_blank">Semiconductor Diode Modeling System</a></h3>
           <p>Engineered advanced semiconductor device simulation platform integrating fundamental physics equations with numerical optimization.</p>
@@ -809,7 +919,18 @@ OCTYPE html>
             <li>Created comprehensive diode physics model incorporating temperature dependencies for accurate high-temperature semiconductor device characterization.</li>
           </ul>
         </div>
-  
+
+        <div class="project-item">
+          <h3><a href="https://www.linkedin.com/in/saif-s-elsaady-78091425a/details/projects/1752178836019/single-media-viewer?type=DOCUMENT&profileId=ACoAAD_Z_FABQWyffCs4GMuY27eD-NRSpekP7G0&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_projects_details%3BsIpY9B47Qvyx%2BbTseUzCLg%3D%3D" target="_blank">Submarine Mine Detection System - Machine Learning Approach</a></h3>
+          <p>Achieved 88.89% accuracy in life-critical submarine mine detection using PCA-optimized Multi-Layer Perceptron neural networks.</p>
+          <ul>
+            <li>Processed 60-dimensional sonar signals with only 3 missed mines out of 29 test cases for enhanced crew survival.</li>
+            <li>Engineered optimal dimensionality reduction pipeline using Principal Component Analysis, reducing feature space from 60 to 8 components (87% reduction).</li>
+            <li>Implemented systematic hyperparameter optimization across 60 PCA configurations using scikit-learn MLPClassifier with 100 hidden neurons.</li>
+            <li>Delivered mission-critical defense technology solution with 10.3% false negative rate for hostile environment navigation.</li>
+          </ul>
+        </div>
+
         <div class="project-item">
           <h3><a href="https://www.linkedin.com/in/saif-s-elsaady-78091425a/details/projects/1752179921261/single-media-viewer?type=DOCUMENT&profileId=ACoAAD_Z_FABQWyffCs4GMuY27eD-NRSpekP7G0&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_projects_details%3BsIpY9B47Qvyx%2BbTseUzCLg%3D%3D" target="_blank">VLSI Circuit Optimization System, EDA Automation Approach</a></h3>
           <p>Engineered advanced HSPICE-driven circuit optimization platform automating parametric sweeps across fan factors and chain lengths.</p>
@@ -820,7 +941,7 @@ OCTYPE html>
             <li>Implemented robust electronic design automation workflow using subprocess management for seamless HSPICE invocation and CSV parsing.</li>
           </ul>
         </div>
-  
+
         <div class="project-item">
           <h3><a href="https://www.linkedin.com/in/saif-s-elsaady-78091425a/details/projects/1752179169267/single-media-viewer?type=DOCUMENT&profileId=ACoAAD_Z_FABQWyffCs4GMuY27eD-NRSpekP7G0&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_projects_details%3BsIpY9B47Qvyx%2BbTseUzCLg%3D%3D" target="_blank">Heart Disease Prediction System - Machine Learning Approach</a></h3>
           <p>Achieved 94.44% diagnostic accuracy in heart disease prediction using Support Vector Machine with RBF kernel.</p>
@@ -831,7 +952,7 @@ OCTYPE html>
             <li>Implemented and optimized 6 machine learning algorithms achieving consistent 90%+ accuracy across multiple models.</li>
           </ul>
         </div>
-  
+
         <div class="project-item">
           <h3><a href="https://www.linkedin.com/in/saif-s-elsaady-78091425a/details/projects/1752180384041/single-media-viewer?type=DOCUMENT&profileId=ACoAAD_Z_FABQWyffCs4GMuY27eD-NRSpekP7G0&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_projects_details%3BsIpY9B47Qvyx%2BbTseUzCLg%3D%3D" target="_blank">AI Deployment Workflow Optimization</a></h3>
           <p>Led enterprise process transformation initiative reducing AI model deployment time by 75% through systematic IDEF0 modeling.</p>
@@ -842,7 +963,7 @@ OCTYPE html>
             <li>Designed standardized, version-controlled deployment pipeline for Jetson Nano and Coral TPU platforms.</li>
           </ul>
         </div>
-  
+
         <div class="project-item">
           <h3><a href="https://www.linkedin.com/in/saif-s-elsaady-78091425a/details/projects/1752181921260/single-media-viewer?type=DOCUMENT&profileId=ACoAAD_Z_FABQWyffCs4GMuY27eD-NRSpekP7G0&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_projects_details%3BsIpY9B47Qvyx%2BbTseUzCLg%3D%3D" target="_blank">EDA Compliance Validation GUI System</a></h3>
           <p>Engineered enterprise-grade desktop application featuring dynamic plugin architecture with importlib-based module loading.</p>
@@ -868,8 +989,13 @@ OCTYPE html>
             <li>Identified juvenile survival as key limiting factor to long-term growth.</li>
             <li>Recommended MPAs and bycatch reduction to improve species viability.</li>
           </ul>
+          
+          <!-- Project Images -->
+          <div class="project-images">
+            <img src="AGEMODEL.png" alt="Sea Turtle Age Model" loading="lazy" class="project-image">
+          </div>
         </div>
-  
+
         <div class="project-item">
           <h3><a href="https://www.linkedin.com/in/saif-s-elsaady-78091425a/details/projects/1740638687791/single-media-viewer/?profileId=ACoAAD_Z_FABQWyffCs4GMuY27eD-NRSpekP7G0" target="_blank">Bird Biodiversity</a></h3>
           <p>Performed ANOVA and regression on urban vs. rural species diversity using CAP LTER data.</p>
@@ -880,7 +1006,7 @@ OCTYPE html>
             <li>Discussed conservation implications for urban planning policies.</li>
           </ul>
         </div>
-  
+
         <div class="project-item">
           <h3><a href="#" target="_blank">TEM for Thin Films</a></h3>
           <p>Used microscopy and FEA to study grain boundaries, voiding, and delamination in thin-film semiconductors.</p>
@@ -890,8 +1016,14 @@ OCTYPE html>
             <li>Visualized defect evolution under strain using SciPy and Matplotlib.</li>
             <li>Proposed improvements to fabrication processes based on findings.</li>
           </ul>
+          
+          <!-- Project Images -->
+          <div class="project-images">
+            <img src="STRESST.jpeg" alt="TEM Stress Analysis 1" loading="lazy" class="project-image">
+            <img src="STRESSS.jpeg" alt="TEM Stress Analysis 2" loading="lazy" class="project-image">
+          </div>
         </div>
-  
+
         <div class="project-item">
           <h3><a href="https://www.linkedin.com/in/saif-s-elsaady-78091425a/details/projects/1736820104121/single-media-viewer/?profileId=ACoAAD_Z_FABQWyffCs4GMuY27eD-NRSpekP7G0" target="_blank">Perovskite Research Ethics</a></h3>
           <p>Explored ethics of solar innovation, data transparency, and conflicts of interest in green tech.</p>
@@ -902,7 +1034,7 @@ OCTYPE html>
             <li>Reflected on societal responsibility of emerging solar technologies.</li>
           </ul>
         </div>
-  
+
         <div class="project-item">
           <h3><a href="https://www.linkedin.com/in/saif-s-elsaady-78091425a/details/projects/1364895872/multiple-media-viewer/?profileId=ACoAAD_Z_FABQWyffCs4GMuY27eD-NRSpekP7G0&treasuryMediaId=1740163223354" target="_blank">PETase Filtration System</a></h3>
           <p>Designed a water pitcher with plastic-eating enzyme membrane and validated filtration performance.</p>
@@ -912,8 +1044,13 @@ OCTYPE html>
             <li>Tested filtration efficiency through lab-based particle retention studies.</li>
             <li>Aligned project goals with UN Sustainable Development Goal 6.6.</li>
           </ul>
+          
+          <!-- Project Images -->
+          <div class="project-images">
+            <img src="FILTER.jpg" alt="PETase Filtration System" loading="lazy" class="project-image">
+          </div>
         </div>
-  
+
         <div class="project-item">
           <h3><a href="https://docs.google.com/document/d/1TZRP6A4-CvUWnU3l3kYcBU2yQYpV2cdJVXPOmOcaHZg/edit?usp=sharing" target="_blank">Urban Green Space GIS</a></h3>
           <p>Modeled biodiversity and access in Tempe, AZ using GeoPandas and open street map data.</p>
@@ -923,6 +1060,11 @@ OCTYPE html>
             <li>Visualized carbon sequestration and air quality improvement metrics.</li>
             <li>Built interactive dashboards to support sustainable urban planning.</li>
           </ul>
+          
+          <!-- Project Images -->
+          <div class="project-images">
+            <img src="Heattree.jpg" alt="Urban Green Space Heat Map" loading="lazy" class="project-image">
+          </div>
         </div>
       </section>
   
@@ -935,12 +1077,38 @@ OCTYPE html>
     <section id="skills" class="skills">
       <div class="container">
         <h2 class="section-title">Technical Skills</h2>
-        <ul style="display: flex; flex-wrap: wrap; gap: 1.5rem; list-style: none; padding: 0; justify-content: center;">
+        <ul style="display: flex; flex-wrap: wrap; gap: 1.5rem; list-style: none; padding: 0; justify-content: center; margin-bottom: 2.5rem;">
           <li><span role="img" aria-label="Python">🐍</span> Python</li>
           <li><span role="img" aria-label="C++">💻</span> C++</li>
           <li><span role="img" aria-label="PowerShell">⚡</span> PowerShell</li>
           <li><span role="img" aria-label="Linux">🐧</span> Linux</li>
         </ul>
+        <div class="skills-content" style="max-width: 800px; margin: 0 auto;">
+          <div class="skills-category" style="margin-bottom: 1.5rem;">
+            <strong style="font-size: 1.15rem; color: var(--link); display: block; margin-bottom: 0.5rem;">Data Science & Analytics</strong>
+            <ul style="margin-left: 1.2em; margin-bottom: 0.7em;">
+              <li>Python (pandas, NumPy, TensorFlow, PyTorch, matplotlib, seaborn, scikit-learn, KMeans)</li>
+              <li>R (tidyverse, dplyr, ggplot2, randomForest, ShinyApp)</li>
+              <li>SQL, JMP, Statistical Process Control (SPC), Design of Experiments (DOE)</li>
+              <li>Data Analysis, Machine Learning</li>
+            </ul>
+          </div>
+          <div class="skills-category" style="margin-bottom: 1.5rem;">
+            <strong style="font-size: 1.15rem; color: var(--link); display: block; margin-bottom: 0.5rem;">Embedded Systems & Hardware</strong>
+            <ul style="margin-left: 1.2em; margin-bottom: 0.7em;">
+              <li>Verilog, I2C, SPI, UART, CAN, PWM</li>
+              <li>C++, PERL, MATLAB, Simulink</li>
+              <li>Linux (Shell, Bash), Automated Test Equipment (ATE)</li>
+              <li>Schematic & PCB Design, Design for Manufacturing (DFM)</li>
+            </ul>
+          </div>
+          <div class="skills-category">
+            <strong style="font-size: 1.15rem; color: var(--link); display: block; margin-bottom: 0.5rem;">Lab & Instrumentation</strong>
+            <ul style="margin-left: 1.2em;">
+              <li>Oscilloscopes, Multimeter, Lab Equipment, Soldering</li>
+            </ul>
+          </div>
+        </div>
       </div>
     </section>
 

@@ -199,7 +199,7 @@ function initBackToTop() {
 
 // ===== IMAGE HANDLING =====
 function initImageHandling() {
-    const images = document.querySelectorAll('.project-card img');
+    const images = document.querySelectorAll('.project-card img, .project-image');
     
     images.forEach(img => {
         // Add loading class
@@ -214,24 +214,29 @@ function initImageHandling() {
             this.style.display = 'none';
             console.log('Image failed to load:', this.src);
             
-            // Create fallback element
-            const fallback = document.createElement('div');
-            fallback.className = 'image-fallback';
-            fallback.innerHTML = '<i class="fas fa-image"></i><span>Image not available</span>';
-            fallback.style.cssText = `
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                height: 150px;
-                background: var(--background-tertiary);
-                border-radius: var(--radius-md);
-                color: var(--text-secondary);
-                font-size: var(--font-size-sm);
-                gap: 0.5rem;
-            `;
-            
-            this.parentNode.insertBefore(fallback, this);
+            // Create fallback element for project images
+            if (this.classList.contains('project-image')) {
+                const fallback = document.createElement('div');
+                fallback.className = 'image-fallback';
+                fallback.innerHTML = '<i class="fas fa-image"></i><span>Image not available</span>';
+                fallback.style.cssText = `
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    height: 150px;
+                    background: var(--bg-section);
+                    border-radius: 8px;
+                    color: var(--text-muted);
+                    font-size: 0.9rem;
+                    gap: 0.5rem;
+                    border: 2px dashed var(--divider);
+                    max-width: 300px;
+                    width: 100%;
+                `;
+                
+                this.parentNode.insertBefore(fallback, this);
+            }
         });
     });
 

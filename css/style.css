@@ -1,15 +1,15 @@
 /* ===== CSS VARIABLES ===== */
 :root {
-    /* Modern, gentle palette for light mode */
-    --bg-main: #eaf2e0; /* lighter, soft green */
-    --bg-section: #f5f8f2; /* very light green for sections */
-    --text-main: #1a2b16; /* deep olive for strong contrast */
-    --text-muted: #3d4d2a; /* muted olive for secondary text */
-    --link: #1b5e20; /* strong green for links */
-    --link-hover: #388e3c; /* brighter green for hover */
-    --accent: #dbe7c9; /* soft highlight */
-    --divider: #b7c9a8;
-    --highlight: #f0f7e8;
+    /* Modern, gentle palette for light mode - Brown aesthetic */
+    --bg-main: #f5f1eb; /* light cream */
+    --bg-section: #faf7f2; /* very light cream for sections */
+    --text-main: #2d1b0e; /* deep brown for strong contrast */
+    --text-muted: #5d4a3a; /* muted brown for secondary text */
+    --link: #8b4513; /* strong brown for links */
+    --link-hover: #a0522d; /* brighter brown for hover */
+    --accent: #e8dcc8; /* soft cream highlight */
+    --divider: #d4c4a8;
+    --highlight: #f8f4e8;
     /* Typography */
     --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     --font-secondary: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
@@ -42,15 +42,15 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg-main: #232e1b; /* deep olive green */
-    --bg-section: #1a2213; /* even deeper olive for sections */
+    --bg-main: #2d1b0e; /* deep brown */
+    --bg-section: #1a1108; /* even deeper brown for sections */
     --text-main: #f7f5e6; /* cream for high contrast */
     --text-muted: #e0e0c2; /* lighter cream for secondary text */
-    --link: #b7e27e; /* light green for links */
+    --link: #d4a574; /* light brown for links */
     --link-hover: #e6e9d8; /* cream highlight for hover */
-    --accent: #3d4d2a; /* muted olive for accents */
-    --divider: #3a4a2c;
-    --highlight: #2c3a1a;
+    --accent: #5d4a3a; /* muted brown for accents */
+    --divider: #4a3a2c;
+    --highlight: #3c2a1a;
   }
 }
 
@@ -308,9 +308,9 @@ nav, .navbar, .nav-container {
 }
 
 .btn-primary:hover {
-    background: #2d5a30;
+    background: #6b3e1a;
     transform: translateY(-2px);
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 4px 20px rgba(139, 69, 19, 0.15);
 }
 
 .btn-secondary {
@@ -407,7 +407,7 @@ section {
     align-items: center;
     background: var(--bg-section);
     border-radius: var(--radius-lg);
-    box-shadow: 0 2px 10px rgba(60,80,40,0.07);
+    box-shadow: 0 2px 10px rgba(139, 69, 19, 0.07);
     padding: var(--spacing-xl);
 }
 
@@ -1115,7 +1115,7 @@ section {
   padding: var(--spacing-2xl) 0;
   border-radius: var(--radius-lg);
   margin-bottom: var(--spacing-2xl);
-  box-shadow: 0 2px 10px rgba(60,80,40,0.07);
+  box-shadow: 0 2px 10px rgba(139, 69, 19, 0.07);
 }
 .certifications .section-title {
   text-align: center;
@@ -1132,7 +1132,7 @@ section {
   max-width: 700px;
   font-size: 1.1rem;
   line-height: 1.7;
-  box-shadow: 0 1px 6px rgba(60,80,40,0.04);
+  box-shadow: 0 1px 6px rgba(139, 69, 19, 0.04);
 }
 .certifications li {
   color: var(--text-main);
@@ -1141,4 +1141,83 @@ section {
 }
 .certifications li:last-child {
   margin-bottom: 0;
+} 
+
+/* ===== PROJECT IMAGES ===== */
+.project-images {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.project-image {
+    max-width: 300px;
+    max-height: 200px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(139, 69, 19, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: var(--bg-section);
+    border: 1px solid var(--divider);
+}
+
+.project-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px rgba(139, 69, 19, 0.2);
+}
+
+/* Responsive adjustments for project images */
+@media (max-width: 768px) {
+    .project-images {
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+    
+    .project-image {
+        max-width: 250px;
+        max-height: 150px;
+    }
+}
+
+@media (max-width: 480px) {
+    .project-images {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.75rem;
+    }
+    
+    .project-image {
+        max-width: 100%;
+        max-height: 180px;
+    }
+}
+
+/* Loading state for images */
+.project-image {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.project-image.loaded {
+    opacity: 1;
+}
+
+/* Error fallback for images */
+.project-image[src*="placeholder"] {
+    background: var(--bg-section);
+    min-height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    border: 2px dashed var(--divider);
+}
+
+.project-image[src*="placeholder"]::before {
+    content: 'Image not available';
 } 
