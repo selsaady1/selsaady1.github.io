@@ -29,8 +29,137 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/responsive.css">
     
-    <!-- Inline CSS for Projects (Fallback) -->
+    <!-- Inline CSS & Theme Overrides (Fallback) -->
     <style>
+        :root {
+            --primary: #0061FF;
+            --primary-dark: #0050CC;
+            --bg-color: #ffffff;
+            --text-color: #111827;
+            --muted-text: #4b5563;
+            --divider: #e5e7eb;
+        }
+
+        html, body {
+            max-width: 100vw;
+            overflow-x: hidden;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+        }
+
+        body {
+            font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        }
+
+        a {
+            color: var(--primary);
+        }
+
+        a:hover {
+            color: var(--primary-dark);
+        }
+
+        .navbar {
+            background-color: #ffffff;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        .nav-logo a,
+        .nav-link {
+            color: var(--text-color);
+            font-weight: 500;
+        }
+
+        .nav-link:hover,
+        .nav-link.active {
+            color: var(--primary);
+        }
+
+        .btn,
+        .btn-primary,
+        .btn-secondary {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.4rem;
+            padding: 0.6rem 1.4rem;
+            border-radius: 999px;
+            font-weight: 500;
+            border: 1px solid transparent;
+            cursor: pointer;
+            transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .btn-primary {
+            background-color: var(--primary);
+            border-color: var(--primary);
+            color: #ffffff;
+            box-shadow: 0 8px 20px rgba(0, 97, 255, 0.25);
+        }
+
+        .btn-primary:hover {
+            background-color: var(--primary-dark);
+            border-color: var(--primary-dark);
+            box-shadow: 0 10px 28px rgba(0, 80, 204, 0.3);
+        }
+
+        .btn-secondary {
+            background-color: #ffffff;
+            color: var(--primary);
+            border-color: var(--primary);
+        }
+
+        .btn-secondary:hover {
+            background-color: var(--primary);
+            color: #ffffff;
+            border-color: var(--primary-dark);
+        }
+
+        .section-title {
+            color: var(--text-color);
+        }
+
+        .project-nav-link {
+            color: var(--muted-text);
+            font-weight: 500;
+        }
+
+        .project-nav-link:hover {
+            color: var(--primary);
+        }
+
+        .back-to-top {
+            background-color: var(--primary);
+            color: #ffffff;
+            border-radius: 999px;
+        }
+
+        .back-to-top:hover {
+            background-color: var(--primary-dark);
+        }
+
+        .contact-link,
+        .social-link {
+            color: var(--primary);
+        }
+
+        .social-link:hover {
+            color: var(--primary-dark);
+        }
+
+        .hero,
+        .about,
+        .projects,
+        .skills,
+        .certifications,
+        .experience,
+        .contact,
+        .research-projects,
+        .software-projects,
+        .hardware-projects {
+            background-color: #ffffff;
+        }
+
         /* Enhanced Project Grid */
         .projects-grid {
             display: grid;
@@ -59,14 +188,14 @@
         }
         
         .project-card strong {
-            color: #8b4513;
+            color: var(--primary);
             font-size: 1.25rem;
             display: block;
             margin-bottom: 1rem;
         }
         
         .project-card a {
-            color: #8b4513;
+            color: var(--primary);
             text-decoration: none;
         }
         
@@ -111,9 +240,9 @@
         
         .filter-btn {
             padding: 0.5rem 1.5rem;
-            border: 2px solid #8b4513;
+            border: 2px solid var(--primary);
             background: transparent;
-            color: #8b4513;
+            color: var(--primary);
             border-radius: 0.5rem;
             cursor: pointer;
             transition: all 0.3s ease;
@@ -122,7 +251,7 @@
         
         .filter-btn.active,
         .filter-btn:hover {
-            background: #8b4513;
+            background: var(--primary);
             color: white;
         }
         
@@ -240,10 +369,6 @@
         * {
             box-sizing: border-box;
         }
-        html, body {
-            max-width: 100vw;
-            overflow-x: hidden;
-        }
         .container {
             width: 100%;
             max-width: 1200px;
@@ -277,9 +402,181 @@
                 font-size: 0.97rem;
             }
         }
+        /* Consulting Portal Section */
+        .consulting-portal {
+            background-color: #ffffff;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        .consulting-portal .portal-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1.4rem 1rem 1.2rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .consulting-portal-top {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            gap: 1rem;
+        }
+
+        .consulting-portal-heading h1 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin: 0 0 0.25rem;
+            color: var(--text-color);
+        }
+
+        .consulting-portal-heading p {
+            margin: 0;
+            font-size: 0.95rem;
+            color: var(--muted-text);
+        }
+
+        .consulting-portal-cta {
+            flex-shrink: 0;
+        }
+
+        .consulting-portal-cta .btn-primary {
+            padding-inline: 1.6rem;
+        }
+
+        .consulting-portal-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.8rem 1.4rem;
+            font-size: 0.9rem;
+        }
+
+        .consulting-portal-links a {
+            font-weight: 500;
+            text-decoration: none;
+        }
+
+        .consulting-portal-links a:hover {
+            text-decoration: underline;
+        }
+
+        .consulting-portal-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1rem;
+            margin-top: 0.4rem;
+        }
+
+        .consulting-card {
+            border: 1px solid #e5e7eb;
+            border-radius: 0.75rem;
+            padding: 0.9rem 1rem;
+            background-color: #ffffff;
+        }
+
+        .consulting-card-title {
+            font-weight: 600;
+            margin: 0 0 0.25rem;
+            color: var(--text-color);
+        }
+
+        .consulting-card p {
+            margin: 0;
+            font-size: 0.9rem;
+            color: var(--muted-text);
+        }
+
+        .consulting-credentials {
+            margin-top: 0.8rem;
+            font-size: 0.88rem;
+            color: var(--muted-text);
+        }
+
+        .consulting-credentials a {
+            font-weight: 500;
+        }
+
+        .consulting-booking {
+            margin-top: 0.8rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.6rem;
+            font-size: 0.9rem;
+            color: var(--muted-text);
+        }
+
+        .consulting-booking p {
+            margin: 0;
+        }
+
+        .consulting-booking .btn-primary {
+            align-self: flex-start;
+        }
+
+        @media (max-width: 768px) {
+            .consulting-portal .portal-inner {
+                padding-inline: 0.9rem;
+            }
+
+            .consulting-portal-top {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .consulting-portal-cta .btn-primary {
+                width: auto;
+            }
+        }
     </style>
 </head>
 <body>
+    <section class="consulting-portal">
+        <div class="portal-inner">
+            <div class="consulting-portal-top">
+                <div class="consulting-portal-heading">
+                    <h1>Saif Samer Elsaady — Supply Chain · AI Automation · Career &amp; Platform Consulting</h1>
+                    <p>Outcome-focused consulting for engineers and technical teams.</p>
+                </div>
+                <div class="consulting-portal-cta">
+                    <a href="https://calendly.com/selsaady27/one-on-one" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                        Book a 30-min call
+                    </a>
+                </div>
+            </div>
+            <div class="consulting-portal-links">
+                <a href="https://www.linkedin.com/in/saif-s-elsaady-78091425a/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <a href="https://calendly.com/selsaady27/one-on-one" target="_blank" rel="noopener noreferrer">Book a time</a>
+                <a href="https://news.engineering.asu.edu/graduate/saif-elsaady/" target="_blank" rel="noopener noreferrer">Graduate Recognition</a>
+                <a href="https://search.asu.edu/profile/3844340" target="_blank" rel="noopener noreferrer">ASU Profile</a>
+            </div>
+            <div class="consulting-portal-grid">
+                <div class="consulting-card">
+                    <div class="consulting-card-title">Supply Chain &amp; Operations</div>
+                    <p>Relevant experience: semiconductor manufacturing analytics, yield-aware planning, tooling data pipelines.</p>
+                </div>
+                <div class="consulting-card">
+                    <div class="consulting-card-title">AI Automation &amp; Engineering</div>
+                    <p>Relevant experience: built AI/ML tools at Intel and automation at Siemens EDA; production ML pipelines and testing automation.</p>
+                </div>
+                <div class="consulting-card">
+                    <div class="consulting-card-title">Career &amp; Platform Consulting</div>
+                    <p>Relevant experience: designed courses and curricula at Arizona State University; built educational offerings and secured roles with TSMC, Honeywell, Intel, Tesla, ARM and interviews from Nvidia, Apple, SanDisk and others — industry-facing program experience.</p>
+                </div>
+            </div>
+            <div class="consulting-credentials">
+                PhD, Electrical Engineering (Arizona State University) — In progress, focused on yield uncertainty in semiconductor manufacturing. MSE, Electrical Engineering (ASU). MS, Computational Life Sciences (ASU). BSE, Electrical Systems Engineering (ASU). BS, Data Science (Mathematics) (ASU). Graduated with Distinction (4.0 GPA). Graduate Spotlight Feature: 
+                <a href="https://news.engineering.asu.edu/graduate/saif-elsaady/" target="_blank" rel="noopener noreferrer">https://news.engineering.asu.edu/graduate/saif-elsaady/</a>.
+            </div>
+            <div class="consulting-booking">
+                <p>Only serious inquiries please. When booking, please state why you're booking (1–2 sentences). I reserve the right to cancel if the booking reason is missing</p>
+                <a href="https://calendly.com/selsaady27/one-on-one" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                    Book a 30-min call
+                </a>
+            </div>
+        </div>
+    </section>
+
     <!-- Loading Screen -->
     <div id="loading-screen">
         <div class="loader">
@@ -1142,57 +1439,74 @@ My work spans semiconductor manufacturing analytics, AI automation engineering, 
         <div class="timeline">
           <div class="timeline-item">
             <div class="timeline-content">
-              <h3>Embedded Systems Intern</h3>
+              <h3>Hardware Ecosystem Engineer</h3>
+              <h4>Arm</h4>
+              <ul style="margin-left:0; padding-left:1.2em;">
+                <li>Identified cost hotspots using Python and investigated the mechanical enclosure of the hardware system.</li>
+                <li>Managing ecosystem partner relationships to validate device verification and support release for data center delivery.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-content">
+              <h3>Graduate Engineer</h3>
+              <h4>Intel Corporation</h4>
+              <ul style="margin-left:0; padding-left:1.2em;">
+                <li>Engineered a synthetic data pipeline using Python, generating 10,000+ test graphs, enabling scalable CNN training.</li>
+                <li>Developed an 8-layer CNN architecture using Python (PyTorch, SciPy, L2 regularization), achieving 92.43% accuracy.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-content">
+              <h3>Signal &amp; Power Integrity Solutions</h3>
+              <h4>Siemens EDA</h4>
+              <ul style="margin-left:0; padding-left:1.2em;">
+                <li>Developed an automated signal integrity and power integrity validation system using Python Tkinter GUI.</li>
+                <li>Automated DRC for differential pairs using Python/Linux tooling, resulting in ~90% reduction in review time.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-content">
+              <h3>Electrical Engineer</h3>
               <h4>Honeywell Aerospace</h4>
               <ul style="margin-left:0; padding-left:1.2em;">
-                <li>Reduced avionics test cycle time by 50% by optimizing scripts with Automated Test Equipment (ATE).</li>
-                <li>Resolved ATE scripting errors and managed JIRA ticketing system to improve test workflow stability.</li>
-                <li>Analyzed signal integrity and optimized script runtimes to save 10 minutes per cycle on UAV systems.</li>
-                <li>Built a Linux-based pipeline streaming UAV camera footage via Python over LTE with 1s latency reduction.</li>
+                <li>Automated avionics workflows using Python and JIRA, reducing test cycle time by 50% through optimization.</li>
+                <li>Developed a data pipeline using Python on NVIDIA JETSON, reducing latency by 1s for signal communications on UAVs.</li>
               </ul>
             </div>
           </div>
           <div class="timeline-item">
             <div class="timeline-content">
-              <h3>Process Automation Engineer Intern</h3>
-              <h4>Intel Corporation</h4>
+              <h3>Data Science Research Intern</h3>
+              <h4>USAA (TDMN)</h4>
               <ul style="margin-left:0; padding-left:1.2em;">
-                <li>Performed statistical modeling on wafer defect and process data using JMP, SQL, and Python (pandas, NumPy, scipy) to improve yield analysis and detect anomalies.</li>
-                <li>Automated semiconductor test and verification workflows using Python scripting (pandas, regex, os), significantly accelerating product validation cycles and reducing manual debugging efforts by 80%.</li>
-                <li>Identified data defects through JMP/Excel, leading to optimized maintenance planning, resulting in $15,000 cost savings and improved process efficiency.</li>
+                <li>Analyzed customer data using Python with K-means and NLP, improving satisfaction by 10% through insights.</li>
+                <li>Conducted EDA on thousands of call transcripts with clustering algorithms, reducing friction scores by 15%.</li>
               </ul>
             </div>
           </div>
+        </div>
+        <h3 class="section-title" style="margin-top:2rem;">Teaching Experience</h3>
+        <div class="timeline">
           <div class="timeline-item">
             <div class="timeline-content">
-              <h3>AI/ML Research Intern</h3>
-              <h4>Intel Corporation</h4>
-              <ul style="margin-left:0; padding-left:1.2em;">
-                <li>Developed a dual CNN classification pipeline using TensorFlow/Keras with separate models for continuous and discrete data modalities, achieving high pass rates on unseen test data.</li>
-                <li>Engineered a complete 3-script MLOps toolchain with professional GUI interfaces and Intel corporate branding, reducing manual configuration by 100%.</li>
-                <li>Created an end-to-end machine learning solution with professional GUI interfaces and automated result organization, streamlining the evaluation workflow from hours to minutes while providing comprehensive performance reporting and audit trails.</li>
-              </ul>
-            </div>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-content">
-              <h3>Data Science Intern</h3>
-              <h4>USAA</h4>
-              <ul style="margin-left:0; padding-left:1.2em;">
-                <li>Improved customer service insights by implementing K-means clustering on interaction data, reducing friction scores by 15%.</li>
-                <li>Enhanced NLP capabilities with n-grams and topic modeling, leading to a 10% improvement in satisfaction metrics.</li>
-                <li>Created dashboards using matplotlib, seaborn, and WordCloud to visualize sentiment and support service redesign.</li>
-              </ul>
-            </div>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-content">
-              <h3>UGTA, Grader, & FURI Researcher</h3>
+              <h3>Teaching Assistant &amp; Grader</h3>
               <h4>Arizona State University</h4>
               <ul style="margin-left:0; padding-left:1.2em;">
-                <li>Assisted instruction and grading in courses: FSE100, BIO514, EGR334, EGR314, EGR202, and EGR201.</li>
-                <li>Supported freshman engineering design projects and lab-based instruction with hands-on mentoring.</li>
-                <li>Contributed to undergraduate research through the FURI program in clean energy and AI-based applications.</li>
+                <li>Delivered instruction across 20+ STEM courses using workshops and labs, resulting in improved student performance.</li>
+                <li>Designed and revised course materials and syllabi, resulting in clearer learning outcomes.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-content">
+              <h3>Tutoring Assistant</h3>
+              <h4>Mountain Pointe High School</h4>
+              <ul style="margin-left:0; padding-left:1.2em;">
+                <li>Supported classroom instruction using guided problem-solving, resulting in stronger foundational skills.</li>
+                <li>Mentored students individually, resulting in increased academic confidence.</li>
               </ul>
             </div>
           </div>
