@@ -135,6 +135,16 @@
         [data-theme="dark"] .project-card li {
             color: #94a3b8;
         }
+
+        [data-theme="dark"] .services div[style*="background:#f8f9fa"],
+        [data-theme="dark"] .education div[style*="background:#f8f9fa"] {
+            background: #1e293b !important;
+            border-color: #475569 !important;
+        }
+        [data-theme="dark"] .services p,
+        [data-theme="dark"] .education p {
+            color: #94a3b8 !important;
+        }
         
         /* Responsive improvements */
         @media (max-width: 768px) {
@@ -300,6 +310,8 @@
                 <a href="#featured" class="nav-link">Projects</a>
                 <a href="#skills" class="nav-link">Skills</a>
                 <a href="#experience" class="nav-link">Experience</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#education" class="nav-link">Education</a>
                 <a href="#contact" class="nav-link">Contact</a>
             </div>
             <div class="nav-toggle" id="nav-toggle">
@@ -319,12 +331,19 @@
                         Hi, I'm <span class="highlight">Saif Elsaady</span>
                     </h1>
                     <h2 class="hero-subtitle">Supply Chain Optimization · AI Automation · Career Strategy</h2>
+                    <div class="hero-links" style="display:flex; gap:1rem; flex-wrap:wrap; margin-top:0.75rem; margin-bottom:0.5rem;">
+                        <a href="https://www.linkedin.com/in/saif-s-elsaady-78091425a/" target="_blank" style="color:#8b4513; font-weight:500; text-decoration:none; border-bottom:1px solid #8b4513;">LinkedIn</a>
+                        <a href="https://calendly.com/selsaady27/one-on-one" target="_blank" style="color:#8b4513; font-weight:500; text-decoration:none; border-bottom:1px solid #8b4513;">Book a Time</a>
+                        <a href="https://news.engineering.asu.edu/graduate/saif-elsaady/" target="_blank" style="color:#8b4513; font-weight:500; text-decoration:none; border-bottom:1px solid #8b4513;">Graduate Recognition</a>
+                        <a href="https://search.asu.edu/profile/3844340" target="_blank" style="color:#8b4513; font-weight:500; text-decoration:none; border-bottom:1px solid #8b4513;">ASU Profile</a>
+                    </div>
                     <p class="hero-description">
                   Specializing in semiconductor supply chain optimization, AI automation engineering, and high-performance career & platform consulting for technical professionals. Focused on execution, efficiency, and measurable outcomes.
                     </p>
                     <div class="hero-buttons">
                         <a href="#projects" class="btn btn-primary">View Projects</a>
                         <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                        <a href="https://calendly.com/selsaady27/one-on-one" target="_blank" class="btn btn-primary" style="background:#8b4513; color:#fff; border-color:#8b4513;">Book a 30-min Call</a>
                     </div>
                 </div>
                 <div class="hero-image">
@@ -368,6 +387,61 @@ My work spans semiconductor manufacturing analytics, AI automation engineering, 
         </div>
     </section>
 
+<!-- Services Section -->
+<section id="services" class="services fade-in" style="padding:4rem 0;">
+    <div class="container">
+        <h2 class="section-title">Services</h2>
+        <p style="text-align:center; max-width:600px; margin:0 auto 0.5rem; font-size:1.15rem; color:#555;">Outcome-focused consulting for engineers and technical teams.</p>
+        <div style="text-align:center; margin-bottom:2rem;">
+            <a href="https://calendly.com/selsaady27/one-on-one" target="_blank" class="btn btn-primary" style="background:#8b4513; color:#fff; border-color:#8b4513; font-size:1.1rem; padding:0.75rem 2rem;">Book a 30-min Call</a>
+            <p style="max-width:600px; margin:1rem auto 0; font-size:0.95rem; color:#777;">Only serious inquiries please. When booking, please state why you're booking (1–2 sentences). I reserve the right to cancel if the booking reason is unclear.</p>
+        </div>
+        <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:2rem; margin-top:2rem;">
+            <div style="background:#f8f9fa; border-radius:0.75rem; padding:1.5rem; border:1px solid #e9ecef; box-shadow:0 2px 10px rgba(0,0,0,0.1);">
+                <h3 style="color:#8b4513; margin-bottom:0.75rem; font-size:1.2rem;">Supply Chain & Operations</h3>
+                <p style="color:#2c3e50; font-size:0.95rem;">Relevant experience: semiconductor manufacturing analytics, yield-aware planning, tooling data pipelines.</p>
+            </div>
+            <div style="background:#f8f9fa; border-radius:0.75rem; padding:1.5rem; border:1px solid #e9ecef; box-shadow:0 2px 10px rgba(0,0,0,0.1);">
+                <h3 style="color:#8b4513; margin-bottom:0.75rem; font-size:1.2rem;">AI Automation & Engineering</h3>
+                <p style="color:#2c3e50; font-size:0.95rem;">Relevant experience: built AI/ML tools at Intel and automation at Siemens EDA; production ML pipelines and testing automation.</p>
+            </div>
+            <div style="background:#f8f9fa; border-radius:0.75rem; padding:1.5rem; border:1px solid #e9ecef; box-shadow:0 2px 10px rgba(0,0,0,0.1);">
+                <h3 style="color:#8b4513; margin-bottom:0.75rem; font-size:1.2rem;">Career & Platform Consulting</h3>
+                <p style="color:#2c3e50; font-size:0.95rem;">Relevant experience: designed courses and curricula at Arizona State University; built educational offerings and got offers with TSMC, Honeywell, Intel, Tesla, ARM and interviews from Nvidia, Apple, Sandisk, etc.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Education Section -->
+<section id="education" class="education fade-in" style="padding:4rem 0;">
+    <div class="container">
+        <h2 class="section-title">Education</h2>
+        <div style="max-width:750px; margin:0 auto;">
+            <div style="margin-bottom:1.5rem; padding:1rem 1.5rem; background:#f8f9fa; border-left:4px solid #8b4513; border-radius:0 0.5rem 0.5rem 0;">
+                <h3 style="color:#8b4513; margin:0 0 0.25rem; font-size:1.1rem;">PhD, Electrical Engineering — Arizona State University</h3>
+                <p style="margin:0; color:#2c3e50;">In progress, focused on yield uncertainty in semiconductor manufacturing.</p>
+            </div>
+            <div style="margin-bottom:1.5rem; padding:1rem 1.5rem; background:#f8f9fa; border-left:4px solid #8b4513; border-radius:0 0.5rem 0.5rem 0;">
+                <h3 style="color:#8b4513; margin:0 0 0.25rem; font-size:1.1rem;">MSE, Electrical Engineering — Arizona State University</h3>
+                <p style="margin:0; color:#2c3e50;">🏆 Graduated with Distinction (4.0 GPA) · 🌟 <a href="https://news.engineering.asu.edu/graduate/saif-elsaady/" target="_blank" style="color:#8b4513; text-decoration:underline;">Read my Graduate Spotlight Feature</a></p>
+            </div>
+            <div style="margin-bottom:1.5rem; padding:1rem 1.5rem; background:#f8f9fa; border-left:4px solid #8b4513; border-radius:0 0.5rem 0.5rem 0;">
+                <h3 style="color:#8b4513; margin:0 0 0.25rem; font-size:1.1rem;">MS, Computational Life Sciences — Arizona State University</h3>
+                <p style="margin:0; color:#2c3e50;">🏆 Graduated with Distinction (4.0 GPA)</p>
+            </div>
+            <div style="margin-bottom:1.5rem; padding:1rem 1.5rem; background:#f8f9fa; border-left:4px solid #8b4513; border-radius:0 0.5rem 0.5rem 0;">
+                <h3 style="color:#8b4513; margin:0 0 0.25rem; font-size:1.1rem;">BSE, Electrical Systems Engineering — Arizona State University</h3>
+                <p style="margin:0; color:#2c3e50;">🏆 Graduated Summa Cum Laude (4.0 GPA)</p>
+            </div>
+            <div style="margin-bottom:1.5rem; padding:1rem 1.5rem; background:#f8f9fa; border-left:4px solid #8b4513; border-radius:0 0.5rem 0.5rem 0;">
+                <h3 style="color:#8b4513; margin:0 0 0.25rem; font-size:1.1rem;">BS, Data Science (Mathematics) — Arizona State University</h3>
+                <p style="margin:0; color:#2c3e50;">🏆 Graduated Summa Cum Laude (4.0 GPA)</p>
+            </div>
+        </div>
+    </div>
+</section>
+    
 <!-- Projects Section -->
 <section id="featured" class="projects">
   <div class="container">
@@ -1244,6 +1318,13 @@ My work spans semiconductor manufacturing analytics, AI automation engineering, 
                             <p><a href="https://github.com/selsaady1" target="_blank" class="contact-link">selsaady1</a></p>
                         </div>
                     </div>
+                    <div class="contact-item">
+                        <i class="fas fa-calendar-check"></i>
+                        <div>
+                            <h3>Book a Call</h3>
+                            <p><a href="https://calendly.com/selsaady27/one-on-one" target="_blank" class="contact-link">Schedule on Calendly</a></p>
+                        </div>
+                    </div>
                 </div>
                 <div class="social-links">
                     <a href="https://www.linkedin.com/in/saif-s-elsaady-78091425a/" target="_blank" class="social-link">
@@ -1429,6 +1510,7 @@ My work spans semiconductor manufacturing analytics, AI automation engineering, 
 </body>
 
 </html>
+
 
 
 
