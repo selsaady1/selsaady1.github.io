@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software Projects | Saif Elsaady</title>
+    <meta name="description" content="Saif Elsaady - Software Projects">
+    <link rel="icon" type="image/jpeg" href="./headshot.jpeg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/animations.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <style>
+        .category-hero {
+            padding: 8rem 0 3rem;
+            text-align: center;
+            border-bottom: 1px solid var(--line);
+        }
+        .category-hero h1 {
+            font-size: clamp(2rem, 4vw, 3rem);
+            font-weight: 800;
+            color: var(--heading);
+            margin-bottom: 0.5rem;
+            letter-spacing: -0.03em;
+        }
+        .category-hero p {
+            color: var(--body);
+            font-size: 1rem;
+            max-width: 600px;
+            margin: 0 auto;
+            line-height: 1.7;
+        }
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--accent);
+            text-decoration: none;
+            font-size: 0.88rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            transition: color 0.2s;
+        }
+        .back-link:hover { color: var(--heading); }
+        .projects-list {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 3rem 1.5rem 5rem;
+        }
+        .project-count {
+            color: var(--muted);
+            font-size: 0.85rem;
+            margin-bottom: 2rem;
+            font-weight: 500;
+        }
+        .category-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 2rem 0;
+            border-top: 1px solid var(--line);
+            margin-top: 2rem;
+        }
+        .category-nav a {
+            color: var(--accent);
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+            transition: color 0.2s;
+        }
+        .category-nav a:hover { color: var(--heading); }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="./index.html">Saif<span>.</span></a>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="./index.html#home" class="nav-link">Home</a>
+                <a href="./index.html#about" class="nav-link">About</a>
+                <a href="./index.html#projects" class="nav-link">Projects</a>
+                <a href="./index.html#skills" class="nav-link">Skills</a>
+                <a href="./index.html#experience" class="nav-link">Experience</a>
+                <a href="./index.html#services" class="nav-link">Services</a>
+                <a href="./index.html#education" class="nav-link">Education</a>
+                <a href="./index.html#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="category-hero">
+        <div class="container">
+            <p class="section-subtitle">Code & Data</p>
+            <h1>Software Projects</h1>
+            <p>Machine learning, data science, simulation, and full-stack development.</p>
+        </div>
+    </section>
+
+    <div class="projects-list">
+        <a href="./index.html#projects" class="back-link"><i class="fas fa-arrow-left"></i> All Categories</a>
+        <p class="project-count">24 projects</p>
+
+        <div class="project-item">
+                    <h3>UAV Traffic Management</h3>
+                    <p>Built Python-based flight optimization model for Honeywell Hackathon with 3D visualization and live path correction logic.</p>
+                    <ul>
+                        <li>Developed real-time UAV path optimization using Python simulation.</li>
+                        <li>Integrated 3D visualization for UAV airspace situational awareness.</li>
+                        <li>Enhanced UAV safety via autonomous conflict resolution logic.</li>
+                    </ul>
+                    <div class="project-images">
+                        <img src="uav_traffic_image.jpg" alt="UAV Traffic Management" loading="lazy" class="project-image">
+                    </div>
+                </div>
+
+        <div class="project-item">
+                    <h3><a href="https://github.com/selsaady1/Saif-Elsaady/blob/main/DAT402_Project2%20(1).ipynb" target="_blank">NVIDIA Stock &amp; Volume Forecasting</a></h3>
+                    <p>Built time-series models (XGBoost, SVR, ANN) and applied PCA + t-SNE for forecasting optimization.</p>
+                    <ul>
+                        <li>Applied supervised learning models for financial forecasting accuracy.</li>
+                        <li>Performed EDA to visualize trends and trading behavior anomalies.</li>
+                        <li>Used PCA and t-SNE to enhance input features and reduce dimensionality.</li>
+                    </ul>
+                </div>
+
+        <div class="project-item">
+                    <h3><a href="https://rpubs.com/sels04/1004163" target="_blank">Instacart Basket Modeling</a></h3>
+                    <p>Applied ML and statistical regression to predict reorder behavior across departments and product types.</p>
+                    <ul>
+                        <li>Performed regression and EDA on reorder patterns in Instacart datasets.</li>
+                        <li>Built ML classifiers and conducted confidence interval testing.</li>
+                        <li>Used probability modeling to optimize reorder prediction accuracy.</li>
+                    </ul>
+                </div>
+
+        <div class="project-item">
+                    <h3><a href="https://www.linkedin.com/in/saif-s-elsaady-78091425a/details/projects/1740371996001/single-media-viewer/?profileId=ACoAAD_Z_FABQWyffCs4GMuY27eD-NRSpekP7G0" target="_blank">Customer Call Clustering (USAA)</a></h3>
+                    <p>Used NLP and K-Means to segment call transcripts, visualize friction, and improve service design.</p>
+                    <ul>
+                        <li>Performed clustering and EDA on transcript data to segment call types.</li>
+                        <li>Used n-gram and topic modeling to identify satisfaction drivers.</li>
+                        <li>Presented insights in checkpoints to inform client-side UX changes.</li>
+                    </ul>
+                </div>
+
+        <div class="project-item">
+                    <h3><a href="https://www.linkedin.com/in/saif-s-elsaady-78091425a/details/projects/297892626/multiple-media-viewer/?profileId=ACoAAD_Z_FABQWyffCs4GMuY27eD-NRSpekP7G0&treasuryMediaId=1740615100215" target="_blank">Crime Prediction (ML)</a></h3>
+                    <p>Used clustering, logistic regression, and geospatial features to predict crime severity and classify weapon usage.</p>
+                    <ul>
+                        <li>Trained classifiers to distinguish violent and armed crime categories.</li>
+                        <li>Mapped geospatial trends with DBSCAN and choropleth clustering.</li>
+                        <li>Modeled temporal patterns with Prophet for forecasting.</li>
+                    </ul>
+                </div>
+
+        <div class="project-item">
+                    <h3><a href="https://www.linkedin.com/in/saif-s-elsaady-78091425a/details/projects/1740434774738/single-media-viewer/?profileId=ACoAAD_Z_FABQWyffCs4GMuY27eD-NRSpekP7G0" target="_blank">MATLAB Simulation</a></h3>
+                    <p>Simulated Newton's Cooling Law, baton physics, and Lotka-Volterra equations for dynamics &amp; biology models.</p>
+                    <ul>
+                        <li>Built simulations of heat loss and motion in physical systems.</li>
+                        <li>Modeled predator-prey behavior with Lotka-Volterra in MATLAB.</li>
+                        <li>Visualized simulations with time plots and parameter sweeps.</li>
+                    </ul>
+                </div>
+
+        <div class="project-item">
+                    <h3>Java Dice Game</h3>
+                    <p>Developed a simple object-oriented betting simulator using classes, input validation, and game logic.</p>
+                    <ul>
+                        <li>Implemented OOP with custom Die and Main classes.</li>
+                        <li>Validated input and tracked user balance during gameplay.</li>
+                        <li>Used java.util.Random for dice roll simulation.</li>
+                    </ul>
+                </div>
+
+        <div class="project-item">
+                    <h3><a href="https://rpubs.com/sels04/994937" target="_blank">Adhesive Heat Testing</a></h3>
+                    <p>Conducted hypothesis testing on calorimetry data, comparing reported and experimental means.</p>
+                    <ul>
+                        <li>Performed one-sample hypothesis tests using R.</li>
+                        <li>Plotted confidence intervals and error bars for clarity.</li>
+                        <li>Published findings showing statistical significance (p &lt; 0.01).</li>
+                    </ul>
+                </div>
+
+        <div class="project-item">
+                    <h3><a href="https://www.linkedin.com/in/saif-s-elsaady-78091425a/details/projects/1740162793819/single-media-viewer/?profileId=ACoAAD_Z_FABQWyffCs4GMuY27eD-NRSpekP7G0" target="_blank">EPL Goal Analysis</a></h3>
+                    <p>Applied normal distribution modeling to Premier League match data, testing fairness of reported stats.</p>
+                    <ul>
+                        <li>Performed z-tests and statistical inference on EPL goal data.</li>
+                        <li>Interpreted fairness and distribution validity of goal claims.</li>
+                        <li>Visualized results with normal curves and deviation thresholds.</li>
+                    </ul>
+                </div>
+
+        <div class="project-item">
+                    <h3><a href="https://www.linkedin.com/in/saif-s-elsaady-78091425a/details/projects/1705887138747/single-media-viewer/?profileId=ACoAAD_Z_FABQWyffCs4GMuY27eD-NRSpekP7G0" target="_blank">Energy Usage in AZ</a></h3>
+                    <p>Used regression to correlate energy burden to income tiers and analyze utility cost equity from RECS data.</p>
+                    <ul>
+                        <li>Modeled relationships between household energy cost and income.</li>
+                        <li>Visualized equity gaps using scatterplots and density maps.</li>
+                        <li>Proposed targeted intervention strategies based on regression insights.</li>
+                    </ul>
+                </div>
+
+        <div class="project-item">
+                    <h3><a href="https://github.com/selsaady1/MAT-421-Elsaady/blob/d2fbcfc368a1359efe5f83fb73b0dd05013fb7ed/DAT301Project2.ipynb" target="_blank">Retail Orders | ML &amp; Statistical Project</a></h3>
+                    <p>Modeled grocery order behavior using regression, classification, and probability distribution.</p>
+                    <ul>
+                        <li>Performed regression analysis to examine reorder and purchase trends.</li>
+                        <li>Implemented ML models with scikit-learn for reorder prediction accuracy.</li>
+                        <li>Visualized frequency distributions and PMFs using seaborn &amp; matplotlib.</li>
+                        <li>Applied probability modeling to evaluate checkout likelihood.</li>
+                        <li>Proposed UX-driven data optimization strategies for cart behavior.</li>
+                    </ul>
+                </div>
+
+        <div class="project-item">
+                    <h3><a href="https://sels04.shinyapps.io/HypothesisTestingOneSample/" target="_blank">One-Sample Hypothesis Testing App</a></h3>
+                    <p>Developed Shiny R app for real-time hypothesis testing with CI visualization.</p>
+                    <ul>
+                        <li>Built hypothesis testing functions with R (shiny, stats) for one-sample analysis.</li>
+                        <li>Generated confidence intervals and statistical visuals dynamically.</li>
+                        <li>Used ggplot2 to show hypothesis rejection with input-driven graphics.</li>
+                        <li>Deployed fully functional app on Shinyapps.io for live demo use.</li>
+                    </ul>
+                </div>
+
+        <div class="project-item">
+                    <h3><a href="https://abyssinianstyle.com/" target="_blank">Abyssinian Style E-Commerce Website</a></h3>
+                    <p>Designed and launched Shopify site to support digital sales and enhance UX.</p>
+                    <ul>
+                        <li>Implemented front-end with HTML/CSS and optimized mobile responsiveness.</li>
+                        <li>Built product pages with integrated checkout and image optimization.</li>
+                        <li>Customized navigation and branding for an intuitive shopping experience.</li>
+                        <li>Worked with backend Shopify settings for inventory and SEO features.</li>
+                    </ul>
+                </div>
+
+        <div class="project-item">
+                    <h3>UAV Camera Integration | Embedded Systems</h3>
+                    <p>Built live-streaming camera pipeline for UAV using Linux, FFmpeg, and OpenCV.</p>
+                    <ul>
+                        <li>Developed video pipeline with OpenCV, GStreamer, and FFmpeg for low-latency feed.</li>
+                        <li>Used Linux scripting for automation of encoding and secure data handling.</li>
+                        <li>Streamed live video to GCS with reliability under UAV flight conditions.</li>
+                        <li>Debugged and tuned performance for improved streaming quality.</li>
+                    </ul>
+                </div>
+
+        <div class="project-item">
+                    <h3><a href="https://docs.google.com/presentation/d/1aNWkjnihUd0T1jMgJzpzdGPdUoMiZezoLIDkjWCCofc/edit" target="_blank">Product Trends with R</a></h3>
+                    <p>Visualized product sales and inventory patterns using R data visualization libraries.</p>
+                    <ul>
+                        <li>Created heatmaps and bar charts for category-level product distributions.</li>
+                        <li>Used ggplot2 and tidyr for long-format transformations and mapping.</li>
+                        <li>Highlighted sales performance drivers via aggregation and color maps.</li>
+                        <li>Built interactive Google Slides for presentation and visual storytelling.</li>
+                    </ul>
+                </div>
+
+        <div class="project-item">
+                    <h3><a href="https://www.linkedin.com/in/saif-s-elsaady-78091425a/details/projects/1615889655/multiple-media-viewer/?profileId=ACoAAD_Z_FABQWyffCs4GMuY27eD-NRSpekP7G0&treasuryMediaId=1746463659906" target="_blank">RF Signal Analysis | Statistical Inference</a></h3>
+                    <p>Explored RF detection trends in data center rooms using Python stats methods.</p>
+                    <ul>
+                        <li>Cleaned and structured RF signal datasets using pandas for Python analysis.</li>
+                        <li>Visualized signal behavior using matplotlib, seaborn, and distribution plots.</li>
+                        <li>Calculated confidence intervals and performed inference on signal variance.</li>
+                        <li>Applied chi-square and t-tests to estimate signal parameters.</li>
+                        <li>Delivered reproducible results using statistical scripting workflows.</li>
+                    </ul>
+                </div>
+
+        <div class="project-item">
+                    <h3><a href="https://www.linkedin.com/in/saif-s-elsaady-78091425a/details/projects/1752181177815/single-media-viewer?type=DOCUMENT&profileId=ACoAAD_Z_FABQWyffCs4GMuY27eD-NRSpekP7G0&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_projects_details%3BsIpY9B47Qvyx%2BbTseUzCLg%3D%3D" target="_blank">Machine Learning Hardware Failure Classification System</a></h3>
+                    <p>Engineered advanced dual CNN architecture for automated hardware failure detection using specialized models for continuous and discrete sensor data.</p>
+                    <ul>
+                        <li>Implemented custom deep learning pipeline with 48-96-128 progressive feature extraction and strategic dropout regularization (0.1, 0.05 rates).</li>
+                        <li>Developed comprehensive transfer learning framework utilizing Adam optimization (5e-5 LR), class weight balancing for imbalanced datasets, and L2 regularization (0.0001).</li>
+                        <li>Built production-ready MLOps pipeline with automated model versioning, timestamped backup systems, and real-time performance monitoring.</li>
+                        <li>Created interactive GUI framework enabling non-technical users to deploy ML models for industrial hardware diagnostics.</li>
+                    </ul>
+                </div>
+
+        <div class="project-item">
+                    <h3><a href="https://www.linkedin.com/in/saif-s-elsaady-78091425a/details/projects/1752179354689/single-media-viewer?type=DOCUMENT&profileId=ACoAAD_Z_FABQWyffCs4GMuY27eD-NRSpekP7G0&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_projects_details%3BsIpY9B47Qvyx%2BbTseUzCLg%3D%3D" target="_blank">Advanced Signal Demodulation System - DSP/ML Engineering</a></h3>
+                    <p>Engineered comparative BPSK demodulation system using dual methodologies (classical DSP vs. neural networks).</p>
+                    <ul>
+                        <li>Processed 10,000-bit transmission with SNR=1 Gaussian noise modeling for realistic communication channel simulation.</li>
+                        <li>Implemented advanced classical demodulation pipeline using orthogonal basis projection onto cosine/sine vectors with trigonometric phase estimation algorithms.</li>
+                        <li>Developed machine learning demodulation approach using optimized Multi-Layer Perceptron (10 hidden neurons) for direct signal-to-bit classification.</li>
+                        <li>Bypassed traditional phase estimation for innovative neural network-based signal recovery.</li>
+                    </ul>
+                </div>
+
+        <div class="project-item">
+                    <h3><a href="https://www.linkedin.com/in/saif-s-elsaady-78091425a/details/projects/1752179640978/single-media-viewer?type=DOCUMENT&profileId=ACoAAD_Z_FABQWyffCs4GMuY27eD-NRSpekP7G0&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_projects_details%3BsIpY9B47Qvyx%2BbTseUzCLg%3D%3D" target="_blank">Semiconductor Diode Modeling System</a></h3>
+                    <p>Engineered advanced semiconductor device simulation platform integrating fundamental physics equations with numerical optimization.</p>
+                    <ul>
+                        <li>Achieved 1e-6 convergence tolerance across 30 iterative optimization cycles for precise parameter extraction from experimental I-V data.</li>
+                        <li>Implemented robust Newton-Raphson circuit solver using SciPy optimization for nonlinear diode-resistor networks at 375K.</li>
+                        <li>Developed multi-parameter optimization engine using iterative least-squares algorithms to extract barrier height, ideality factor, and series resistance.</li>
+                        <li>Created comprehensive diode physics model incorporating temperature dependencies for accurate high-temperature semiconductor device characterization.</li>
+                    </ul>
+                </div>
+
+        <div class="project-item">
+                    <h3><a href="https://www.linkedin.com/in/saif-s-elsaady-78091425a/details/projects/1752178836019/single-media-viewer?type=DOCUMENT&profileId=ACoAAD_Z_FABQWyffCs4GMuY27eD-NRSpekP7G0&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_projects_details%3BsIpY9B47Qvyx%2BbTseUzCLg%3D%3D" target="_blank">Submarine Mine Detection System - Machine Learning Approach</a></h3>
+                    <p>Achieved 88.89% accuracy in life-critical submarine mine detection using PCA-optimized Multi-Layer Perceptron neural networks.</p>
+                    <ul>
+                        <li>Processed 60-dimensional sonar signals with only 3 missed mines out of 29 test cases for enhanced crew survival.</li>
+                        <li>Engineered optimal dimensionality reduction pipeline using Principal Component Analysis, reducing feature space from 60 to 8 components (87% reduction).</li>
+                        <li>Implemented systematic hyperparameter optimization across 60 PCA configurations using scikit-learn MLPClassifier with 100 hidden neurons.</li>
+                        <li>Delivered mission-critical defense technology solution with 10.3% false negative rate for hostile environment navigation.</li>
+                    </ul>
+                </div>
+
+        <div class="project-item">
+                    <h3><a href="https://www.linkedin.com/in/saif-s-elsaady-78091425a/details/projects/1752179921261/single-media-viewer?type=DOCUMENT&profileId=ACoAAD_Z_FABQWyffCs4GMuY27eD-NRSpekP7G0&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_projects_details%3BsIpY9B47Qvyx%2BbTseUzCLg%3D%3D" target="_blank">VLSI Circuit Optimization System, EDA Automation Approach</a></h3>
+                    <p>Engineered advanced HSPICE-driven circuit optimization platform automating parametric sweeps across fan factors and chain lengths.</p>
+                    <ul>
+                        <li>Minimized propagation delay (t_phl) for 30pF high-capacitance loads through intelligent inverter sizing and topology optimization.</li>
+                        <li>Developed sophisticated Python automation framework integrating industry-standard HSPICE simulation with dynamic netlist generation.</li>
+                        <li>Enabled systematic exploration of 100+ circuit configurations with automated performance extraction and optimal design identification.</li>
+                        <li>Implemented robust electronic design automation workflow using subprocess management for seamless HSPICE invocation and CSV parsing.</li>
+                    </ul>
+                </div>
+
+        <div class="project-item">
+                    <h3><a href="https://www.linkedin.com/in/saif-s-elsaady-78091425a/details/projects/1752179169267/single-media-viewer?type=DOCUMENT&profileId=ACoAAD_Z_FABQWyffCs4GMuY27eD-NRSpekP7G0&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_projects_details%3BsIpY9B47Qvyx%2BbTseUzCLg%3D%3D" target="_blank">Heart Disease Prediction System - Machine Learning Approach</a></h3>
+                    <p>Achieved 94.44% diagnostic accuracy in heart disease prediction using Support Vector Machine with RBF kernel.</p>
+                    <ul>
+                        <li>Outperformed 5 other ML algorithms on clinical dataset of 270 patient records with 13 cardiovascular features.</li>
+                        <li>Conducted comprehensive exploratory data analysis using Pearson correlation matrices and covariance analysis.</li>
+                        <li>Identified 6 critical predictive features with correlations above 0.41 for optimal model performance.</li>
+                        <li>Implemented and optimized 6 machine learning algorithms achieving consistent 90%+ accuracy across multiple models.</li>
+                    </ul>
+                </div>
+
+        <div class="project-item">
+                    <h3><a href="https://www.linkedin.com/in/saif-s-elsaady-78091425a/details/projects/1752180384041/single-media-viewer?type=DOCUMENT&profileId=ACoAAD_Z_FABQWyffCs4GMuY27eD-NRSpekP7G0&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_projects_details%3BsIpY9B47Qvyx%2BbTseUzCLg%3D%3D" target="_blank">AI Deployment Workflow Optimization</a></h3>
+                    <p>Led enterprise process transformation initiative reducing AI model deployment time by 75% through systematic IDEF0 modeling.</p>
+                    <ul>
+                        <li>Reduced deployment time from 3-4 hours to &lt;1 hour through automated workflow design for edge computing platforms.</li>
+                        <li>Engineered comprehensive automation solution using CLI-based toolchain integration with $5,700 total solution investment.</li>
+                        <li>Applied advanced enterprise modeling methodologies including Fishbone diagrams and 5 Whys analysis.</li>
+                        <li>Designed standardized, version-controlled deployment pipeline for Jetson Nano and Coral TPU platforms.</li>
+                    </ul>
+                </div>
+
+        <div class="project-item">
+                    <h3><a href="https://www.linkedin.com/in/saif-s-elsaady-78091425a/details/projects/1752181921260/single-media-viewer?type=DOCUMENT&profileId=ACoAAD_Z_FABQWyffCs4GMuY27eD-NRSpekP7G0&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_projects_details%3BsIpY9B47Qvyx%2BbTseUzCLg%3D%3D" target="_blank">EDA Compliance Validation GUI System</a></h3>
+                    <p>Engineered enterprise-grade desktop application featuring dynamic plugin architecture with importlib-based module loading.</p>
+                    <ul>
+                        <li>Implemented sophisticated multi-check execution engine supporting variable schema CSV processing and intelligent data merging.</li>
+                        <li>Developed advanced tkinter-based GUI framework with Excel-style multi-column filtering and real-time visualization.</li>
+                        <li>Built production-ready software architecture implementing MVC, Observer, Factory, and Strategy design patterns.</li>
+                        <li>Delivered scalable validation platform enabling non-technical users to execute complex compliance workflows.</li>
+                    </ul>
+                </div>
+
+        <nav class="category-nav">
+            <a href="./hardware.html"><i class="fas fa-arrow-left"></i> Hardware</a>
+            <a href="./index.html#projects">All Projects</a>
+            <a href="./research.html">Research <i class="fas fa-arrow-right"></i></a>
+        </nav>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Saif Elsaady. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>

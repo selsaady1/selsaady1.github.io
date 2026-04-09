@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Featured Projects | Saif Elsaady</title>
+    <meta name="description" content="Saif Elsaady - Featured Projects">
+    <link rel="icon" type="image/jpeg" href="./headshot.jpeg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/animations.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <style>
+        .category-hero {
+            padding: 8rem 0 3rem;
+            text-align: center;
+            border-bottom: 1px solid var(--line);
+        }
+        .category-hero h1 {
+            font-size: clamp(2rem, 4vw, 3rem);
+            font-weight: 800;
+            color: var(--heading);
+            margin-bottom: 0.5rem;
+            letter-spacing: -0.03em;
+        }
+        .category-hero p {
+            color: var(--body);
+            font-size: 1rem;
+            max-width: 600px;
+            margin: 0 auto;
+            line-height: 1.7;
+        }
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--accent);
+            text-decoration: none;
+            font-size: 0.88rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            transition: color 0.2s;
+        }
+        .back-link:hover { color: var(--heading); }
+        .projects-list {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 3rem 1.5rem 5rem;
+        }
+        .project-count {
+            color: var(--muted);
+            font-size: 0.85rem;
+            margin-bottom: 2rem;
+            font-weight: 500;
+        }
+        .category-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 2rem 0;
+            border-top: 1px solid var(--line);
+            margin-top: 2rem;
+        }
+        .category-nav a {
+            color: var(--accent);
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+            transition: color 0.2s;
+        }
+        .category-nav a:hover { color: var(--heading); }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="./index.html">Saif<span>.</span></a>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="./index.html#home" class="nav-link">Home</a>
+                <a href="./index.html#about" class="nav-link">About</a>
+                <a href="./index.html#projects" class="nav-link">Projects</a>
+                <a href="./index.html#skills" class="nav-link">Skills</a>
+                <a href="./index.html#experience" class="nav-link">Experience</a>
+                <a href="./index.html#services" class="nav-link">Services</a>
+                <a href="./index.html#education" class="nav-link">Education</a>
+                <a href="./index.html#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="category-hero">
+        <div class="container">
+            <p class="section-subtitle">Highlights</p>
+            <h1>Featured Projects</h1>
+            <p>Top projects spanning hardware, software, and research.</p>
+        </div>
+    </section>
+
+    <div class="projects-list">
+        <a href="./index.html#projects" class="back-link"><i class="fas fa-arrow-left"></i> All Categories</a>
+        <p class="project-count">3 projects</p>
+
+        <div class="project-item">
+                    <h3><a href="https://www.linkedin.com/in/saif-s-elsaady-78091425a/details/projects/1752181177815/single-media-viewer?type=DOCUMENT&profileId=ACoAAD_Z_FABQWyffCs4GMuY27eD-NRSpekP7G0&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_projects_details%3BsIpY9B47Qvyx%2BbTseUzCLg%3D%3D" target="_blank">Machine Learning Hardware Failure Classification System</a></h3>
+                    <p>Engineered an advanced dual CNN architecture for automated hardware failure detection using specialized models for continuous and discrete sensor data.</p>
+                    <ul>
+                        <li>Implemented custom deep learning pipeline with 48-96-128 progressive feature extraction and strategic dropout regularization (0.1, 0.05 rates).</li>
+                        <li>Developed a comprehensive transfer learning framework utilizing Adam optimization (5e-5 LR), class weight balancing for imbalanced datasets, and L2 regularization (0.0001).</li>
+                        <li>Built production-ready MLOps pipeline with automated model versioning, timestamped backup systems, and real-time performance monitoring.</li>
+                        <li>Created an interactive GUI framework enabling non-technical users to deploy ML models for industrial hardware diagnostics.</li>
+                    </ul>
+                </div>
+
+        <div class="project-item">
+                    <h3><a href="https://www.linkedin.com/in/saif-s-elsaady-78091425a/details/projects/1752178836019/single-media-viewer?type=DOCUMENT&profileId=ACoAAD_Z_FABQWyffCs4GMuY27eD-NRSpekP7G0&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_projects_details%3BsIpY9B47Qvyx%2BbTseUzCLg%3D%3D" target="_blank">Submarine Mine Detection System - Machine Learning Approach</a></h3>
+                    <p>Achieved 88.89% accuracy in life-critical submarine mine detection using PCA-optimized Multi-Layer Perceptron neural networks.</p>
+                    <ul>
+                        <li>Processed 60-dimensional sonar signals with only 3 missed mines out of 29 test cases for enhanced crew survival.</li>
+                        <li>Engineered optimal dimensionality reduction pipeline using Principal Component Analysis, reducing feature space from 60 to 8 components (87% reduction).</li>
+                        <li>Implemented systematic hyperparameter optimization across 60 PCA configurations using scikit-learn MLPClassifier with 100 hidden neurons.</li>
+                        <li>Delivered mission-critical defense technology solution with 10.3% false negative rate for hostile environment navigation.</li>
+                    </ul>
+                </div>
+
+        <div class="project-item">
+                    <h3><a href="https://egr314team311.github.io/team311.github.io/Final_Report.html" target="_blank">Weather Station</a></h3>
+                    <p>Developed a mobile PCB with I2C/SPI sensors, power-efficient architecture, and field-tested calibration for environmental monitoring.</p>
+                    <ul>
+                        <li>Built environmental sensor array using temperature, pressure, and wind modules.</li>
+                        <li>Developed a power-saving design using switching regulators and rechargeable cells.</li>
+                        <li>Designed the PCB in Cadence and passed DRC checks before fabrication.</li>
+                        <li>Performed accuracy tests in varied conditions to verify sensor readings.</li>
+                    </ul>
+                </div>
+
+        <nav class="category-nav">
+            <a href="./research.html"><i class="fas fa-arrow-left"></i> Research</a>
+            <a href="./index.html#projects">All Projects</a>
+            <a href="./hardware.html">Hardware <i class="fas fa-arrow-right"></i></a>
+        </nav>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Saif Elsaady. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>

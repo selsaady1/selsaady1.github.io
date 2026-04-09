@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research Projects | Saif Elsaady</title>
+    <meta name="description" content="Saif Elsaady - Research Projects">
+    <link rel="icon" type="image/jpeg" href="./headshot.jpeg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/animations.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <style>
+        .category-hero {
+            padding: 8rem 0 3rem;
+            text-align: center;
+            border-bottom: 1px solid var(--line);
+        }
+        .category-hero h1 {
+            font-size: clamp(2rem, 4vw, 3rem);
+            font-weight: 800;
+            color: var(--heading);
+            margin-bottom: 0.5rem;
+            letter-spacing: -0.03em;
+        }
+        .category-hero p {
+            color: var(--body);
+            font-size: 1rem;
+            max-width: 600px;
+            margin: 0 auto;
+            line-height: 1.7;
+        }
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--accent);
+            text-decoration: none;
+            font-size: 0.88rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            transition: color 0.2s;
+        }
+        .back-link:hover { color: var(--heading); }
+        .projects-list {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 3rem 1.5rem 5rem;
+        }
+        .project-count {
+            color: var(--muted);
+            font-size: 0.85rem;
+            margin-bottom: 2rem;
+            font-weight: 500;
+        }
+        .category-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 2rem 0;
+            border-top: 1px solid var(--line);
+            margin-top: 2rem;
+        }
+        .category-nav a {
+            color: var(--accent);
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+            transition: color 0.2s;
+        }
+        .category-nav a:hover { color: var(--heading); }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="./index.html">Saif<span>.</span></a>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="./index.html#home" class="nav-link">Home</a>
+                <a href="./index.html#about" class="nav-link">About</a>
+                <a href="./index.html#projects" class="nav-link">Projects</a>
+                <a href="./index.html#skills" class="nav-link">Skills</a>
+                <a href="./index.html#experience" class="nav-link">Experience</a>
+                <a href="./index.html#services" class="nav-link">Services</a>
+                <a href="./index.html#education" class="nav-link">Education</a>
+                <a href="./index.html#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="category-hero">
+        <div class="container">
+            <p class="section-subtitle">Science & Sustainability</p>
+            <h1>Research Projects</h1>
+            <p>Scientific research, environmental modeling, and sustainability studies.</p>
+        </div>
+    </section>
+
+    <div class="projects-list">
+        <a href="./index.html#projects" class="back-link"><i class="fas fa-arrow-left"></i> All Categories</a>
+        <p class="project-count">6 projects</p>
+
+        <div class="project-item">
+                    <h3><a href="https://colab.research.google.com/drive/1Q99aIMV8y3LL3m8ud0Pt17700qDMT20S" target="_blank">Sea Turtle Survival</a></h3>
+                    <p>Modeled endangered populations using Leslie matrices and simulated conservation strategy outcomes.</p>
+                    <ul>
+                        <li>Built stage-based matrix model using life-stage survival data from IUCN.</li>
+                        <li>Simulated population trends under baseline and conservation scenarios.</li>
+                        <li>Identified juvenile survival as key limiting factor to long-term growth.</li>
+                        <li>Recommended MPAs and bycatch reduction to improve species viability.</li>
+                    </ul>
+                    <div class="project-images">
+                        <img src="AGEMODEL.png" alt="Sea Turtle Age Model" loading="lazy" class="project-image">
+                    </div>
+                </div>
+
+        <div class="project-item">
+                    <h3><a href="https://www.linkedin.com/in/saif-s-elsaady-78091425a/details/projects/1740638687791/single-media-viewer/?profileId=ACoAAD_Z_FABQWyffCs4GMuY27eD-NRSpekP7G0" target="_blank">Bird Biodiversity</a></h3>
+                    <p>Performed ANOVA and regression on urban vs. rural species diversity using CAP LTER data.</p>
+                    <ul>
+                        <li>Analyzed 20+ years of CAP LTER bird data using R statistical tools.</li>
+                        <li>Compared species richness across habitats using one-way ANOVA.</li>
+                        <li>Performed linear regression to identify temporal biodiversity trends.</li>
+                        <li>Discussed conservation implications for urban planning policies.</li>
+                    </ul>
+                </div>
+
+        <div class="project-item">
+                    <h3>TEM for Thin Films</h3>
+                    <p>Used microscopy and FEA to study grain boundaries, voiding, and delamination in thin-film semiconductors.</p>
+                    <ul>
+                        <li>Performed TEM-based structural analysis of advanced thin-film materials.</li>
+                        <li>Simulated stress-induced void formation using FEA and Python modeling.</li>
+                        <li>Visualized defect evolution under strain using SciPy and Matplotlib.</li>
+                        <li>Proposed improvements to fabrication processes based on findings.</li>
+                    </ul>
+                    <div class="project-images">
+                        <img src="STRESST.jpeg" alt="TEM Stress Analysis 1" loading="lazy" class="project-image">
+                        <img src="STRESSS.jpeg" alt="TEM Stress Analysis 2" loading="lazy" class="project-image">
+                    </div>
+                </div>
+
+        <div class="project-item">
+                    <h3><a href="https://www.linkedin.com/in/saif-s-elsaady-78091425a/details/projects/1736820104121/single-media-viewer/?profileId=ACoAAD_Z_FABQWyffCs4GMuY27eD-NRSpekP7G0" target="_blank">Perovskite Research Ethics</a></h3>
+                    <p>Explored ethics of solar innovation, data transparency, and conflicts of interest in green tech.</p>
+                    <ul>
+                        <li>Evaluated transparency issues in perovskite efficiency claims.</li>
+                        <li>Reviewed funding conflicts in industry-academic solar research.</li>
+                        <li>Recommended best practices for ethical materials data reporting.</li>
+                        <li>Reflected on societal responsibility of emerging solar technologies.</li>
+                    </ul>
+                </div>
+
+        <div class="project-item">
+                    <h3><a href="https://www.linkedin.com/in/saif-s-elsaady-78091425a/details/projects/1364895872/multiple-media-viewer/?profileId=ACoAAD_Z_FABQWyffCs4GMuY27eD-NRSpekP7G0&treasuryMediaId=1740163223354" target="_blank">PETase Filtration System</a></h3>
+                    <p>Designed a water pitcher with plastic-eating enzyme membrane and validated filtration performance.</p>
+                    <ul>
+                        <li>Integrated PETase enzyme to degrade microplastics in water samples.</li>
+                        <li>Prototyped reusable mesh filter with enzymatic plastic breakdown.</li>
+                        <li>Tested filtration efficiency through lab-based particle retention studies.</li>
+                        <li>Aligned project goals with UN Sustainable Development Goal 6.6.</li>
+                    </ul>
+                    <div class="project-images">
+                        <img src="FILTER.jpg" alt="PETase Filtration System" loading="lazy" class="project-image">
+                    </div>
+                </div>
+
+        <div class="project-item">
+                    <h3><a href="https://docs.google.com/document/d/1TZRP6A4-CvUWnU3l3kYcBU2yQYpV2cdJVXPOmOcaHZg/edit?usp=sharing" target="_blank">Urban Green Space GIS</a></h3>
+                    <p>Modeled biodiversity and access in Tempe, AZ using GeoPandas and open street map data.</p>
+                    <ul>
+                        <li>Mapped green spaces in Tempe using Python GIS libraries (GeoPandas, OSMnx).</li>
+                        <li>Analyzed species diversity and ecological benefits across city zones.</li>
+                        <li>Visualized carbon sequestration and air quality improvement metrics.</li>
+                        <li>Built interactive dashboards to support sustainable urban planning.</li>
+                    </ul>
+                    <div class="project-images">
+                        <img src="Heattree.jpg" alt="Urban Green Space Heat Map" loading="lazy" class="project-image">
+                    </div>
+                </div>
+
+        <nav class="category-nav">
+            <a href="./software.html"><i class="fas fa-arrow-left"></i> Software</a>
+            <a href="./index.html#projects">All Projects</a>
+            <a href="./featured.html">Featured <i class="fas fa-arrow-right"></i></a>
+        </nav>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Saif Elsaady. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
