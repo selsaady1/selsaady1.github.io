@@ -50,7 +50,7 @@ function initParticleBackground() {
 
             ctx.beginPath();
             ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
-            ctx.fillStyle = 'rgba(0, 224, 176, ' + p.opacity + ')';
+            ctx.fillStyle = 'rgba(212, 162, 76,' + p.opacity + ')';
             ctx.fill();
         });
 
@@ -65,7 +65,7 @@ function initParticleBackground() {
                     ctx.beginPath();
                     ctx.moveTo(particles[i].x, particles[i].y);
                     ctx.lineTo(particles[j].x, particles[j].y);
-                    ctx.strokeStyle = 'rgba(0, 224, 176, ' + (0.04 * (1 - dist / 150)) + ')';
+                    ctx.strokeStyle = 'rgba(212, 162, 76,' + (0.04 * (1 - dist / 150)) + ')';
                     ctx.lineWidth = 0.5;
                     ctx.stroke();
                 }
