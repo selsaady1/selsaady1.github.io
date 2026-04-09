@@ -1,62 +1,137 @@
-/* ===== ANIMATIONS & SCROLL EFFECTS ===== */
+/* ===== ANIMATIONS - DARK CINEMATIC PORTFOLIO ===== */
 
+/* ===== FADE-IN (default: fade up) ===== */
 .fade-in {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: opacity 0.8s cubic-bezier(0.4,0,0.2,1), transform 0.8s cubic-bezier(0.4,0,0.2,1);
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1),
+                transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
 }
-
 .fade-in.visible {
-  opacity: 1;
-  transform: none;
+    opacity: 1;
+    transform: translateY(0);
 }
 
+/* ===== SLIDE VARIANTS ===== */
 .slide-in-left {
-  opacity: 0;
-  transform: translateX(-40px);
-  transition: opacity 0.8s cubic-bezier(0.4,0,0.2,1), transform 0.8s cubic-bezier(0.4,0,0.2,1);
+    opacity: 0;
+    transform: translateX(-30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
 }
 .slide-in-left.visible {
-  opacity: 1;
-  transform: none;
+    opacity: 1;
+    transform: translateX(0);
 }
 
 .slide-in-right {
-  opacity: 0;
-  transform: translateX(40px);
-  transition: opacity 0.8s cubic-bezier(0.4,0,0.2,1), transform 0.8s cubic-bezier(0.4,0,0.2,1);
+    opacity: 0;
+    transform: translateX(30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
 }
 .slide-in-right.visible {
-  opacity: 1;
-  transform: none;
+    opacity: 1;
+    transform: translateX(0);
 }
 
-.btn, .filter-btn {
-  transition: transform 0.2s, box-shadow 0.2s;
-}
-.btn:hover, .filter-btn:hover {
-  transform: translateY(-3px) scale(1.04);
-  box-shadow: 0 4px 24px rgba(139, 69, 19, 0.12);
-}
-
+/* ===== SECTION TITLE ===== */
 .section-title {
-  position: relative;
-  overflow: hidden;
+    opacity: 0;
+    transform: translateY(16px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
 }
-.section-title::after {
-  content: '';
-  display: block;
-  width: 0;
-  height: 4px;
-  background: var(--link);
-  transition: width 0.6s cubic-bezier(0.4,0,0.2,1);
-  position: absolute;
-  left: 50%;
-  bottom: -10px;
-  transform: translateX(-50%);
-}
-.section-title.visible::after {
-  width: 60px;
+.section-title.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 
-/* Loader animation (already in style.css, but can be enhanced here if needed) */ 
+/* ===== STAGGERED FADE-UP KEYFRAMES ===== */
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.stagger-1 { animation-delay: 0s; }
+.stagger-2 { animation-delay: 0.1s; }
+.stagger-3 { animation-delay: 0.2s; }
+.stagger-4 { animation-delay: 0.25s; }
+
+/* ===== HERO ANIMATIONS ===== */
+@keyframes heroFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero-text {
+    animation: heroFadeIn 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.3s both;
+}
+
+.hero-image {
+    animation: heroFadeIn 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.5s both;
+}
+
+.hero-title {
+    animation: heroFadeIn 0.7s cubic-bezier(0.16, 1, 0.3, 1) 0.4s both;
+}
+
+.hero-subtitle {
+    animation: heroFadeIn 0.7s cubic-bezier(0.16, 1, 0.3, 1) 0.55s both;
+}
+
+.hero-links {
+    animation: heroFadeIn 0.6s cubic-bezier(0.16, 1, 0.3, 1) 0.65s both;
+}
+
+.hero-description {
+    animation: heroFadeIn 0.6s cubic-bezier(0.16, 1, 0.3, 1) 0.7s both;
+}
+
+.hero-buttons {
+    animation: heroFadeIn 0.6s cubic-bezier(0.16, 1, 0.3, 1) 0.8s both;
+}
+
+.scroll-indicator {
+    animation: heroFadeIn 0.5s ease 1.2s both;
+}
+
+/* ===== LOADING SCREEN ===== */
+@keyframes loaderPulse {
+    0%, 100% { opacity: 0.5; }
+    50% { opacity: 1; }
+}
+
+.loader p {
+    animation: loaderPulse 1.5s ease infinite;
+}
+
+/* ===== REDUCED MOTION ===== */
+@media (prefers-reduced-motion: reduce) {
+    .fade-in,
+    .slide-in-left,
+    .slide-in-right,
+    .section-title,
+    .hero-text,
+    .hero-image,
+    .hero-title,
+    .hero-subtitle,
+    .hero-links,
+    .hero-description,
+    .hero-buttons,
+    .scroll-indicator {
+        animation: none !important;
+        transition: none !important;
+        opacity: 1 !important;
+        transform: none !important;
+    }
+}
