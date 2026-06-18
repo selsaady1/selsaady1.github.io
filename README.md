@@ -1,6 +1,6 @@
 # Samer Elsaady
 
-Personal site for **Samer Elsaady** — Senior Manager, Compliance & Information Security at Conga.
+Personal site for **Samer Elsaady**, Senior Manager, Compliance & Information Security at Conga.
 
 Live at **https://selsaady1.github.io**
 
@@ -12,6 +12,6 @@ A single, fast-loading static page (no build step, inline CSS, one optimized ima
 - Contact
 
 ## Files
-- `index.html` — the entire site
-- `samer.jpg` — portrait (560×560, optimized)
-- `.nojekyll` — serve files as-is on GitHub Pages
+- `index.html`: the entire site
+- `samer.jpg`: portrait (560×560, optimized)
+- `.nojekyll`: serve files as-is on GitHub Pages
