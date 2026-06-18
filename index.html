@@ -1,449 +1,380 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Saif Elsaady | Engineer &amp; Consultant</title>
-    <meta name="description" content="Saif Elsaady - Electrical & Computer Engineering Portfolio | AI/ML, Hardware, Software Development">
-    <meta name="keywords" content="Saif Elsaady, Portfolio, Electrical Engineering, Computer Engineering, AI, ML, Hardware, Software">
-    <meta name="author" content="Saif Elsaady">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Samer Elsaady — Senior Manager, Compliance &amp; Information Security</title>
+<meta name="description" content="Samer Elsaady — Senior Manager, Compliance &amp; Information Security at Conga. 20+ years in GRC, IT audit, risk management, and corporate governance across SOC 1/2, ISO 27001, HITRUST, SOX, PCI DSS and more." />
+<meta name="author" content="Samer Elsaady" />
+<meta name="theme-color" content="#0f1e2e" />
+<link rel="preload" as="image" href="samer.jpg" />
+<meta property="og:type" content="profile" />
+<meta property="og:title" content="Samer Elsaady — Compliance &amp; Information Security Leader" />
+<meta property="og:description" content="Senior Manager, Compliance &amp; Information Security at Conga. 20+ years in GRC, IT audit, and risk management." />
+<meta property="og:image" content="samer.jpg" />
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230f1e2e'/><text x='50' y='68' font-size='54' font-family='Georgia,serif' fill='%23c8a24a' text-anchor='middle'>SE</text></svg>" />
+<style>
+  :root{
+    --navy:#0f1e2e; --navy-2:#16293c; --ink:#1d2733; --slate:#5a6b7b;
+    --line:#e4e8ec; --bg:#ffffff; --bg-soft:#f6f8fa; --gold:#c8a24a; --gold-dark:#a9851f;
+    --maxw:1080px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+  body{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    color:var(--ink);background:var(--bg);line-height:1.6;font-size:17px;
+    -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;
+  }
+  a{color:inherit;text-decoration:none}
+  img{max-width:100%;display:block}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+  .eyebrow{font-size:13px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold-dark);font-weight:600}
+  h2.section-title{font-size:clamp(26px,3.6vw,38px);line-height:1.15;color:var(--navy);font-weight:700;letter-spacing:-.01em;margin:.4em 0 .2em}
 
-    <!-- Open Graph -->
-    <meta property="og:title" content="Saif Elsaady | Engineer & Consultant">
-    <meta property="og:description" content="Engineering consulting, career coaching & technical services for engineers and technical professionals.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://selsaady1.github.io/">
+  /* NAV */
+  header.nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.92);backdrop-filter:saturate(160%) blur(8px);border-bottom:1px solid var(--line)}
+  .nav-inner{display:flex;align-items:center;justify-content:space-between;height:64px}
+  .brand{font-weight:700;color:var(--navy);letter-spacing:.02em;font-size:18px}
+  .brand .dot{color:var(--gold)}
+  nav.links{display:flex;gap:30px}
+  nav.links a{font-size:15px;color:var(--slate);font-weight:500;transition:color .2s}
+  nav.links a:hover{color:var(--navy)}
+  .nav-cta{background:var(--navy);color:#fff;padding:9px 18px;border-radius:8px;font-size:14px;font-weight:600;transition:background .2s}
+  .nav-cta:hover{background:var(--navy-2)}
+  @media(max-width:760px){nav.links{display:none}}
 
-    <!-- Favicon -->
-    <link rel="icon" type="image/jpeg" href="./headshot.jpeg">
+  /* HERO */
+  .hero{background:linear-gradient(160deg,#0f1e2e 0%,#16293c 60%,#1d3650 100%);color:#eef2f6;position:relative;overflow:hidden}
+  .hero::after{content:"";position:absolute;inset:0;background:radial-gradient(900px 400px at 80% -10%,rgba(200,162,74,.16),transparent 60%);pointer-events:none}
+  .hero-grid{display:grid;grid-template-columns:1.4fr .9fr;gap:52px;align-items:center;padding:84px 0 88px;position:relative;z-index:1}
+  .hero .eyebrow{color:var(--gold)}
+  .hero h1{font-size:clamp(34px,5.4vw,58px);line-height:1.05;font-weight:800;letter-spacing:-.02em;margin:14px 0 10px;color:#fff}
+  .hero .role{font-size:clamp(18px,2.3vw,23px);color:#cdd9e4;font-weight:500}
+  .hero .role b{color:var(--gold);font-weight:600}
+  .hero .lede{margin:22px 0 6px;max-width:46ch;color:#b9c6d3;font-size:17px}
+  .hero .meta{display:flex;gap:20px;flex-wrap:wrap;margin-top:22px;font-size:14.5px;color:#9fb0c0}
+  .hero .meta span{display:inline-flex;align-items:center;gap:7px}
+  .cta-row{display:flex;gap:14px;flex-wrap:wrap;margin-top:30px}
+  .btn{padding:13px 24px;border-radius:9px;font-weight:600;font-size:15px;transition:transform .15s,background .2s,border-color .2s;border:1px solid transparent}
+  .btn-gold{background:var(--gold);color:#231a05}
+  .btn-gold:hover{background:#d8b75f;transform:translateY(-2px)}
+  .btn-ghost{border-color:rgba(255,255,255,.28);color:#eef2f6}
+  .btn-ghost:hover{border-color:var(--gold);color:#fff;transform:translateY(-2px)}
+  .portrait{justify-self:center;position:relative}
+  .portrait img{width:300px;height:300px;border-radius:50%;object-fit:cover;border:4px solid rgba(200,162,74,.55);box-shadow:0 24px 60px rgba(0,0,0,.45)}
+  .portrait .ring{position:absolute;inset:-14px;border:1px solid rgba(200,162,74,.3);border-radius:50%}
+  @media(max-width:860px){
+    .hero-grid{grid-template-columns:1fr;text-align:center;gap:34px;padding:60px 0 64px}
+    .hero .lede,.hero .meta{margin-left:auto;margin-right:auto;justify-content:center}
+    .cta-row{justify-content:center}
+    .portrait{order:-1}
+    .portrait img{width:210px;height:210px}
+  }
 
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  /* STATS */
+  .stats{background:var(--navy-2);border-top:1px solid rgba(255,255,255,.06)}
+  .stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:0;text-align:center}
+  .stat{padding:30px 16px;color:#eef2f6;border-right:1px solid rgba(255,255,255,.08)}
+  .stat:last-child{border-right:none}
+  .stat .num{font-size:clamp(28px,3.6vw,40px);font-weight:800;color:var(--gold);letter-spacing:-.02em}
+  .stat .lbl{font-size:13.5px;color:#a9b8c6;margin-top:4px;letter-spacing:.02em}
+  @media(max-width:680px){.stats-grid{grid-template-columns:repeat(2,1fr)}.stat:nth-child(2){border-right:none}.stat:nth-child(1),.stat:nth-child(2){border-bottom:1px solid rgba(255,255,255,.08)}}
 
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  section{padding:78px 0}
+  section.alt{background:var(--bg-soft)}
 
-    <!-- CSS Files -->
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/animations.css">
-    <link rel="stylesheet" href="./css/responsive.css">
+  /* ABOUT */
+  .about-grid{display:grid;grid-template-columns:1fr 1.55fr;gap:48px}
+  .about p{color:#37424f;margin-bottom:16px}
+  .focus-list{list-style:none;display:grid;gap:12px;margin-top:8px}
+  .focus-list li{display:flex;gap:12px;align-items:flex-start;font-size:15.5px;color:#37424f}
+  .focus-list .chk{flex:0 0 22px;height:22px;border-radius:50%;background:rgba(200,162,74,.16);color:var(--gold-dark);display:grid;place-items:center;font-size:13px;margin-top:2px}
+  @media(max-width:820px){.about-grid{grid-template-columns:1fr;gap:26px}}
+
+  /* SKILLS */
+  .cols{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:34px}
+  .card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:26px 24px;transition:box-shadow .2s,transform .2s,border-color .2s}
+  .card:hover{box-shadow:0 16px 40px rgba(15,30,46,.08);transform:translateY(-3px);border-color:#d6dde4}
+  .card h3{font-size:17px;color:var(--navy);margin-bottom:14px;display:flex;align-items:center;gap:10px}
+  .card h3 .ic{width:34px;height:34px;border-radius:9px;background:var(--navy);color:var(--gold);display:grid;place-items:center;font-size:16px}
+  .tags{display:flex;flex-wrap:wrap;gap:8px}
+  .tag{background:var(--bg-soft);border:1px solid var(--line);color:#3a4754;font-size:13px;padding:6px 11px;border-radius:7px;font-weight:500}
+  @media(max-width:820px){.cols{grid-template-columns:1fr}}
+
+  /* EXPERIENCE */
+  .timeline{margin-top:34px;border-left:2px solid var(--line);padding-left:0}
+  .job{position:relative;padding:0 0 34px 30px;margin-left:8px;border-left:2px solid transparent}
+  .job::before{content:"";position:absolute;left:-7px;top:6px;width:12px;height:12px;border-radius:50%;background:var(--gold);box-shadow:0 0 0 4px var(--bg)}
+  section.alt .job::before{box-shadow:0 0 0 4px var(--bg-soft)}
+  .job:last-child{padding-bottom:0}
+  .job .when{font-size:13px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:var(--gold-dark)}
+  .job h3{font-size:19px;color:var(--navy);margin:3px 0 1px;font-weight:700}
+  .job .org{font-size:15px;color:var(--slate);font-weight:500;margin-bottom:10px}
+  .job ul{list-style:none;display:grid;gap:7px}
+  .job li{position:relative;padding-left:18px;color:#3c4856;font-size:15.5px}
+  .job li::before{content:"▹";position:absolute;left:0;color:var(--gold-dark)}
+
+  /* CERTS + LANG */
+  .two{display:grid;grid-template-columns:1.4fr 1fr;gap:24px;margin-top:34px}
+  .panel{background:#fff;border:1px solid var(--line);border-radius:14px;padding:28px}
+  .panel h3{color:var(--navy);font-size:18px;margin-bottom:16px}
+  .cert-list{list-style:none;display:grid;gap:11px}
+  .cert-list li{display:flex;gap:12px;align-items:center;font-size:15.5px;color:#37424f}
+  .cert-list .badge{flex:0 0 30px;height:30px;border-radius:8px;background:var(--navy);color:var(--gold);display:grid;place-items:center;font-size:14px}
+  .lang-row{display:flex;justify-content:space-between;align-items:center;padding:11px 0;border-bottom:1px solid var(--line);font-size:15.5px}
+  .lang-row:last-child{border-bottom:none}
+  .lang-row b{color:var(--navy)}
+  .lang-row span{font-size:13px;color:var(--slate);background:var(--bg-soft);padding:4px 10px;border-radius:20px}
+  .edu{margin-top:22px;padding-top:20px;border-top:1px solid var(--line)}
+  @media(max-width:820px){.two{grid-template-columns:1fr}}
+
+  /* CONTACT */
+  .contact{background:linear-gradient(160deg,#0f1e2e,#16293c);color:#eef2f6;text-align:center}
+  .contact h2{color:#fff;font-size:clamp(26px,4vw,40px);font-weight:800;letter-spacing:-.01em}
+  .contact p{color:#b9c6d3;max-width:50ch;margin:16px auto 0}
+  .contact .cta-row{justify-content:center;margin-top:32px}
+  footer{background:#0b1722;color:#8597a7;text-align:center;padding:30px 24px;font-size:13.5px;border-top:1px solid rgba(255,255,255,.06)}
+  footer a{color:#b9c6d3}
+
+  .reveal{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s ease}
+  .reveal.in{opacity:1;transform:none}
+  @media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+</style>
 </head>
 <body>
-    <!-- Loading Screen -->
-    <div id="loading-screen">
-        <div class="loader">
-            <div class="loader-circle"></div>
-            <p>Loading</p>
-        </div>
-    </div>
 
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <a href="#home">Saif<span>.</span></a>
-            </div>
-            <div class="nav-menu" id="nav-menu">
-                <a href="#home" class="nav-link">Home</a>
-                <a href="#about" class="nav-link">About</a>
-                <a href="#projects" class="nav-link">Projects</a>
-                <a href="#skills" class="nav-link">Skills</a>
-                <a href="#experience" class="nav-link">Experience</a>
-                <a href="#services" class="nav-link">Services</a>
-                <a href="#education" class="nav-link">Education</a>
-                <a href="#contact" class="nav-link">Contact</a>
-            </div>
-            <div class="nav-toggle" id="nav-toggle">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-        </div>
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="#top">Samer Elsaady<span class="dot">.</span></a>
+    <nav class="links">
+      <a href="#about">About</a>
+      <a href="#expertise">Expertise</a>
+      <a href="#experience">Experience</a>
+      <a href="#credentials">Credentials</a>
     </nav>
+    <a class="nav-cta" href="#contact">Get in touch</a>
+  </div>
+</header>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <video class="hero-video-bg" autoplay muted loop playsinline>
-            <source src="./hero-bg.mp4" type="video/mp4">
-        </video>
-        <div class="hero-overlay"></div>
-        <div class="hero-container">
-            <div class="hero-content">
-                <div class="hero-text">
-                    <h1 class="hero-title">
-                        Hi, I'm <span class="highlight">Saif Elsaady</span>
-                    </h1>
-                    <h2 class="hero-subtitle">Supply Chain Optimization &middot; AI Automation &middot; Career Strategy</h2>
-                    <div class="hero-links">
-                        <a href="https://www.linkedin.com/in/saif-s-elsaady-78091425a/" target="_blank">LinkedIn</a>
-                        <a href="https://calendly.com/selsaady27/one-on-one" target="_blank">Book a Time</a>
-                        <a href="https://news.engineering.asu.edu/graduate/saif-elsaady/" target="_blank">Graduate Recognition</a>
-                        <a href="https://search.asu.edu/profile/3844340" target="_blank">ASU Profile</a>
-                    </div>
-                    <p class="hero-description">
-                        I offer one-on-one career coaching, job hunting strategy, and business consulting guidance for engineers and technical professionals.
-                    </p>
-                    <p class="hero-description">
-                        Specializing in semiconductor supply chain optimization, AI automation engineering, and high-performance career &amp; platform consulting for technical professionals. Focused on execution, efficiency, and measurable outcomes.
-                    </p>
-                    <div class="hero-buttons">
-                        <a href="#projects" class="btn btn-primary">View Projects</a>
-                        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
-                        <a href="https://calendly.com/selsaady27/one-on-one" target="_blank" class="btn btn-primary">Book a 30-min Call</a>
-                    </div>
-                </div>
-                <div class="hero-image">
-                    <img src="./headshot.jpeg" alt="Saif Elsaady" class="profile-image" loading="lazy">
-                </div>
-            </div>
-            <div class="scroll-indicator">
-                <div class="scroll-arrow"></div>
-            </div>
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <p class="eyebrow">Compliance &amp; Information Security Leader</p>
+        <h1>Samer Elsaady</h1>
+        <p class="role">Senior Manager, Compliance &amp; Information Security at <b>Conga</b></p>
+        <p class="lede">Two decades of building and scaling governance, risk, and compliance programs — turning complex regulatory frameworks into audit-ready, business-aligned operations.</p>
+        <div class="meta">
+          <span>📍 United States</span>
+          <span>🛡️ GRC &amp; IT Audit</span>
+          <span>🌐 EN · AR · IT</span>
         </div>
-        <div class="hero-fade"></div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="about fade-in">
-        <div class="container">
-            <p class="section-subtitle">About</p>
-            <h2 class="section-title">About Me</h2>
-            <div class="section-divider"></div>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>
-                        PhD Electrical Engineering candidate with a 4.0 GPA across all degrees, specializing in semiconductor supply chain modeling, AI-driven automation systems, and strategic technical career development. Built 60+ projects spanning manufacturing analytics, machine learning deployment, and systems optimization.
-                    </p>
-                    <p>
-                        My work spans semiconductor manufacturing analytics, AI automation engineering, and designing scalable educational and career platforms for educators. I focus on translating complex technical systems into measurable operational and professional outcomes.
-                    </p>
-                    <div class="about-stats">
-                        <div class="stat">
-                            <h3>4+</h3>
-                            <p>Years Industry Experience</p>
-                        </div>
-                        <div class="stat">
-                            <h3>56+</h3>
-                            <p>Technical Projects Built</p>
-                        </div>
-                        <div class="stat">
-                            <h3>20+</h3>
-                            <p>STEM Courses Designed &amp; Delivered</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="cta-row">
+          <a class="btn btn-gold" href="#contact">Connect with me</a>
+          <a class="btn btn-ghost" href="https://www.linkedin.com/in/samerelsaady" target="_blank" rel="noopener">View LinkedIn →</a>
         </div>
-    </section>
+      </div>
+      <div class="portrait">
+        <span class="ring"></span>
+        <img src="samer.jpg" width="300" height="300" alt="Portrait of Samer Elsaady" fetchpriority="high" />
+      </div>
+    </div>
+  </section>
 
-    <!-- Services Section -->
-    <section id="services" class="services fade-in">
-        <div class="container">
-            <p class="section-subtitle">Services</p>
-            <h2 class="section-title">Services</h2>
-            <div class="section-divider"></div>
-            <div style="text-align:center; margin-bottom:2rem;">
-                <a href="https://calendly.com/selsaady27/one-on-one" target="_blank" class="btn btn-primary">Book a 30-min Call</a>
-                <p style="max-width:650px; margin:1rem auto 0; font-size:0.92rem; color:var(--body);">I offer career coaching, job hunting strategy, resume optimization, interview prep, and technical career guidance. Only serious inquiries please. When booking, mention why you're reaching out and what you want to get out of working with me. I reserve the right to cancel if the booking reason is unclear.</p>
-            </div>
-            <div class="services-grid" style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:1.5rem; margin-top:2rem;">
-                <div class="service-card">
-                    <h3><i class="fas fa-microchip"></i> Supply Chain &amp; Operations</h3>
-                    <p>Relevant experience: semiconductor manufacturing analytics, yield-aware planning, tooling data pipelines.</p>
-                </div>
-                <div class="service-card">
-                    <h3><i class="fas fa-robot"></i> AI Automation &amp; Engineering</h3>
-                    <p>Relevant experience: built AI/ML tools at Intel and automation at Siemens EDA; production ML pipelines and testing automation.</p>
-                </div>
-                <div class="service-card">
-                    <h3><i class="fas fa-chart-line"></i> Career &amp; Platform Consulting</h3>
-                    <p>Relevant experience: designed courses and curricula at Arizona State University; built educational offerings and got offers with TSMC, Honeywell, Intel, Tesla, ARM and interviews from Nvidia, Apple, Sandisk, etc.</p>
-                </div>
-            </div>
+  <!-- STATS -->
+  <div class="stats">
+    <div class="wrap stats-grid">
+      <div class="stat"><div class="num">20+</div><div class="lbl">Years in audit &amp; compliance</div></div>
+      <div class="stat"><div class="num">Zero</div><div class="lbl">Critical findings across exams</div></div>
+      <div class="stat"><div class="num">60%</div><div class="lbl">Audit cycle time reduced</div></div>
+      <div class="stat"><div class="num">10+</div><div class="lbl">Compliance frameworks led</div></div>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="wrap about-grid reveal">
+      <div>
+        <p class="eyebrow">About</p>
+        <h2 class="section-title">Governance that moves the business forward</h2>
+      </div>
+      <div>
+        <p>I'm a compliance and information security leader with deep experience across internal audit, IT audit, enterprise risk management (ERM), and corporate governance. I'm known for identifying cost-reduction opportunities by surfacing process inefficiencies while keeping business and IT strategy aligned.</p>
+        <p>My work spans organizational restructuring, process re-engineering, gap analysis, benchmarking, and digital transformation — developing and implementing governance and risk-management best practices that scale.</p>
+        <ul class="focus-list">
+          <li><span class="chk">✓</span> Cross-framework control mapping &amp; unified compliance programs</li>
+          <li><span class="chk">✓</span> External audit liaison — SOC 1/2, HITRUST, HIPAA, ISO 27001/27701, PCI DSS</li>
+          <li><span class="chk">✓</span> GRC platform design, automated evidence collection &amp; continuous monitoring</li>
+          <li><span class="chk">✓</span> Third-party risk, privacy operations (DPIA, RoPA, retention &amp; deletion)</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERTISE -->
+  <section id="expertise" class="alt">
+    <div class="wrap reveal">
+      <p class="eyebrow">Expertise</p>
+      <h2 class="section-title">Core competencies</h2>
+      <div class="cols">
+        <div class="card">
+          <h3><span class="ic">📋</span> Compliance Frameworks</h3>
+          <div class="tags">
+            <span class="tag">SOC 1/2</span><span class="tag">SOX</span><span class="tag">ISO 27001</span>
+            <span class="tag">ISO 27701</span><span class="tag">HITRUST</span><span class="tag">HIPAA</span>
+            <span class="tag">PCI DSS</span><span class="tag">GDPR</span><span class="tag">CCPA</span>
+            <span class="tag">NIST 800</span><span class="tag">COSO</span><span class="tag">COBIT</span>
+          </div>
         </div>
-    </section>
-
-    <!-- Education Section -->
-    <section id="education" class="education fade-in">
-        <div class="container">
-            <p class="section-subtitle">Education</p>
-            <h2 class="section-title">Education</h2>
-            <div class="section-divider"></div>
-            <div style="max-width:750px; margin:0 auto; display:flex; flex-direction:column; gap:1rem;">
-                <div class="edu-card">
-                    <h3>PhD, Electrical Engineering &mdash; Arizona State University</h3>
-                    <p>In progress, focused on yield uncertainty in semiconductor manufacturing.</p>
-                </div>
-                <div class="edu-card">
-                    <h3>MSE, Electrical Engineering &mdash; Arizona State University</h3>
-                    <p>Graduated with Distinction (4.0 GPA) &middot; <a href="https://news.engineering.asu.edu/graduate/saif-elsaady/" target="_blank">Read my Graduate Spotlight Feature</a></p>
-                </div>
-                <div class="edu-card">
-                    <h3>MS, Computational Life Sciences &mdash; Arizona State University</h3>
-                    <p>Graduated with Distinction (4.0 GPA)</p>
-                </div>
-                <div class="edu-card">
-                    <h3>BSE, Electrical Systems Engineering &mdash; Arizona State University</h3>
-                    <p>Graduated Summa Cum Laude (4.0 GPA)</p>
-                </div>
-                <div class="edu-card">
-                    <h3>BS, Data Science (Mathematics) &mdash; Arizona State University</h3>
-                    <p>Graduated Summa Cum Laude (4.0 GPA)</p>
-                </div>
-            </div>
+        <div class="card">
+          <h3><span class="ic">🛡️</span> Risk &amp; Governance</h3>
+          <div class="tags">
+            <span class="tag">ISMS</span><span class="tag">Enterprise Risk (ERM)</span><span class="tag">IT Audit</span>
+            <span class="tag">Internal Controls</span><span class="tag">ICFR</span><span class="tag">Third-Party Risk</span>
+            <span class="tag">Privacy Ops</span><span class="tag">DPIA / RoPA</span><span class="tag">Forensic Audit</span>
+          </div>
         </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <p class="section-subtitle">Work</p>
-            <h2 class="section-title">Projects</h2>
-            <div class="section-divider"></div>
-            <div class="category-cards">
-                <a href="./featured.html" class="category-card">
-                    <div class="category-icon"><i class="fas fa-star"></i></div>
-                    <h3>Featured</h3>
-                    <p>Top projects across all disciplines</p>
-                    <span class="category-count">3 projects</span>
-                </a>
-                <a href="./hardware.html" class="category-card">
-                    <div class="category-icon"><i class="fas fa-microchip"></i></div>
-                    <h3>Hardware</h3>
-                    <p>PCB, embedded systems, power electronics</p>
-                    <span class="category-count">19 projects</span>
-                </a>
-                <a href="./software.html" class="category-card">
-                    <div class="category-icon"><i class="fas fa-code"></i></div>
-                    <h3>Software</h3>
-                    <p>ML, data science, simulation, web</p>
-                    <span class="category-count">24 projects</span>
-                </a>
-                <a href="./research.html" class="category-card">
-                    <div class="category-icon"><i class="fas fa-flask"></i></div>
-                    <h3>Research</h3>
-                    <p>Scientific research and sustainability</p>
-                    <span class="category-count">6 projects</span>
-                </a>
-            </div>
+        <div class="card">
+          <h3><span class="ic">📊</span> GRC &amp; Analytics Tools</h3>
+          <div class="tags">
+            <span class="tag">Power BI</span><span class="tag">Tableau</span><span class="tag">ACL Analytics</span>
+            <span class="tag">IDEA</span><span class="tag">CAATs</span><span class="tag">Jira</span>
+            <span class="tag">Confluence</span><span class="tag">Slack</span><span class="tag">PENTANA Vision</span>
+          </div>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
-        <div class="container">
-            <p class="section-subtitle">Expertise</p>
-            <h2 class="section-title">Technical Skills</h2>
-            <div class="section-divider"></div>
-            <div class="skills-icons-row">
-                <div class="skill-icon-label">
-                    <span role="img" aria-label="Data Science">&#129504;</span>
-                    <span>Data Science &amp; Analytics</span>
-                    <ul class="skill-libraries">
-                        <li>Python (pandas, NumPy, TensorFlow, PyTorch, matplotlib, seaborn, scikit-learn, KMeans)</li>
-                        <li>R (tidyverse, dplyr, ggplot2, randomForest, ShinyApp)</li>
-                        <li>SQL, JMP, SPC, DOE</li>
-                    </ul>
-                </div>
-                <div class="skill-icon-label">
-                    <span role="img" aria-label="Embedded & Hardware">&#128268;</span>
-                    <span>Embedded &amp; Hardware</span>
-                    <ul class="skill-libraries">
-                        <li>C++, Verilog, PERL, MATLAB, Simulink, PowerShell</li>
-                        <li>I2C, SPI, UART, CAN, PWM</li>
-                        <li>Linux (Shell, Bash), ATE</li>
-                        <li>PCB Design, DFM</li>
-                    </ul>
-                </div>
-                <div class="skill-icon-label">
-                    <span role="img" aria-label="Lab & Instrumentation">&#128300;</span>
-                    <span>Lab &amp; Instrumentation</span>
-                    <ul class="skill-libraries">
-                        <li>Oscilloscopes, Multimeter, Lab Equipment, Soldering</li>
-                    </ul>
-                </div>
-            </div>
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <div class="wrap reveal">
+      <p class="eyebrow">Experience</p>
+      <h2 class="section-title">Career history</h2>
+      <div class="timeline">
+
+        <div class="job">
+          <div class="when">Jan 2021 — Present</div>
+          <h3>Senior Manager, Compliance &amp; Information Security</h3>
+          <div class="org">Conga · United States</div>
+          <ul>
+            <li>Standardized cross-framework control mapping and awareness training, embedding compliance across Product, Engineering, IT, Cloud Ops, HR, and Legal.</li>
+            <li>Primary liaison for SOC 1/2, HITRUST, HIPAA, ISO 27001-2022, 27701-2019, and PCI DSS audits — achieved zero critical findings and cut audit cycle time by 60%.</li>
+            <li>Led GRC platform rollout with automated evidence collection and continuous monitoring, sharply reducing manual effort and raising audit readiness.</li>
+            <li>SME for privacy operations (retention, deletion, DPIA, RoPA) and third-party risk reviews; strengthened client trust through sales-driven security inquiries.</li>
+          </ul>
         </div>
-    </section>
 
-    <!-- Certifications Section -->
-    <section id="certifications" class="certifications fade-in">
-        <div class="container">
-            <p class="section-subtitle">Credentials</p>
-            <h2 class="section-title">Certifications</h2>
-            <div class="section-divider"></div>
-            <ul>
-                <li>High Speed Signal Integrity Principles &ndash; Siemens EDA (Issued May 2025)</li>
-                <li>AI Foundations &ndash; Intel Corporation</li>
-                <li>Electrical Safety &ndash; Intel Corporation</li>
-                <li>Responsible Conduct of Research &ndash; CITI Program (Credential ID 67231577)</li>
-                <li>Introduction to R &ndash; DataCamp (Credential ID 35658541)</li>
-                <li>Introduction to the TidyVerse &ndash; DataCamp (Credential ID 35686923)</li>
-                <li>Lean Six Sigma Overview &ndash; Intel Corporation</li>
-                <li>Process Control Systems &ndash; Intel Corporation</li>
-                <li>Quality Issue Management &ndash; Intel Corporation</li>
-                <li>Reporting with R Markdown &ndash; DataCamp (Credential ID 35673667)</li>
-                <li>SPC++ Basics &ndash; Intel Corporation</li>
-                <li>Machine Learning &amp; Deep Learning In Python &ndash; Udemy</li>
-            </ul>
+        <div class="job">
+          <div class="when">Dec 2018 — Nov 2020</div>
+          <h3>Experienced Manager, Technology Audit</h3>
+          <div class="org">Grant Thornton LLP</div>
+          <ul>
+            <li>Led IT audit and ITGC engagements: SOX compliance/readiness, ICFR, systems assurance (SAP, Oracle, NetSuite, Workday), network &amp; database security, IAM, data privacy, and SDLC.</li>
+            <li>Helped clients anticipate emerging risks and leverage technology to resolve business challenges as a trusted advisor.</li>
+          </ul>
         </div>
-    </section>
 
-    <!-- Experience Section -->
-    <section id="experience" class="experience fade-in">
-        <div class="container">
-            <p class="section-subtitle">Career</p>
-            <h2 class="section-title">Professional Experience</h2>
-            <div class="section-divider"></div>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <h3>Hardware Ecosystem Engineer</h3>
-                        <h4>Arm</h4>
-                        <ul>
-                            <li>Identified cost hotspots using Python and investigated the mechanical enclosure of the hardware system.</li>
-                            <li>Managing ecosystem partner relationships to validate device verification and support release for data center delivery.</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <h3>Graduate Engineer</h3>
-                        <h4>Intel Corporation</h4>
-                        <ul>
-                            <li>Engineered a synthetic data pipeline using Python, generating 10,000+ test graphs, enabling scalable CNN training.</li>
-                            <li>Developed an 8-layer CNN architecture using Python (PyTorch, SciPy, L2 regularization), achieving 92.43% accuracy.</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <h3>Signal &amp; Power Integrity Solutions</h3>
-                        <h4>Siemens EDA</h4>
-                        <ul>
-                            <li>Developed an automated signal integrity and power integrity validation system using Python Tkinter GUI.</li>
-                            <li>Automated DRC for differential pairs using Python/Linux tooling, resulting in ~90% reduction in review time.</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <h3>Electrical Engineer</h3>
-                        <h4>Honeywell Aerospace</h4>
-                        <ul>
-                            <li>Automated avionics workflows using Python and JIRA, reducing test cycle time by 50% through optimization.</li>
-                            <li>Developed a data pipeline using Python on NVIDIA JETSON, reducing latency by 1s for signal communications on UAVs.</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <h3>Data Science Research Intern</h3>
-                        <h4>USAA (TDMN)</h4>
-                        <ul>
-                            <li>Analyzed customer data using Python with K-means and NLP, improving satisfaction by 10% through insights.</li>
-                            <li>Conducted EDA on thousands of call transcripts with clustering algorithms, reducing friction scores by 15%.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <p class="section-subtitle" style="margin-top:3rem;">Teaching</p>
-            <h3 class="section-title">Teaching Experience</h3>
-            <div class="section-divider"></div>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <h3>Teaching Assistant &amp; Grader</h3>
-                        <h4>Arizona State University</h4>
-                        <ul>
-                            <li>Delivered instruction across 20+ STEM courses using workshops and labs, resulting in improved student performance.</li>
-                            <li>Designed and revised course materials and syllabi, resulting in clearer learning outcomes.</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <h3>Tutoring Assistant</h3>
-                        <h4>Mountain Pointe High School</h4>
-                        <ul>
-                            <li>Supported classroom instruction using guided problem-solving, resulting in stronger foundational skills.</li>
-                            <li>Mentored students individually, resulting in increased academic confidence.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+        <div class="job">
+          <div class="when">Sep 2017 — Oct 2018</div>
+          <h3>Manager, Risk Advisory — Financial Services Office</h3>
+          <div class="org">EY (Ernst &amp; Young)</div>
+          <ul>
+            <li>Led IT and integrated audits for Fortune 500 financial services clients across the South West region.</li>
+            <li>Directed engagements spanning SDLC, application controls, cybersecurity, third-party risk, change management, data encryption, SOX, DB security, and IAM.</li>
+            <li>Applied CAAT tools to enhance GRC and escalated emerging risks to executive stakeholders.</li>
+          </ul>
         </div>
-    </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact fade-in">
-        <div class="container">
-            <p class="section-subtitle">Connect</p>
-            <h2 class="section-title">Get In Touch</h2>
-            <div class="section-divider"></div>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <div>
-                            <h3>Email</h3>
-                            <p><a href="mailto:selsaady27@gmail.com" class="contact-link">selsaady27@gmail.com</a></p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fab fa-linkedin"></i>
-                        <div>
-                            <h3>LinkedIn</h3>
-                            <p><a href="https://www.linkedin.com/in/saif-s-elsaady-78091425a/" target="_blank" class="contact-link">Saif S. Elsaady</a></p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fab fa-github"></i>
-                        <div>
-                            <h3>GitHub</h3>
-                            <p><a href="https://github.com/selsaady1" target="_blank" class="contact-link">selsaady1</a></p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-calendar-check"></i>
-                        <div>
-                            <h3>Book a Call</h3>
-                            <p><a href="https://calendly.com/selsaady27/one-on-one" target="_blank" class="contact-link">Schedule on Calendly</a></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="social-links">
-                    <a href="https://www.linkedin.com/in/saif-s-elsaady-78091425a/" target="_blank" class="social-link" aria-label="LinkedIn">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                    <a href="https://github.com/selsaady1" target="_blank" class="social-link" aria-label="GitHub">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="mailto:selsaady27@gmail.com" class="social-link" aria-label="Email">
-                        <i class="fas fa-envelope"></i>
-                    </a>
-                </div>
-            </div>
+        <div class="job">
+          <div class="when">2008 — 2017 · Doha, Qatar</div>
+          <h3>Audit &amp; Risk Manager → IT Audit Specialist</h3>
+          <div class="org">Qatar Financial Centre (QFC) Authority · 9 yrs 8 mos</div>
+          <ul>
+            <li>Built and delivered the annual audit plan approved by the Audit &amp; Risk Committee, preparing committee papers and managing the enterprise risk register.</li>
+            <li>Led control self-assessments, process re-engineering within ERP, and special forensic investigations for senior management.</li>
+            <li>Administered PENTANA Vision GRC software; applied ISO 27001 to the Oracle R12 ERP implementation and secured certification.</li>
+          </ul>
         </div>
-    </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2025 Saif Elsaady. All rights reserved.</p>
+        <div class="job">
+          <div class="when">2002 — 2008</div>
+          <h3>Senior Oracle / ERP Consultant</h3>
+          <div class="org">GIZA Systems · Computer &amp; Systems Engineering Co.</div>
+          <ul>
+            <li>Delivered full-cycle Oracle ERP implementations (R11i/R12) — GL, AP, AR, FA, Cash Management — across telecom, energy, and government clients in the Middle East.</li>
+            <li>First to apply CMMI to an ERP implementation in the region; led gap analysis, build, testing, migration, and rollout.</li>
+          </ul>
         </div>
-    </footer>
 
-    <!-- Back to Top Button -->
-    <button id="back-to-top" class="back-to-top" aria-label="Back to top">
-        <i class="fas fa-arrow-up"></i>
-    </button>
+      </div>
+    </div>
+  </section>
 
-    <!-- JavaScript Files -->
-    <script src="./js/main.js"></script>
-    <script src="./js/animations.js"></script>
+  <!-- CREDENTIALS -->
+  <section id="credentials" class="alt">
+    <div class="wrap reveal">
+      <p class="eyebrow">Credentials</p>
+      <h2 class="section-title">Certifications, languages &amp; education</h2>
+      <div class="two">
+        <div class="panel">
+          <h3>Certifications</h3>
+          <ul class="cert-list">
+            <li><span class="badge">★</span> COBIT 5 Implementation</li>
+            <li><span class="badge">★</span> COBIT 5 Foundation</li>
+            <li><span class="badge">★</span> The Role of Data in AI Auditing</li>
+            <li><span class="badge">★</span> ISO 27001 / ISO 27701 — ISMS &amp; Privacy frameworks</li>
+            <li><span class="badge">★</span> Excel: PivotTables in Depth · Grammar Foundations</li>
+          </ul>
+        </div>
+        <div class="panel">
+          <h3>Languages</h3>
+          <div class="lang-row"><b>English</b><span>Native / Bilingual</span></div>
+          <div class="lang-row"><b>Arabic</b><span>Native / Bilingual</span></div>
+          <div class="lang-row"><b>Italian</b><span>Professional</span></div>
+          <div class="edu">
+            <h3>Education</h3>
+            <div class="lang-row"><b>Helwan University, Cairo</b></div>
+            <p style="color:#5a6b7b;font-size:14.5px;margin-top:6px">B.A.Sc. — Accounting &amp; Business / Management</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact">
+    <div class="wrap reveal">
+      <p class="eyebrow" style="color:var(--gold)">Get in touch</p>
+      <h2>Let's talk compliance, risk &amp; security</h2>
+      <p>Open to leadership conversations in GRC, information security, and IT audit. The fastest way to reach me is email or LinkedIn.</p>
+      <div class="cta-row">
+        <a class="btn btn-gold" href="mailto:saelsaady@gmail.com">✉ saelsaady@gmail.com</a>
+        <a class="btn btn-ghost" href="https://www.linkedin.com/in/samerelsaady" target="_blank" rel="noopener">in/samerelsaady →</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  © <span id="yr">2026</span> Samer Elsaady · Compliance &amp; Information Security Leader ·
+  <a href="mailto:saelsaady@gmail.com">saelsaady@gmail.com</a>
+</footer>
+
+<script>
+  document.getElementById('yr').textContent = new Date().getFullYear();
+  (function(){
+    var els = document.querySelectorAll('.reveal');
+    if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return;}
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){ if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target);} });
+    },{threshold:.12});
+    els.forEach(function(e){io.observe(e);});
+  })();
+</script>
 </body>
 </html>
