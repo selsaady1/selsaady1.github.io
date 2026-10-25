@@ -1,6 +1,6 @@
 # Samer Elsaady
 
-Personal site for **Samer Elsaady**, Senior Manager, Compliance & Information Security at Conga.
+Personal site for **Samer Elsaady**, Audit, Governance, Risk, & Compliance Lead.
 
 Live at **https://selsaady1.github.io**
 
