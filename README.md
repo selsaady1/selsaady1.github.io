@@ -6,7 +6,7 @@ Live at **https://selsaady1.github.io**
 
 A single, fast-loading static page (no build step, inline CSS, one optimized image) covering:
 - Professional summary
-- Core competencies (compliance frameworks, risk & governance, GRC/analytics tools)
+- Core competencies (compliance frameworks, risk & governance, GRC & business tools)
 - Career history (Conga, Grant Thornton, EY, QFC Authority, GIZA Systems)
 - Certifications, languages & education
 - Contact
